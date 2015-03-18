@@ -1,0 +1,10 @@
+name = MD Leaders
+description = Select this profile to install demo profile for MD Leaders theme.
+core = 7.x
+exclusive = 1
+dependencies[] = node
+dependencies[] = contact
+files[] = mdleaders.profile
+
+version = "7.32"
+project = "drupal"
