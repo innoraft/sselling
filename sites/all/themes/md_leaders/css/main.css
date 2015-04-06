@@ -6518,3 +6518,7 @@ div.ppt {
 .to_animate_child_blocks .col-sm-4 .single_teaser h3 strong {
   color: #EB7000;
 }
+
+.row-fluid > div{
+  margin-bottom: 20px;
+}
