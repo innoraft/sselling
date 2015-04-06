@@ -6523,9 +6523,9 @@ div.ppt {
   margin-bottom: 20px;
 }
 
-.col-1 .col-2 .col-3 .col-4{
+.col-first{
 
-  padding-left: 60px;
+  padding-left: 65px;
 }
 
 .sticky-wrapper{
