@@ -6516,19 +6516,14 @@ div.ppt {
 
 .to_animate_child_blocks .col-sm-4 .single_teaser h3 strong {
   color: #EB7000;
-<<<<<<< HEAD
 }
-=======
-}
+
 #info .block-header {
   text-transform: none;
 }
 .addthis_button {
   display: none;
 }
->>>>>>> fca419ab4eaa0000fc18929f6dbe17d69b1461d0
-
-
 .row-fluid > div{
   margin-bottom: 20px;
 }
