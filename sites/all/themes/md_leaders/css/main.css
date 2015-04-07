@@ -6525,3 +6525,7 @@ div.ppt {
 .sticky-wrapper{
   margin-bottom: 85px !important;
 }
+
+.row-fluid{
+  text-align: center;
+}
