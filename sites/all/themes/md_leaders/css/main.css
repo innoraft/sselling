@@ -905,7 +905,6 @@ iframe {
   margin-bottom: 30px;
   font-size: 55px;
   position: relative;
-  text-transform: uppercase;
 }
 
 /*** buttons ***/
@@ -1306,7 +1305,7 @@ ol.list3 li + li {
   right: 0;
   z-index: 10000;
   background-color: #000000;
-  height: 145px !important;
+  height: 95px !important;
 }
 
 #header {
@@ -1329,7 +1328,7 @@ ol.list3 li + li {
   position: absolute;
   padding: 0 0 0 15px;
   z-index: 10;
-  top: 48px;
+  top: 20px;
   font-size: 30px;
   color: #fff;
 }
@@ -1358,7 +1357,7 @@ ol.list3 li + li {
 }
 @media (max-width: 767px) {
   #header .navbar-brand {
-    top: 18px;
+    top: 5px;
   }
 }
 @media (max-width: 500px) {
@@ -1459,7 +1458,7 @@ ol.list3 li + li {
 }
 
 #mainmenu {
-  margin-top: 45px;
+  margin-top: 15px;
 }
 
 .is-sticky #mainmenu {
@@ -1803,11 +1802,11 @@ ol.list3 li + li {
   }
 
   #mainmenu {
-    margin-top: 98px;
+    margin-top: 68px;
   }
 
   .main-menu-icon {
-    padding: 40px 0;
+    padding: 25px 0;
   }
 }
 .menu-item-number,
@@ -2832,7 +2831,7 @@ p.comment-form-comment:before, p.contact-form-message:before {
   margin-bottom: 0;
 }
 .single_teaser h3 {
-  font-size: 28px;
+  font-size: 26px;
   margin: 22px 0 18px;
   text-transform: none;
   font-weight: 400;
@@ -6517,4 +6516,26 @@ div.ppt {
 
 .to_animate_child_blocks .col-sm-4 .single_teaser h3 strong {
   color: #EB7000;
+<<<<<<< HEAD
+}
+=======
+}
+#info .block-header {
+  text-transform: none;
+}
+.addthis_button {
+  display: none;
+}
+>>>>>>> fca419ab4eaa0000fc18929f6dbe17d69b1461d0
+
+
+.row-fluid > div{
+  margin-bottom: 20px;
+}
+.sticky-wrapper{
+  margin-bottom: 55px !important;
+}
+
+.row-fluid{
+  text-align: center;
 }

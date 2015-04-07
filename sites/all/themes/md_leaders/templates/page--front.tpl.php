@@ -144,7 +144,7 @@
         <div class="container">
             <div class="row">
                 <div class="pull-left" style="margin-left:15px;"><a href="/privacy-policy"><small>Privacy Policy</small></a> &nbsp;| &nbsp;<a href="/disclaimer"><small>Disclaimer</small></a></div>
-                <div class="pull-right" style="margin-right:15px;"><a target="_blank" title="HCL Technologies" href="http://www.hcltech.com">
+                <div class="pull-right" style="margin-right:15px;"><span style="font-size: smaller;">Copyright © 2015 HCL Technologies Limited | </span><a target="_blank" title="HCL Technologies" href="http://www.hcltech.com">
                 <img hspace="0" height="10" border="0" width="69" vspace="0" src="/sites/all/themes/md_leaders/img/hcl.png"></img></a></div>
 
         </div>
