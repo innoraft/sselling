@@ -6522,17 +6522,6 @@ div.ppt {
 .row-fluid > div{
   margin-bottom: 20px;
 }
-
-.col-first{
-
-  padding-left: 80px;
-}
-.col-2{
-  padding-left: 50px;
-}
-.col-3{
-  padding-left: 40px;
-}
 .sticky-wrapper{
   margin-bottom: 85px !important;
 }
