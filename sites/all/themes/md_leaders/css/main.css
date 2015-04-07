@@ -6534,3 +6534,28 @@ div.ppt {
 .row-fluid{
   text-align: center;
 }
+
+.counter{
+position: fixed;
+top:60%;
+background-color:#f5821f;
+width:170px;
+height:82px;
+border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;
+z-index: 10;
+}
+.number{
+color:white;
+padding-left:50px;
+margin-bottom:-8px;
+padding-top: 17px;
+}
+.number p{
+font-size:40px;font-weight:bold;z-index:-1;
+}
+.amile{
+color:white;
+padding-left:20px;
+}
+

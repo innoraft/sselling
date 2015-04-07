@@ -101,6 +101,14 @@
       'recommended': {}
     });
   </script>
+  <div class="counter">
+<div class="number">
+<p>200</p> 
+</div>
+<div class="amile">
+<p>ran #aMileForHer</p>
+</div>
+</div>
 
 </body>
 </html>
