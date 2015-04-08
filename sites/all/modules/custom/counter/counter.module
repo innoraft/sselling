@@ -1,0 +1,40 @@
+<?php
+
+function counter_menu() {
+  $items['admin/config/counter'] = array(
+        'title' => t('Counter'),
+        'description' => t('Enter the counter number'),
+        'page callback' => 'drupal_get_form',
+        'access arguments' => array('administer site configuration'),
+        'file' => 'system.admin.inc',
+        'file path'=> drupal_get_path('module','system'),
+   );
+    $items['admin/config/counter/settings'] = array(
+  'title' => t('Number for counter'),
+  'description' => t('Enter the number for Counter'),
+  'page callback' => 'drupal_get_form',
+  'page arguments' => array('counter_settings'),
+  'access arguments' => array('administer site configuration'),
+  'type' => MENU_NORMAL_ITEM,
+  );
+
+  return $items;
+}
+ 
+function counter_settings() {
+  $form['counter'] = array(
+    '#type' => 'textfield',
+    '#title' => t('Enter the number'),
+    '#size'=> 80,
+    '#description'=>t('Enter the number for display in counter'),
+    '#required' => TRUE,
+    '#default_value' => variable_get('counter', ''),
+  );
+  // $form['submit']=array(
+  //       '#type'=>'submit',
+  //       '#value'=>t('Submit'),
+  // );
+  return system_settings_form($form);
+}
+
+

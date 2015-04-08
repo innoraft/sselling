@@ -103,7 +103,7 @@
   </script>
   <div class="counter">
 <div class="number">
-<p>200</p> 
+<p><?php echo variable_get('counter', ''); ?></p> 
 </div>
 <div class="amile">
 <p>ran #aMileForHer</p>
