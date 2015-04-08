@@ -102,11 +102,9 @@
     });
   </script>
   <div class="counter">
-<div class="number">
-<p><?php echo variable_get('counter', ''); ?></p> 
+<div class="number"><?php echo variable_get('counter', ''); ?>
 </div>
-<div class="amile">
-<p>ran #aMileForHer</p>
+<div class="amile">ran #aMileForHer
 </div>
 </div>
 

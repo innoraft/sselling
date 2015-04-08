@@ -6537,48 +6537,43 @@ div.ppt {
 
 .counter{
 position: fixed;
-top:60%;
+/*top:60%;*/
 background-color:#f5821f;
-width:170px;
-height:82px;
-border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;
+/*width:170px;
+height:82px;*/
+/*border-top-right-radius: 10px;
+border-bottom-right-radius: 10px;*/
 z-index: 10;
+bottom: 25%;
+border-radius: 0 10px 10px 0;
+padding:10px 20px;
 }
 .number{
 color:white;
-padding-left:40px;
-margin-bottom:-8px;
-padding-top: 17px;
-}
-.number p{
-font-size:40px;font-weight:bold;z-index:-1;
+/*padding-left:40px;*/
+text-align: center;
+/*margin-bottom:-8px;*/
+/*padding-top: 17px;*/
+font-weight: bold;
+font-size: 40px;
+padding: 10px 0;
 }
 .amile{
 color:white;
-padding-left:20px;
+text-align: center;
+/*padding-left:20px;*/
 }
 
 @media screen and (max-width: 850px){
 .counter{
-width:112px;
-height:63px;
+/*width:112px;
+height:63px;*/
+padding:0px 9px;
 }
 .number{
-color:white;
-padding-left:25px;
-margin-bottom:-13px;
-padding-top:8px;
-}
-.number p{
-font-size:30px;
-font-weight:bold;
-z-index:-1;
+font-size: 30px;
 }
 .amile{
-color:white;
-padding-left:5px;
-font-size: 70%;
+font-size: 60%;
 }
 }
-
