@@ -6559,3 +6559,26 @@ color:white;
 padding-left:20px;
 }
 
+@media screen and (max-width: 850px){
+.counter{
+width:108px;
+height:66px;
+}
+.number{
+color:white;
+padding-left:25px;
+margin-bottom:-13px;
+padding-top:8px;
+}
+.number p{
+font-size:30px;
+font-weight:bold;
+z-index:-1;
+}
+.amile{
+color:white;
+padding-left:5px;
+font-size: 70%;
+}
+}
+
