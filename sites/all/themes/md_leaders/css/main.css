@@ -6537,16 +6537,11 @@ div.ppt {
 
 .counter{
 position: fixed;
-/*top:60%;*/
 background-color:#f5821f;
-/*width:170px;
-height:82px;*/
-/*border-top-right-radius: 10px;
-border-bottom-right-radius: 10px;*/
 z-index: 10;
 bottom: 25%;
 border-radius: 0 10px 10px 0;
-padding:10px 20px;
+padding:10px 10px;
 }
 .number{
 color:white;
@@ -6566,6 +6561,7 @@ padding:0px 9px;
 }
 .number{
 font-size: 30px;
+padding:5px 0;
 }
 .amile{
 font-size: 60%;
