@@ -1314,7 +1314,7 @@ ol.list3 li + li {
   left: 0;
   right: 0;
   z-index: 10000;
-  height: 100%;
+  /*height: 100%;*/
 }
 #header .header-inner {
   max-width: 1200px;
@@ -6565,5 +6565,8 @@ padding:5px 0;
 }
 .amile{
 font-size: 60%;
+}
+.darkgrey_section{
+  display: none;
 }
 }
