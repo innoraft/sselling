@@ -6539,9 +6539,10 @@ div.ppt {
 position: fixed;
 background-color:#f5821f;
 z-index: 10;
-bottom: 25%;
-border-radius: 0 10px 10px 0;
+bottom: 40%;
+border-radius: 10px 0 0 10px;
 padding:10px 10px;
+right: 0px;
 }
 .number{
 color:white;
