@@ -93,7 +93,7 @@
     addthis.layers({
       'theme': 'transparent',
       'share': {
-        'position': 'left',
+        'position': 'right',
         'numPreferredServices': 5,
         'services': 'facebook,twitter,google_plusone_share,linkedin,more',
       },
