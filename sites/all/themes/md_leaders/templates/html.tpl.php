@@ -80,15 +80,13 @@
       url_transforms: {
         shorten: {
           twitter: 'bitly',
-          facebook: 'bitly',
-          linkedin: 'bitly',
           google_plus: 'bitly'
         }
       },
       shorteners: {
         bitly: {}
       },
-      title: "HCL Technologies Launches #aMileForHer. Run a mile & dedicate it to the women in your life. Visit: www.amileforher.in",
+      title: "Run a mile & dedicate it to women #aMileForHer. @hcltech will match miles & empower women via digital literacy ",
     }
     addthis.layers({
       'theme': 'transparent',
