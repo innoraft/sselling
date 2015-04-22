@@ -3461,7 +3461,7 @@ ul#flickr li {
   position: absolute;
   height: 40px;
   width: 40px;
-  margin-left: -40px;
+  margin-left: 0px;
   margin-top: -20px;
   top: 50%;
   left: 50%;
@@ -6199,7 +6199,7 @@ div.facebook .pp_contract:hover {
 div.facebook .pp_close {
   width: 22px;
   height: 22px;
-  background: url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;
+  /*background: url(../img/prettyPhoto/facebook/sprite.png) -1px -1px no-repeat;*/
   cursor: pointer;
 }
 div.facebook .pp_description {
@@ -6554,6 +6554,14 @@ padding: 10px 0;
 color:white;
 text-align: center;
 }
+.p-link{
+display: none;
+}
+.pp_social{
+  display: none;
+}
+
+
 
 @media screen and (max-width: 850px){
 .counter{
@@ -6569,4 +6577,8 @@ font-size: 60%;
 .darkgrey_section{
   display: none;
 }
+.p-view{
+  display: none;
 }
+}
+
