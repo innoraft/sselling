@@ -74,7 +74,7 @@
             <div class="row">
                 <div>
                     <?php if (isset($subtitle) && $subtitle != null): ?>
-                        <center><h3><?php print $subtitle; ?></h3></center>
+                        <center><h2 class="block-header"><?php print $subtitle; ?></h2></center>
                     <?php endif; ?>
                     <p>
                         <?php print $quote; ?>
