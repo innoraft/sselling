@@ -72,15 +72,15 @@
 	<section id="latest_works" class="grey_section">
         <div class="container">
             <div class="row">
-                <div class="block col-sm-3">
+                <div>
                     <?php if (isset($subtitle) && $subtitle != null): ?>
-                        <h3><?php print $subtitle; ?></h3>
+                        <center><h3><?php print $subtitle; ?></h3></center>
                     <?php endif; ?>
                     <p>
                         <?php print $quote; ?>
                     </p>
                 </div>
-                <div class="col-sm-9 to_slide_left">
+                <div class="to_slide_left">
                     <?php print $content; ?>
                 </div>
             </div>
