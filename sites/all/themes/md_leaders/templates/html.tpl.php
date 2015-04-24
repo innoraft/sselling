@@ -102,7 +102,7 @@
   <div class="counter">
 <div class="number"><?php echo variable_get('counter', ''); ?>
 </div>
-<div class="amile">ran #aMileForHer
+<div class="amile">women empowered
 </div>
 </div>
 
