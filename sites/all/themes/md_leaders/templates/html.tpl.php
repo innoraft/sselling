@@ -102,7 +102,8 @@
   <div class="counter">
 <div class="number"><?php echo variable_get('counter', ''); ?>
 </div>
-<div class="amile">women empowered
+<div class="amile">Women are getting</div>
+<div class="new">empowered</div>
 </div>
 </div>
 

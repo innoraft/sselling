@@ -6541,14 +6541,14 @@ background-color:#f5821f;
 z-index: 10;
 bottom: 40%;
 border-radius: 0 10px 10px 0;
-padding:10px 10px;
+padding:7px;
 }
 .number{
 color:white;
 text-align: center;
 font-weight: bold;
 font-size: 40px;
-padding: 10px 0;
+padding: 5px 0;
 }
 .amile{
 color:white;
@@ -6568,7 +6568,11 @@ display: none;
   position: relative;
   color: #393939;
 }
-
+.new{
+color:white;
+text-align: center;
+margin-top: -2%;
+}
 
 @media screen and (max-width: 850px){
 .counter{
@@ -6577,9 +6581,11 @@ padding:0px 9px;
 .number{
 font-size: 30px;
 padding:5px 0;
+margin-bottom: -7%;
 }
 .amile{
 font-size: 60%;
+margin-bottom: -10%;
 }
 .darkgrey_section{
   display: none;
@@ -6590,5 +6596,8 @@ font-size: 60%;
 .pane-title{
   font-size: 40px;
   }
+  .new{
+font-size: 60%;
+}
 }
 
