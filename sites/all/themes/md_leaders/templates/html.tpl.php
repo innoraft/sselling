@@ -103,7 +103,8 @@
 <div class="number"><?php echo variable_get('counter', ''); ?>
 </div>
 <div class="amile">women are getting</div>
-<div class="new">empowered</div>
+<div class="new">empowered during</div>
+<div class="empowered">2015-2016 </div>
 </div>
 </div>
 

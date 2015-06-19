@@ -6554,6 +6554,10 @@ padding: 5px 0;
 color:white;
 text-align: center;
 }
+.empowered{
+color:white;
+text-align: center;
+}
 .p-link{
 display: none;
 }
@@ -6571,7 +6575,6 @@ display: none;
 .new{
 color:white;
 text-align: center;
-margin-top: -2%;
 }
 
 @media screen and (max-width: 850px){
@@ -6587,6 +6590,11 @@ margin-bottom: -7%;
 font-size: 60%;
 margin-bottom: -10%;
 }
+
+.empowered{
+ font-size:30px;
+  margin-bottom: -10%; 
+}
 .darkgrey_section{
   display: none;
 }
@@ -6599,5 +6607,5 @@ margin-bottom: -10%;
   .new{
 font-size: 60%;
 }
-}
+
 
