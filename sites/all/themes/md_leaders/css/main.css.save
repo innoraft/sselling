@@ -28,9 +28,6 @@ prettyPhoto 			- In this section are styles for prettyPhoto LightBox plugin.
 .page-type-our-team section {
   padding-top: 20px;
 }
-#footer{
-  display: block;
-}
 
 .page-type-our-team .member .media-body {
   text-align: left;
@@ -397,7 +394,8 @@ section > .container  > .row {
   border: none;
 }
 
-.carousel .media > .pull-left {
+.carousel .media > .
+pull-left {
   max-width: 100px;
   margin-right: 18px;
   margin-bottom: 24px;
@@ -799,7 +797,7 @@ blockquote, .blockquote {
   position: relative;
   border: none;
   margin: 20px 0;
-  padding: 0 30px;
+  padding: 0 60px;
   font-size: 22px;
   line-height: 1.2;
   font-style: italic;
@@ -1935,13 +1933,11 @@ ol.list3 li + li {
 @media screen and (min-width: 992px) {
   .member.media > .pull-left {
     max-width: 540px;
-    text-align: center;
   }
 }
 @media screen and (max-width: 991px) {
   .member.media > .pull-left {
     max-width: 300px;
-   text-align: center;
   }
 }
 @media screen and (max-width: 600px) {
@@ -1950,7 +1946,6 @@ ol.list3 li + li {
     display: block;
     max-width: 100%;
     margin-right: 0;
-    text-align: center;
   }
 
   .member .media-body {

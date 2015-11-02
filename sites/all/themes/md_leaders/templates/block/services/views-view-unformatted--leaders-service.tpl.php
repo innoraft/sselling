@@ -22,5 +22,6 @@
           print '</div>';
         }
         ?>
+
     <?php endforeach; ?>
 </div>

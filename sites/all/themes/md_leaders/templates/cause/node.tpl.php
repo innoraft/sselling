@@ -28,10 +28,10 @@
   <section id="middle" class="grey_section">
       <div class="container">
             <div class="row">
-                <div class="title_strong col-sm-12">
+                <div class="col-sm-12">
                     <?php print render($title_prefix); ?>
                     <?php if ($title): ?>
-                        <h3><?php print $title; ?></h3>
+                        <h2 class="text-center block-header animated fadeInUp"><?php print $title; ?></h2>
                     <?php endif; ?>
                     <?php print render($title_suffix); ?>
                 </div>

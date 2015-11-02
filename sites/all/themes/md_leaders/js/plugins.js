@@ -40,6 +40,7 @@ jQuery(document).ready(function() {
     jQuery('.main_menu').attr('id','mainmenu');
     jQuery('.main-menu-icon').on('click', toggleMobileMenu);
 
+/*
     //contact form processing
     jQuery('form.contact-form').on('submit', function( e ){
         e.preventDefault();
@@ -54,7 +55,7 @@ jQuery(document).ready(function() {
                 jQuery($form).find('[type="submit"]').attr('disabled', false).parent().prepend('<p>Mail cannot be sent.</p>');
         })
     });
-
+*/
 
     //mailchimp subscribe form processing
     jQuery('#signup').on('submit', function( e ) {

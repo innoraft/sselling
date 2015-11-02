@@ -64,7 +64,7 @@
                         </blockquote>
                     <?php endif; ?>       
                 </div>
-                <?php print $content; ?>
+                <?php print $content; ?><br>
             </div>
         </div>
     </section>

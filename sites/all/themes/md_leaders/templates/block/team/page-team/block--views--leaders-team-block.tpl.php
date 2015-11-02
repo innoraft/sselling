@@ -46,8 +46,8 @@
 <section class="grey_section">
   <div class="container">
       <div class="row">
-        <div class="title_strong col-sm-12">
-          <h3><?php print $block->subject; ?></h3>
+        <div class="col-sm-12">
+          <h2 class="text-center block-header animated fadeInUp"><?php print $block->subject; ?></h2>
         </div>
       </div>
       <?php print $content; ?>
