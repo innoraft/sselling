@@ -1,15 +1,18 @@
 "use strict";
 function toggleMobileMenu() {
     var menuIcon = jQuery('.main-menu-icon');
+    jQuery(menuIcon).addClass('.locked');
     //jQuery(menuIcon).toggleClass('menu-opened');
     if(jQuery(menuIcon).hasClass('menu-opened')) {
         jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
             jQuery(this).css({'display' : 'none'});
             jQuery(menuIcon).removeClass('menu-opened');
+            jQuery(menuIcon).removeClass('locked');
         });
     } else {
         jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 200, opacity: 1}, 350, function(){
             jQuery(menuIcon).addClass('menu-opened');
+            jQuery(menuIcon).removeClass('locked');
         });
     }
 }
@@ -41,20 +44,23 @@ jQuery(document).ready(function() {
 
     //mobile menu
     jQuery('.main_menu').attr('id','mainmenu');
-    jQuery('.main-menu-icon').on('click', function(event){
+    jQuery('.main-menu-icon :not(.locked)').on('click', function(event){
         event.stopPropagation();
         toggleMobileMenu();
     });
-    jQuery('body :not(.main_menu.sf-menu, .main-menu-icon, #header)').on('click', function(event){
+    jQuery('body').on('click', function(event){
         //event.stopPropagation();
         var menuIcon = jQuery('.main-menu-icon');
-        if(jQuery(menuIcon).hasClass('menu-opened')) {
-            console.log('grddd');
-            console.log($(this).attr('id'));
-            jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
-                jQuery(this).css({'display' : 'none'});
-            });
-            jQuery(menuIcon).removeClass('menu-opened');
+        if(!(jQuery(menuIcon).hasClass('locked'))) {
+            if(jQuery(menuIcon).hasClass('menu-opened')) {
+                jQuery(menuIcon).addClass('locked');
+                jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
+                    jQuery(this).css({'display' : 'none'});
+                    jQuery(menuIcon).removeClass('menu-opened');
+                    jQuery(menuIcon).removeClass('locked');
+
+                });
+            }
         }
     });
 
