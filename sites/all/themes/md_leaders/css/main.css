@@ -2775,9 +2775,8 @@ footer.bottom-entry-meta {
 }
 
 .comment-respond label, .contact-form label {
-  display: block;
+  display: none;
   margin-right: 10px;
- float:left;
 }
 
 .contact-form #webform-component-delivery-quantity label, .contact-form #webform-component-gift-wrap label {
