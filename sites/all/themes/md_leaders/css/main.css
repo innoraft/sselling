@@ -6703,3 +6703,13 @@ font-size: 60%;
     display: none;
   }
 }
+
+@media (min-width: 767px) {
+  .front #info .to_animate_child_blocks .block .single_teaser p.block-readmore {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: -19px;
+  }
+}
+
