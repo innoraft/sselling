@@ -244,10 +244,13 @@ section > .container  > .row {
   -webkit-border-radius: 0;
   border-radius: 0;
   border: 1px solid #dedede;
-  background-color: transparent;
+/*  background-color: transparent;*/
   font-size: 18px;
   font-style: italic;
+  margin-left: auto;
+  margin-right: auto;
 }
+
 .form-control:focus {
   border-color: transparent;
   outline: 0;
