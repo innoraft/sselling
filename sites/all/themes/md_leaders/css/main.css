@@ -691,7 +691,8 @@ section {
   padding-bottom: 30px;
 }
 
-.page-home section, .page-node-74 section, .page-node-203 section {
+.page-home section, .page-node-74 section, .page-node-203 section, .page-authors section,
+.page-node-2 section, .page-node-73 section {
  padding-top: 60px;
  padding-bottom: 60px;
 }
