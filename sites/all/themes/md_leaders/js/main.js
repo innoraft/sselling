@@ -53,14 +53,14 @@ function animateElements() {
     $.fn.mdtextbold = function(){
         var $this = $(this),
             text_full = $this.text().split(' ');
-                if($this.children("a").length > 0){        
+                if($this.children("a").length > 0){
                      $this.find("a").html(text_full.shift() + ' <strong>' + text_full.join(' ') + '</strong>');
                  }
                  else{
                      $this.html(text_full.shift() + ' <strong>' + text_full.join(' ') + '</strong>');
                  }
     }
-    
+
     jQuery(document).ready(function() {
             //title strong
             if ( $.fn.mdtextbold ) {
@@ -85,6 +85,14 @@ function animateElements() {
 	}
 //        blog related
         $(window).resize(function() {
+            //make front page boxes of equal height
+            var width = $(window).width();
+            $('.front #info .to_animate_child_blocks .block .single_teaser').height('auto');
+
+            if (width > 752) {
+              adjust_height();
+            }
+
             var pic_width = $('.related-posts .entry-thumbnail').width();
                 if (pic_width >270) {
                     pic_width = 270;
@@ -93,6 +101,17 @@ function animateElements() {
             var pic_height = pic_width *264/ 270;
             $('.related-posts .carousel img').height(pic_height);
         }).resize();
+
+
+
+        function adjust_height() {
+          var max_height = 0;
+          $('.front #info .to_animate_child_blocks .block .single_teaser').each(function(){
+            var new_ht = $(this).height();
+            max_height = Math.max(max_height, new_ht);
+          });
+          $('.front #info .to_animate_child_blocks .block .single_teaser').height(max_height + 35);
+        }
     })
 })(jQuery);
 
@@ -195,7 +214,7 @@ function animateElements() {
                         avatar_size: 48,
                         loading_text: 'loading twitter feed...',
                         join_text: 'auto',
-                        username: 'ThemeForest', 
+                        username: 'ThemeForest',
                         template: "{avatar}{time}{join}<span class=\"tweet_text\">{tweet_text}</span>"
                     });
             }
@@ -205,12 +224,12 @@ function animateElements() {
 
 jQuery(window).load(function(){
 
-	
+
 	//init gallery
-	Grid.init(); 
-        
-        
-        
+	Grid.init();
+
+
+
 	setTimeout(function(){
 		jQuery('.progress-bar').addClass('stretchRight');
 		//init animation
@@ -219,19 +238,19 @@ jQuery(window).load(function(){
 
 	//stick header to top
 	if (jQuery().sticky) {
-	    jQuery("#header").sticky({ 
+	    jQuery("#header").sticky({
 	    		topSpacing: 0,
 	    		scrollBeforeStick: 220
 	    	},
-	    	function(){ 
+	    	function(){
 	    		jQuery("#header").stop().animate({opacity:0}, 0).delay(500).stop().animate({opacity:1}, 800);
 	    	},
-	       	function(){ 
+	       	function(){
 	    		jQuery("#header").stop().animate({opacity:0}, 0).delay(800).stop().animate({opacity:1}, 1000);
 	    	}
 	    );
 	}
-	
+
 	jQuery('body').delay(1000).scrollspy('refresh');
 
 	//preloader
@@ -245,7 +264,7 @@ jQuery(window).load(function(){
 		var $mainSlider = jQuery('#mainslider');
 		jQuery('.slider').fractionSlider({
 			'fullWidth': 			true,
-			'controls': 			false, 
+			'controls': 			false,
 			'pager': 				true,
 			'responsive': 			true,
 			'dimensions': 			"1920,700",
@@ -254,7 +273,7 @@ jQuery(window).load(function(){
 			'slideEndAnimation': 	true,
 			'timeout' : 			3000,
 			'speedOut' : 			1000
-			
+
 		});
 	}
 
@@ -275,7 +294,7 @@ jQuery(window).load(function(){
 				hook: 'data-gal',
 				theme: 'facebook'
 	   		});
-	   		jQuery("#flickr li").hover(function () {						 
+	   		jQuery("#flickr li").hover(function () {
 			   jQuery(this).find("img").stop().animate({ opacity: 0.5 }, 200);
 		    }, function() {
 			   jQuery(this).find("img").stop().animate({ opacity: 1.0 }, 400);

@@ -39,20 +39,19 @@ jQuery(document).ready(function() {
     //mobile menu
     jQuery('.main_menu').attr('id','mainmenu');
     jQuery('.main-menu-icon').on('click', function(event){
-        event.stopPropagation();
+        //event.stopPropagation();
         toggleMobileMenu();
     });
-    jQuery('body :not(.main_menu.sf-menu, .main-menu-icon)').on('click', function(event){
+    /*jQuery('body :not(.main_menu.sf-menu, .main-menu-icon)').on('click', function(event){
         event.stopPropagation();
         var menuIcon = jQuery('.main-menu-icon');
         if(jQuery(menuIcon).hasClass('menu-opened')) {
-            console.log('$(this).attr("class")');
             jQuery(menuIcon).toggleClass('menu-opened');
             jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
                 jQuery(this).css({'display' : 'none'});
             });
         }
-    });
+    });*/
 
 /*
     //contact form processing
