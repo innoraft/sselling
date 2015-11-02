@@ -1,0 +1,6 @@
+name = Mobile slider
+description = Show mobile slider on home page.
+package = Innoraft
+version = VERSION
+core = 7.x
+

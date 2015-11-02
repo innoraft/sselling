@@ -6659,7 +6659,7 @@ margin-bottom: -10%;
 
 .empowered{
  font-size:30px;
-  margin-bottom: -10%; 
+  margin-bottom: -10%;
 }
 .darkgrey_section{
   display: none;
@@ -6683,4 +6683,19 @@ font-size: 60%;
   background: #393939;
   color: #FFF;
   padding: 2px 8px;
+}
+
+#slider1_container {
+  display: none;
+}
+
+
+@media (max-width: 991px) {
+  #slider1_container {
+    display: block;
+  }
+
+  .md-slide-wrap.md-slide-responsive {
+    display: none;
+  }
 }

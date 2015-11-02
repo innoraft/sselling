@@ -3,7 +3,7 @@ function toggleMobileMenu() {
     var menuIcon = jQuery('.main-menu-icon');
     jQuery(menuIcon).toggleClass('menu-opened');
     if(jQuery(menuIcon).hasClass('menu-opened')) {
-        jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 300, opacity: 1}, 350);
+        jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 200, opacity: 1}, 350);
     } else {
         jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
             jQuery(this).css({'display' : 'none'});
@@ -19,15 +19,15 @@ jQuery(document).ready(function() {
     var MainWindowWidth = jQuery(window).width();
     jQuery(window).resize(function(){
         MainWindowWidth = jQuery(window).width();
-    });        
+    });
     jQuery('.sf-menu ul li').mouseover(function(){
-        // checks if third level menu exist         
-        var subMenuExist = jQuery(this).find('.dropdown-menu').length;            
+        // checks if third level menu exist
+        var subMenuExist = jQuery(this).find('.dropdown-menu').length;
         if( subMenuExist > 0){
             var subMenuWidth = jQuery(this).find('.dropdown-menu').width();
             var subMenuOffset = jQuery(this).find('.dropdown-menu').parent().offset().left + subMenuWidth;
             // if sub menu is off screen, give new position
-            if((subMenuOffset + subMenuWidth) > MainWindowWidth){                  
+            if((subMenuOffset + subMenuWidth) > MainWindowWidth){
                 var newSubMenuPosition = subMenuWidth + 80;
                 $(this).find('.dropdown-menu').first().css({
                     left: -newSubMenuPosition,
@@ -38,7 +38,21 @@ jQuery(document).ready(function() {
 
     //mobile menu
     jQuery('.main_menu').attr('id','mainmenu');
-    jQuery('.main-menu-icon').on('click', toggleMobileMenu);
+    jQuery('.main-menu-icon').on('click', function(event){
+        event.stopPropagation();
+        toggleMobileMenu();
+    });
+    jQuery('body :not(.main_menu.sf-menu, .main-menu-icon)').on('click', function(event){
+        event.stopPropagation();
+        var menuIcon = jQuery('.main-menu-icon');
+        if(jQuery(menuIcon).hasClass('menu-opened')) {
+            console.log('$(this).attr("class")');
+            jQuery(menuIcon).toggleClass('menu-opened');
+            jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
+                jQuery(this).css({'display' : 'none'});
+            });
+        }
+    });
 
 /*
     //contact form processing
@@ -62,7 +76,7 @@ jQuery(document).ready(function() {
         e.preventDefault();
         // update user interface
         jQuery('#response').html('Adding email address...');
-        
+
         // Prepare query string and send AJAX request
         jQuery.ajax({
             url: 'mailchimp/store-address.php',
@@ -76,7 +90,7 @@ jQuery(document).ready(function() {
 });
 
     //gallery
-    (function($){ 
+    (function($){
         $(window).resize(function(){
             var $windowWidth = $(window).width();
         });
@@ -94,7 +108,7 @@ jQuery(document).ready(function() {
                   duration: 800
                 },
                 onLayout: function() {
-                    jQuery('body').scrollspy('refresh');  
+                    jQuery('body').scrollspy('refresh');
                 }
             });
         });
@@ -120,7 +134,7 @@ jQuery(document).ready(function() {
                     var $optionSet = $this.parents('#filtrable');
                     $optionSet.find('.selected').removeClass('selected');
                     $this.addClass('selected');
-              
+
                     // make option object dynamically, i.e. { filter: '.my-filter-class' }
                     var options = {},
                         key = $optionSet.attr('data-option-key'),
@@ -135,7 +149,7 @@ jQuery(document).ready(function() {
                       // otherwise, apply new options
                       $container.isotope( options );
                     }
-                    
+
                     // return false;
                     e.preventDefault();
                 });
