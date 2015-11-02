@@ -6580,7 +6580,7 @@ div.ppt {
   display: none;
 }
 
-.to_animate_child_blocks .col-sm-4 .single_teaser h3 strong {
+.to_animate_child_blocks .col-sm-6 .single_teaser h3 strong, .to_animate_child_blocks .col-md-4 .single_teaser h3 strong {
   color: #EB7000;
 }
 
