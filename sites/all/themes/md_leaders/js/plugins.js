@@ -13,6 +13,13 @@ function toggleMobileMenu() {
         jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 200, opacity: 1}, 350, function(){
             jQuery(menuIcon).addClass('menu-opened');
             jQuery(menuIcon).removeClass('locked');
+            if($('.feedback-button').hasClass('opened')) {
+            $('#block-webform-client-block-205').animate({
+                                                          left: "-300px",
+                                                        }, 300, "easeOutCubic", function(){
+                                                          $('.feedback-button').removeClass('opened');
+                                                        });
+            }
         });
     }
 }

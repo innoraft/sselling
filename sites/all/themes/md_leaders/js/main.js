@@ -128,6 +128,15 @@ function animateElements() {
                                                           left: "0",
                                                         }, 300, "easeOutCubic", function(){
                                                           $('.feedback-button').addClass('opened');
+                                                          var menuIcon = jQuery('.main-menu-icon');
+                                                          if(jQuery(menuIcon).hasClass('menu-opened')) {
+                                                              jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {
+                                                                  jQuery(this).css({'display' : 'none'});
+                                                                  jQuery(menuIcon).removeClass('menu-opened');
+                                                                  jQuery(menuIcon).removeClass('locked');
+                                                              });
+                                                          }
+
                                                         });
           }
 
