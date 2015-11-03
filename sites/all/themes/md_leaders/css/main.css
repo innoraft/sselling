@@ -6840,5 +6840,7 @@ input.form-control, .webform-client-form textarea.form-control, .webform-client-
 
   .feedback-button {
     top: 50%;
+    padding: 3px 18px;
+    right: -68px;
   }
 }
