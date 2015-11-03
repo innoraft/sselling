@@ -1,7 +1,7 @@
 "use strict";
 function toggleMobileMenu() {
     var menuIcon = jQuery('.main-menu-icon');
-    jQuery(menuIcon).addClass('.locked');
+    jQuery(menuIcon).addClass('locked');
     //jQuery(menuIcon).toggleClass('menu-opened');
     if(jQuery(menuIcon).hasClass('menu-opened')) {
         jQuery('#mainmenu').animate({height: 0, opacity: 0}, 400, function() {

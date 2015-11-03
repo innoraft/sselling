@@ -116,15 +116,29 @@ function animateElements() {
         //code for feedback form
         $('.feedback-button').click(function(event){
           event.stopPropagation();
-          $('#block-webform-client-block-205').animate({
+          if($(this).hasClass('opened')) {
+            $('#block-webform-client-block-205').animate({
+                                                          left: "-300px",
+                                                        }, 300, "easeOutCubic", function(){
+                                                          $('.feedback-button').removeClass('opened');
+                                                        });
+          }
+          else {
+            $('#block-webform-client-block-205').animate({
                                                           left: "0",
-                                                        }, 300, "easeOutCubic");
+                                                        }, 300, "easeOutCubic", function(){
+                                                          $('.feedback-button').addClass('opened');
+                                                        });
+          }
+
         });
 
         $('body').click(function(event){
           $('#block-webform-client-block-205').animate({
                                                           left: "-300px",
-                                                        }, 300, "easeOutCubic");
+                                                        }, 300, "easeOutCubic", function(){
+                                                          $('.feedback-button').removeClass('opened');
+                                                        });
         });
 
         $('#block-webform-client-block-205').click(function(event){
