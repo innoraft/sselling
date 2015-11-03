@@ -6718,7 +6718,7 @@ font-size: 60%;
   text-align: center;
 }
 
-.webform-client-form label, .webform-component-textarea {
+.webform-client-form label {
   display: inline-block;
   width: 200px;
   margin-right: 10px;
@@ -6726,7 +6726,7 @@ font-size: 60%;
   text-align: left;
 }
 
-input.form-control, .webform-client-form .resizable, .webform-client-form select {
+input.form-control, .webform-client-form textarea.form-control, .webform-client-form select {
   display: inline-block;
   width: 50%;
   text-align: left;
@@ -6759,7 +6759,7 @@ input.form-control, .webform-client-form .resizable, .webform-client-form select
     margin-top: 0;
   }
 
-  input.form-control, .webform-client-form .resizable {
+  input.form-control, .webform-client-form textarea.form-control {
     width: 100%;
   }
 
@@ -6770,4 +6770,14 @@ input.form-control, .webform-client-form .resizable, .webform-client-form select
   .webform-client-form .resizable {
     margin-left: 0px;
   }
+}
+
+
+.page-type-webform section {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.page-type-webform .block-header {
+  margin-bottom: -10px;
 }
