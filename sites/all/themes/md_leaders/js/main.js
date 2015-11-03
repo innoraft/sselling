@@ -112,6 +112,42 @@ function animateElements() {
           });
           $('.front #info .to_animate_child_blocks .block .single_teaser').height(max_height + 35);
         }
+
+        //code for feedback form
+        $('.feedback-button').click(function(event){
+          event.stopPropagation();
+          $('#block-webform-client-block-205').animate({
+                                                          left: "0",
+                                                        }, 300, "easeOutCubic");
+        });
+
+        $('body').click(function(event){
+          $('#block-webform-client-block-205').animate({
+                                                          left: "-300px",
+                                                        }, 300, "easeOutCubic");
+        });
+
+        $('#block-webform-client-block-205').click(function(event){
+          event.stopPropagation();
+        });
+
+        //$('.feedback-webform .form-submit').prop('disabled', true);
+        $('.feedback-webform').submit(function(e){
+          alert('ac');
+           var email = $('.feedback-webform input.email').val();
+           var fb = $('.feedback-webform textarea').val();
+           if (fb == "" || email == "") {
+            $('.feedback-webform .error-msg').remove();
+            var warning =  "<div class='error-msg'>Please fill mandatory fields</div>";
+            $('.feedback-webform').prepend(warning);
+            e.preventDefault();
+           }
+           else {
+            //$('.feedback-webform').submit();
+            //$(this).submit();
+           }
+       });
+
     })
 })(jQuery);
 

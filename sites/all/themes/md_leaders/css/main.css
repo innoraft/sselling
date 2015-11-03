@@ -6781,3 +6781,53 @@ input.form-control, .webform-client-form textarea.form-control, .webform-client-
 .page-type-webform .block-header {
   margin-bottom: -10px;
 }
+
+
+#block-webform-client-block-205 h2 {
+  width: 100%;
+  text-align: center;
+}
+
+#block-webform-client-block-205 {
+  /*min-width: 400px;
+  max-width: 50%;*/
+  width: 300px;
+  background: #00233C;
+  padding: 20px;
+  position: fixed;
+  left: -300px;
+  top: 15%;
+  color: white;
+  z-index: 9999;
+}
+
+#block-webform-client-block-205 input.form-control {
+  width: 180px;
+}
+
+#block-webform-client-block-205 .contact-form-name input {
+  margin-left: 7px;
+}
+
+#block-webform-client-block-205 h2 {
+  display: none;
+}
+
+#block-webform-client-block-205 .vertical-margin-40 {
+  margin: 10px 0 !important;
+}
+
+
+.feedback-button {
+  position: absolute;
+  right: -83px;
+  top: 60%;
+  background: #00233C;
+  color: white;
+  -webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);
+  -ms-transform: rotate(-90deg);
+  -o-transform: rotate(-90deg);
+  padding: 10px 25px;
+  cursor: pointer;
+}

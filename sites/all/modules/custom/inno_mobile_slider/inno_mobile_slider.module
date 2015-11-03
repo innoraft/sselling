@@ -42,3 +42,27 @@ function inno_mobile_banner_content() {
 </div>';
   return $output;
 }
+
+
+/**
+ * Implements hook_form_alter().
+ */
+function inno_mobile_slider_form_alter(&$form, &$form_state, $form_id) {
+  if ($form_id == "webform_client_form_205") {
+    $form['#prefix'] = "<div class='feedback-button'>Feedback</div>";
+    $form['#attributes'] = array('class' => array('feedback-webform'));
+    $curr_path =  current_path() ;
+    $form['curr_path'] = array(
+      '#type' => 'hidden',
+      '#value' => $curr_path
+      );
+    $form['#submit'][] = 'feedback_form_redirect';
+  }
+}
+
+
+function feedback_form_redirect($form, $form_state) {
+  drupal_set_message("Thank You for your valuable feedback.");
+  $redirect_path = $form_state['input']['curr_path'];
+  drupal_goto($redirect_path);
+}
