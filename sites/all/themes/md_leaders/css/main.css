@@ -6831,3 +6831,14 @@ input.form-control, .webform-client-form textarea.form-control, .webform-client-
   padding: 10px 25px;
   cursor: pointer;
 }
+
+
+@media (max-width: 500px) {
+  #block-webform-client-block-205 {
+    top: 5%;
+  }
+
+  .feedback-button {
+    top: 50%;
+  }
+}

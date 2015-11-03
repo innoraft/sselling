@@ -133,7 +133,6 @@ function animateElements() {
 
         //$('.feedback-webform .form-submit').prop('disabled', true);
         $('.feedback-webform').submit(function(e){
-          alert('ac');
            var email = $('.feedback-webform input.email').val();
            var fb = $('.feedback-webform textarea').val();
            if (fb == "" || email == "") {
