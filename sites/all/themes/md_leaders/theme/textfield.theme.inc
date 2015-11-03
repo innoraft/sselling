@@ -11,7 +11,7 @@
 function md_leaders_textfield($variables) {
   $element = $variables['element'];
   $element['#attributes']['type'] = 'text';
-  $element['#attributes'] = array('placeholder' => $element['#title']);
+  //$element['#attributes'] = array('placeholder' => $element['#title']);
   element_set_attributes($element, array('id', 'name', 'value', 'size', 'maxlength'));
   _form_set_class($element, array('form-control'));
 

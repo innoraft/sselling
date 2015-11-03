@@ -2775,7 +2775,7 @@ footer.bottom-entry-meta {
   font-size: 30px;
 }
 
-.comment-respond label, .contact-form label {
+.comment-respond label {
   display: none;
   margin-right: 10px;
 }
@@ -6713,3 +6713,61 @@ font-size: 60%;
   }
 }
 
+
+.webform-client-form {
+  text-align: center;
+}
+
+.webform-client-form label, .webform-component-textarea {
+  display: inline-block;
+  width: 200px;
+  margin-right: 10px;
+  vertical-align: top;
+  text-align: left;
+}
+
+input.form-control, .webform-client-form .resizable, .webform-client-form select {
+  display: inline-block;
+  width: 50%;
+  text-align: left;
+}
+
+.webform-client-form .resizable {
+  margin-left: 3px;
+}
+
+.theme_btn.form-submit {
+  font-weight: bold;
+  font-size: 17px;
+  padding: 12px 28px;
+}
+
+
+@media (max-width: 471px) {
+  .webform-client-form {
+    text-align: left;
+    margin-left: 20%;
+    margin-right: 20%
+  }
+
+  .node-webform .container .row {
+    text-align: center;
+  }
+
+  .webform-component-textarea {
+    margin-bottom: 0;
+    margin-top: 0;
+  }
+
+  input.form-control, .webform-client-form .resizable {
+    width: 100%;
+  }
+
+  .webform-client-form select {
+    width: auto;
+  }
+
+  .webform-client-form .resizable {
+    margin-left: 0px;
+  }
+}

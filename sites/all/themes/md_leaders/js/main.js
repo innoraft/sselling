@@ -1,9 +1,9 @@
 "use strict";
-if(typeof Placeholdem === 'function') {
+/*if(typeof Placeholdem === 'function') {
 	if (document.querySelectorAll( '[placeholder]' ).length) {
 		Placeholdem( document.querySelectorAll( '[placeholder]' ) );
 	};
-}
+}*/
 
 var $ = jQuery.noConflict();
 

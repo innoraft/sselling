@@ -10,7 +10,7 @@
  */
 function md_leaders_textarea($variables) {
   $element = $variables['element'];
-  $element['#attributes'] = array('placeholder' => $element['#title']);
+  //$element['#attributes'] = array('placeholder' => $element['#title']);
   element_set_attributes($element, array('id', 'name', 'cols', 'rows'));
   _form_set_class($element, array('form-control'));
 

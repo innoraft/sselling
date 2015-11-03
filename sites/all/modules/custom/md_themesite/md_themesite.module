@@ -16,7 +16,7 @@
 /*----------------------------------Breadcrumb-------------------------------------*/
 function md_themesite_views_pre_render(&$view) {
 //    dsm($view);
-    
+
     if (($view->name == 'leaders_about_team') || ($view->name == 'leaders_team') || ($view->name == 'leaders_contact_form') || ($view->name =='leaders_blog_page')) {
         $breadcrumb = array();
         $page_title = drupal_get_title();
@@ -42,14 +42,14 @@ function md_themesite_views_pre_render(&$view) {
         $breadcrumb[] = 'Blog Single Item';
         drupal_set_breadcrumb($breadcrumb);
     }
-    
+
     if ($view->name == 'leaders_blog_term') {
         $breadcrumb = array();
         $breadcrumb[0] = '<a class="pathway" href="'.url('<front>', array('absolute' => TRUE)).'"><i class="rt-icon-home"></i></a>';
         $breadcrumb[] = 'Blog Item';
         drupal_set_breadcrumb($breadcrumb);
     }
-    
+
     if (($view->name == 'portfolio')) {
         $breadcrumb = array();
         $page_title = drupal_get_title();
@@ -61,17 +61,17 @@ function md_themesite_views_pre_render(&$view) {
 
 
 /*------------------------------------------------ form ------------------------------------------------*/
-function md_themesite_form_alter(&$form, $form_state, $form_id) { 
+function md_themesite_form_alter(&$form, $form_state, $form_id) {
 
     // webform_client_form
   if (stristr($form_id, "webform_client_form")) {
     $form['#attributes']['class'][] = 'contact-form';
 
-    $form['submitted']['email']['#attributes'] = array('placeholder' => t('Email'));
+    //$form['submitted']['email']['#attributes'] = array('placeholder' => t('Email'));
     $form['submitted']['email']['#attributes']['class'][] = 'form-control';
 
     unset($form['submitted']['message']['#theme_wrappers']);
-    $form['submitted']['message']['#attributes'] = array('placeholder' => t('Message'));
+    //$form['submitted']['message']['#attributes'] = array('placeholder' => t('Message'));
     $form['submitted']['message']['#attributes']['class'][] = 'form-control';
 
     $form['actions']['#attributes']['class'] = array('contact-form-submit', 'vertical-margin-40');
@@ -85,8 +85,8 @@ function md_themesite_form_alter(&$form, $form_state, $form_id) {
     $form['submit']['#attributes']['class'] = array('theme_btn');
 
   }
-    
-    
+
+
   // comment_node_article_form
   if ($form_id == 'comment_node_article_form') {
     unset($form['author']['name']['#autocomplete_path']);
@@ -107,12 +107,12 @@ function md_themesite_form_alter(&$form, $form_state, $form_id) {
 }
 
 
-//Remove homepage fields in Form Comments 
+//Remove homepage fields in Form Comments
 function md_themesite_form_comment_form_alter(&$form, &$form_state) {
     $form['author']['homepage']['#access'] = FALSE;
   }
-  
-//Form comments template    
+
+//Form comments template
 function md_themesite_theme() {
   return array(
     'comment_form__node_article' => array(
