@@ -69,5 +69,31 @@ body.page-social-selling-case-studies {
   .field-name-field-case-study-image {
     float: left;
     margin: 0 10px 10px 0;
+
+    @media screen and (max-width: 440px) {
+      float: none;
+      display: inline-block;
+      width: 100%;
+      .field-item {
+        text-align: center;
+      }
+    }
+
+    a {
+      display: inline-block;
+      width: 420px;
+
+      @media screen and (max-width: 720px) {
+        width: 250px;
+      }
+
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
   }
+
+
 }

@@ -63,3 +63,26 @@ body.page-social-selling-case-studies {
   float: left;
   margin: 0 10px 10px 0;
 }
+@media screen and (max-width: 440px) {
+  .page-type-case-study .field-name-field-case-study-image {
+    float: none;
+    display: inline-block;
+    width: 100%;
+  }
+  .page-type-case-study .field-name-field-case-study-image .field-item {
+    text-align: center;
+  }
+}
+.page-type-case-study .field-name-field-case-study-image a {
+  display: inline-block;
+  width: 420px;
+}
+@media screen and (max-width: 720px) {
+  .page-type-case-study .field-name-field-case-study-image a {
+    width: 250px;
+  }
+}
+.page-type-case-study .field-name-field-case-study-image img {
+  width: 100%;
+  height: auto;
+}
