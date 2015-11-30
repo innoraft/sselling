@@ -1,0 +1,60 @@
+body.page-social-selling-case-studies {
+  background: #f0f0f0;
+}
+
+.page-social-selling-case-studies {
+  .view-page-title {
+    margin-top: 52px;
+    margin-bottom: 45px;
+  }
+
+  .views-field-field-case-study-image {
+    float: left;
+    margin-right: 10px;
+  }
+
+  .view-content {
+    width: 90%;
+    margin: auto;
+  }
+
+  .views-row {
+    background: white;
+    border-right: 10px solid #006bb6;
+    margin-bottom: 30px;
+    clear:both;
+    overflow: auto;
+
+    @media screen and (min-width: 1030px) {
+      width: 48%;
+      float: left;
+      clear: none;
+    }
+  }
+
+  @media screen and (min-width: 1030px) {
+    .views-row-1 {
+      margin-right: 2%;
+    }
+  }
+
+  .views-field-title {
+    font-size: 24px;
+    margin: 10px;
+  }
+
+  .views-field-body {
+    margin: 10px;
+  }
+}
+
+.page-type-case-study {
+  .block-header {
+    margin-top: 30px;
+  }
+
+  .field-name-field-case-study-image {
+    float: left;
+    margin: 0 10px 10px 0;
+  }
+}
