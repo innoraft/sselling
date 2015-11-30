@@ -10,6 +10,15 @@ body.page-social-selling-case-studies {
   float: left;
   margin-right: 10px;
 }
+@media screen and (max-width: 460px) {
+  .page-social-selling-case-studies .views-field-field-case-study-image {
+    float: none;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 170px;
+    margin-top: 20px;
+  }
+}
 .page-social-selling-case-studies .view-content {
   width: 90%;
   margin: auto;
@@ -26,6 +35,12 @@ body.page-social-selling-case-studies {
     width: 48%;
     float: left;
     clear: none;
+  }
+}
+@media screen and (max-width: 460px) {
+  .page-social-selling-case-studies .views-row {
+    border-right: 0 none;
+    border-bottom: 10px solid #006bb6;
   }
 }
 @media screen and (min-width: 1030px) {
