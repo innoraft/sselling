@@ -24,7 +24,7 @@
   <?php if ($admin_links): ?>
     <?php print $admin_links; ?>
   <?php endif; ?>
-  
+
   <section id="middle" class="grey_section">
       <div class="container">
             <div class="row">
@@ -36,7 +36,7 @@
                     <?php print render($title_suffix); ?>
                 </div>
             </div>
-            <div class="row">
+            <div class="row row-content">
               <?php print render($content); ?>
             </div>
         </div>

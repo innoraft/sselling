@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 body.page-social-selling-case-studies {
   background: #f0f0f0;
 }
@@ -99,9 +101,19 @@ body.page-social-selling-case-studies {
     margin-top: 30px;
   }
 
+  .row-content {
+    background-color: white;
+    padding: 50px;
+    font-family: arial;
+    font-weight: 300;
+    color: #333;
+    font-size: 14px;
+    @include box-shadow(rgba(0,0,0,0.5) 0px 0px 34px);
+  }
+
   .field-name-field-case-study-image {
     float: left;
-    margin: 0 10px 10px 0;
+    margin: 0 50px 50px 0;
 
     @media screen and (max-width: 440px) {
       float: none;
@@ -114,10 +126,10 @@ body.page-social-selling-case-studies {
 
     a {
       display: inline-block;
-      width: 420px;
+      width: 260px;
 
       @media screen and (max-width: 720px) {
-        width: 250px;
+        width: 200px;
       }
 
     }
