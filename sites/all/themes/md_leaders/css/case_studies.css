@@ -23,12 +23,41 @@ body.page-social-selling-case-studies {
   width: 90%;
   margin: auto;
 }
+.page-social-selling-case-studies .views-field-view-node {
+  text-align: right;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.page-social-selling-case-studies .views-field-view-node a {
+  background-color: #393939;
+  font-size: 12px;
+  font-weight: normal;
+  padding: 15px 20px;
+  color: #fff;
+  border: none;
+  line-height: 1;
+  letter-spacing: 0px;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-transition: all 0.35s ease-in-out;
+  -moz-transition: all 0.35s ease-in-out;
+  -o-transition: all 0.35s ease-in-out;
+  -ms-transition: all 0.35s ease-in-out;
+  transition: all 0.35s ease-in-out;
+}
+.page-social-selling-case-studies .views-field-view-node a:hover {
+  background: #EB7000;
+  color: #FFF !important;
+}
 .page-social-selling-case-studies .views-row {
   background: white;
   border-right: 10px solid #006bb6;
   margin-bottom: 30px;
   clear: both;
   overflow: auto;
+}
+.page-social-selling-case-studies .views-row.views-row-last {
+  margin-bottom: 60px;
 }
 @media screen and (min-width: 1030px) {
   .page-social-selling-case-studies .views-row {
