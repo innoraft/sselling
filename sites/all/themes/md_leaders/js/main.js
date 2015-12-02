@@ -83,7 +83,10 @@ function animateElements() {
 			$(this).mdtextbold();
 		});
 	}     $(window).load(function() {
-          adjust_height();
+          var width = $(window).width();
+          if (width > 752) {
+            adjust_height();
+          }
         });
 //        blog related
         $(window).resize(function() {
