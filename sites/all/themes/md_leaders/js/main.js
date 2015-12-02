@@ -85,7 +85,7 @@ function animateElements() {
 	}     $(window).load(function() {
           var width = $(window).width();
           if (width > 752) {
-            adjust_height();
+            adjust_height(0);
           }
         });
 //        blog related
@@ -95,7 +95,7 @@ function animateElements() {
             $('.front #info .to_animate_child_blocks .block .single_teaser').height('auto');
 
             if (width > 752) {
-              adjust_height();
+              adjust_height(35);
             }
 
             var pic_width = $('.related-posts .entry-thumbnail').width();
@@ -109,13 +109,16 @@ function animateElements() {
 
 
 
-        function adjust_height() {
+        function adjust_height(ht) {
           var max_height = 0;
           $('.front #info .to_animate_child_blocks .block .single_teaser').each(function(){
             var new_ht = $(this).height();
             max_height = Math.max(max_height, new_ht);
           });
-          $('.front #info .to_animate_child_blocks .block .single_teaser').height(max_height + 35);
+          console.log(max_height);
+          if (max_height > 300) {
+            $('.front #info .to_animate_child_blocks .block .single_teaser').height(max_height + ht);
+          }
         }
 
         //code for feedback form
