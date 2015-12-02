@@ -82,7 +82,9 @@ function animateElements() {
                 $( '.title_strong h2' ).each(function(){
 			$(this).mdtextbold();
 		});
-	}
+	}     $(window).load(function() {
+          adjust_height();
+        });
 //        blog related
         $(window).resize(function() {
             //make front page boxes of equal height
