@@ -176,6 +176,18 @@ function animateElements() {
 (function($){
     jQuery(document).ready(function() {
 
+      //change heading of chapter
+      if ($('body').hasClass('page-type-page')) {
+        var $title = $('.grey_section .col-md-12 > .block-header');
+        var curr_header = $title.text();
+        if (curr_header.match("^Chapter")) {
+          $title.html("<div class='title'>Summary</div>");
+          curr_header = curr_header.split(/-(.+)?/)[1]
+          $title.append("<div class='sub-heading'>" + curr_header + "</div>");
+        }
+
+      }
+
             //menu
             if (jQuery().superfish) {
                     jQuery('ul.sf-menu').superfish({

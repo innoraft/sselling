@@ -132,3 +132,11 @@ body.page-social-selling-case-studies {
   width: 100%;
   height: auto;
 }
+
+.page-type-page .grey_section h2.block-header .title {
+  padding-top: 15px;
+}
+.page-type-page .grey_section h2.block-header .sub-heading {
+  font-size: 0.60em;
+  padding-top: 12px;
+}
