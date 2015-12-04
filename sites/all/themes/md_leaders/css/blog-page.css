@@ -1,4 +1,4 @@
-.page-blog-list #block-views-recent-blog-block > h2, .page-blog-list #block-views-blog-author-block-1 > h2, .page-blog-list #block-views-blog-author-block > h2 {
+.page-blogs #block-views-recent-blog-block > h2, .page-blogs #block-views-blog-author-block-1 > h2, .page-blogs #block-views-blog-author-block > h2 {
   margin-top: 0;
   border-bottom: 4px solid #d9d9d9;
   color: #00bac4;
@@ -8,13 +8,20 @@
   font-weight: bolder;
 }
 
-.page-blog-list {
+.page-blogs {
   background-color: #f7f7f7;
 }
-.page-blog-list .view-blog-list {
+.page-blogs .blogs-title {
+  color: #272727;
+  font-size: 55px;
+  font-weight: 300;
+  text-align: center;
+  margin-top: 65px;
+}
+.page-blogs .view-blog-list {
   margin: 70px 0;
 }
-.page-blog-list .view-blog-list .views-row {
+.page-blogs .view-blog-list .views-row {
   width: 30.9%;
   margin: 10px;
   border: 1px solid #eee;
@@ -22,51 +29,51 @@
   display: inline-block;
   background-color: #fff;
 }
-.page-blog-list .view-blog-list .views-field-field-blog-image img {
+.page-blogs .view-blog-list .views-field-field-blog-image img {
   width: 100%;
 }
-.page-blog-list .view-blog-list .views-field-title {
+.page-blogs .view-blog-list .views-field-title {
   margin: 20px 14px 0;
 }
-.page-blog-list .view-blog-list .views-field-title a {
+.page-blogs .view-blog-list .views-field-title a {
   color: #999999;
   font-size: 15px;
   font-weight: bold;
 }
-.page-blog-list .view-blog-list .views-field-title a:hover {
+.page-blogs .view-blog-list .views-field-title a:hover {
   color: #00bac4;
 }
-.page-blog-list .view-blog-list .views-field-name {
+.page-blogs .view-blog-list .views-field-name {
   margin: 8px 14px;
   padding-bottom: 6px;
   border-bottom: 1px solid #d9d9d9;
 }
-.page-blog-list .view-blog-list .post-date {
+.page-blogs .view-blog-list .post-date {
   color: #999999;
   font-size: 14px;
   margin-right: 10px;
   padding-left: 18px;
   background: url("/sites/all/themes/md_leaders/img/blog-date.png") no-repeat -1px 1px;
 }
-.page-blog-list .view-blog-list .username {
+.page-blogs .view-blog-list .username {
   color: #999999;
   font-size: 14px;
   display: inline-block;
   padding-left: 18px;
   background: url("/sites/all/themes/md_leaders/img/blog-username.png") no-repeat 0 4px;
 }
-.page-blog-list .view-blog-list .username:first-letter {
+.page-blogs .view-blog-list .username:first-letter {
   text-transform: uppercase;
 }
-.page-blog-list .view-blog-list .views-field-body {
+.page-blogs .view-blog-list .views-field-body {
   height: 170px;
   color: #999999;
   margin: 24px 14px;
 }
-.page-blog-list .footer {
+.page-blogs .footer {
   margin-bottom: 60px;
 }
-.page-blog-list #block-views-recent-blog-block {
+.page-blogs #block-views-recent-blog-block {
   width: 30.9%;
   display: inline-block;
   margin: 10px;
@@ -74,15 +81,15 @@
   border: 1px solid #eee;
   background-color: #fff;
 }
-.page-blog-list #block-views-recent-blog-block .views-field-title {
+.page-blogs #block-views-recent-blog-block .views-field-title {
   margin: 20px 0;
   padding-left: 18px;
   background: url("/sites/all/themes/md_leaders/img/recent-post.png") no-repeat 0 4px;
 }
-.page-blog-list #block-views-recent-blog-block .views-field-title a {
+.page-blogs #block-views-recent-blog-block .views-field-title a {
   color: #999999;
 }
-.page-blog-list #block-views-blog-author-block-1, .page-blog-list #block-views-blog-author-block {
+.page-blogs #block-views-blog-author-block-1, .page-blogs #block-views-blog-author-block {
   width: 30.9%;
   display: inline-block;
   vertical-align: top;
@@ -91,19 +98,19 @@
   border: 1px solid #eee;
   background-color: #fff;
 }
-.page-blog-list #block-views-blog-author-block-1 .author-image img, .page-blog-list #block-views-blog-author-block .author-image img {
+.page-blogs #block-views-blog-author-block-1 .author-image img, .page-blogs #block-views-blog-author-block .author-image img {
   height: 272px;
 }
-.page-blog-list #block-views-blog-author-block-1 .media-body, .page-blog-list #block-views-blog-author-block .media-body {
+.page-blogs #block-views-blog-author-block-1 .media-body, .page-blogs #block-views-blog-author-block .media-body {
   height: 314px;
   position: relative;
 }
-.page-blog-list #block-views-blog-author-block-1 .team-social, .page-blog-list #block-views-blog-author-block .team-social {
+.page-blogs #block-views-blog-author-block-1 .team-social, .page-blogs #block-views-blog-author-block .team-social {
   bottom: 0;
   margin-bottom: 0;
   position: absolute;
 }
-.page-blog-list #block-views-blog-author-block-1 .author-image {
+.page-blogs #block-views-blog-author-block-1 .author-image {
   margin-left: -10px;
 }
 

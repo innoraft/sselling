@@ -8,7 +8,7 @@ engine = phptemplate
 ;stylesheets[all][] = css/animations.css
 ;stylesheets[all][] = css/main.css
 stylesheets[all][] = css/case_studies.css
-stylesheets[all][] = css/blog-list.css
+stylesheets[all][] = css/blog-page.css
 stylesheets[all][] = css/blog-node.css
 
 

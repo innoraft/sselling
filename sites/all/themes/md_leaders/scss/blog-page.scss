@@ -3,8 +3,17 @@
 
 
 // Page blog list.
-.page-blog-list {
+.page-blogs {
 	 background-color: #f7f7f7;
+
+	// Blog title.
+	.blogs-title {
+		color: #272727;
+		font-size: 55px;
+		font-weight: 300;
+		text-align: center;
+		margin-top: 65px;
+	} 
 
 	// View blog list.
 	.view-blog-list {
