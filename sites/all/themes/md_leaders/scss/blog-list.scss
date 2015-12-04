@@ -4,6 +4,8 @@
 
 // Page blog list.
 .page-blog-list {
+	 background-color: #f7f7f7;
+
 	// View blog list.
 	.view-blog-list {
 		margin: 70px 0;
@@ -14,6 +16,11 @@
 			border: 1px solid #eee;
 			vertical-align: top;
 			display: inline-block;
+			background-color: #fff;
+		}
+
+		.views-field-field-blog-image img {
+			width: 100%;
 		}
 
 		.views-field-title {
@@ -58,6 +65,58 @@
 			margin: 24px 14px;
 		}
 	}
+
+	// Footer.
+	.footer {
+		margin-bottom: 60px;
+	}
+
+	// Recent blog block.
+	#block-views-recent-blog-block {
+		width: 30.9%;
+		display: inline-block;
+		margin: 10px;
+		padding: 14px;
+		border: 1px solid #eee;
+		background-color: #fff;
+
+		> h2 {
+			@extend %blog-head;
+		}
+
+		.views-field-title {
+			margin: 20px 0;
+			padding-left: 18px;
+			background: url('/sites/all/themes/md_leaders/img/recent-post.png') no-repeat 0 4px;
+
+			a {
+				color: $text-color;
+			}
+		}
+	}
+
+	// Blog author block.
+	#block-views-blog-author-block-1, #block-views-blog-author-block {
+		width: 30.9%;
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+		padding: 14px;
+		border: 1px solid #eee;
+		background-color: #fff;
+
+		> h2 {
+			@extend %blog-head;
+		}
+
+		.media-body {
+			height: 304px;
+		}
+	}
+
+	#block-views-blog-author-block-1 .author-image {
+		margin-left: -10px;
+	}
 }
 
 
@@ -66,27 +125,22 @@
 	.page-blog-list {
 		// View blog list.
 		.view-blog-list {
-			.view-content {
-				width: 676px;
-			}
-
 			.views-row {
 				width: 100%;
 				margin: 10px 0;
 			}
 		}
-	}
-}
 
+		// Recent blog block.
+		#block-views-recent-blog-block {
+			width: 100%;
+			margin: 10px 0;
+		}
 
-@media screen and (max-width: 717px) { 
-	// Page blog list.
-	.page-blog-list {
-		// View blog list.
-		.view-blog-list {
-			.view-content {
-				width: 100%;
-			}
+		// Blog author block.
+		#block-views-blog-author-block-1, #block-views-blog-author-block {
+			width: 100%;
+			margin: 10px 0;
 		}
 	}
 }

@@ -1,1 +1,14 @@
 $text-color : #999999;
+$font-Helvetica : "Helvetica Neue",Helvetica,Arial,sans-serif;
+$font-open : "Open Sans",Arial,Helvetica,sans-serif;
+
+// Heading of blog author block.
+%blog-head {
+	margin-top: 0;
+	border-bottom: 4px solid #d9d9d9;
+	color: #00bac4;
+	font-family: $font-open;
+	font-size: 24px;
+	padding: 5px 5px 20px 0px;
+	font-weight: bolder;
+}
