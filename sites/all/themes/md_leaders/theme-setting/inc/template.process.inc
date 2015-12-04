@@ -2075,3 +2075,7 @@ function theme_path() {
     return $theme_path;
 
 }
+
+function md_leaders_process_node(&$vars) {
+    $vars['content']['comments']['#weight'] = 100;
+}
