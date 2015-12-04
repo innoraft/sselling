@@ -137,7 +137,9 @@
   </div></div>
 </section>-->
 
-
+<div class="blogs-title">
+  Blogs
+</div>
 
 
 <?php print render($page['content']); ?>
