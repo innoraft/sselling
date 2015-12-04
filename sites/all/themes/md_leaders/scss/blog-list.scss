@@ -31,6 +31,10 @@
 				font-size: 15px;
 				font-weight: bold;
 			}
+
+			a:hover {
+				color: #00bac4;
+			}
 		}
 
 		.views-field-name {
@@ -105,12 +109,23 @@
 		border: 1px solid #eee;
 		background-color: #fff;
 
+		.author-image img {
+			height: 272px;
+		}
+
 		> h2 {
 			@extend %blog-head;
 		}
 
 		.media-body {
-			height: 304px;
+			height: 314px;
+			position: relative;
+		}
+
+		.team-social {
+			bottom: 0;
+			margin-bottom: 0;
+			position: absolute;
 		}
 	}
 
