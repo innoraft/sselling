@@ -745,7 +745,7 @@ function feature_blog_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'blog-list';
+  $handler->display->display_options['path'] = 'blogs';
   $export['blog_list'] = $view;
 
   $view = new view();
