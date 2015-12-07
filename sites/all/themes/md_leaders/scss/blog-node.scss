@@ -41,15 +41,9 @@
 		display: block;
 	}
 
-	// .ckeditor-mod {
-	// 	text-align: left;
-	// 	display: block !important;
-	// 	visibility: visible !important;
-	// }
-
-	// .ckeditor_links, .cke_browser_gecko {
-	// 	display: none !important;
-	// }
+	#edit-comment-body textarea {
+		text-align: left;
+	}
 
 	.filter-wrapper, #edit-preview {
 		display: none;
