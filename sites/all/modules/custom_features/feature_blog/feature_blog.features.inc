@@ -32,5 +32,20 @@ function feature_blog_image_default_styles() {
     ),
   );
 
+  // Exported image style: blog_node_image.
+  $styles['blog_node_image'] = array(
+    'label' => 'blog node image',
+    'effects' => array(
+      17 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 1040,
+          'height' => 500,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }

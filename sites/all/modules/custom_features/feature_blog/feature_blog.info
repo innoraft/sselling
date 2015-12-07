@@ -6,6 +6,7 @@ dependencies[] = views
 features[ctools][] = views:views_default:3.0
 features[features_api][] = api:2
 features[image][] = blog_image
+features[image][] = blog_node_image
 features[views_view][] = blog_author
 features[views_view][] = blog_list
 features[views_view][] = recent_blog
