@@ -115,15 +115,15 @@
 }
 
 @media screen and (max-width: 993px) {
-  .page-blog-list .view-blog-list .views-row {
+  .page-blogs .view-blog-list .views-row {
     width: 100%;
     margin: 10px 0;
   }
-  .page-blog-list #block-views-recent-blog-block {
+  .page-blogs #block-views-recent-blog-block {
     width: 100%;
     margin: 10px 0;
   }
-  .page-blog-list #block-views-blog-author-block-1, .page-blog-list #block-views-blog-author-block {
+  .page-blogs #block-views-blog-author-block-1, .page-blogs #block-views-blog-author-block {
     width: 100%;
     margin: 10px 0;
   }
