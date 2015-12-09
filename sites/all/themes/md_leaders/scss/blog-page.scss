@@ -118,16 +118,15 @@
 		border: 1px solid #eee;
 		background-color: #fff;
 
-		.author-image img {
-			height: 272px;
-		}
-
 		> h2 {
 			@extend %blog-head;
 		}
 
-		.media-body {
+		.content {
 			width: 90%;
+		}
+
+		.media-body {
 			height: 314px;
 			position: relative;
 			text-align: justify;
@@ -153,6 +152,10 @@
 
 		h2 {
 			color: #fff;
+		}
+
+		.content {
+			float: right;
 		}
 
 		.author-image {
@@ -194,8 +197,12 @@
 				color: #00bac4;
 			}
 
-			.media-body {
+			.content {
 				width: 100%;
+				float: none;
+			}
+
+			.media-body {
 				height: auto;
 				padding-bottom: 40px;
 			}
