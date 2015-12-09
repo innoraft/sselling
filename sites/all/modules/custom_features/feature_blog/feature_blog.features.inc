@@ -17,6 +17,21 @@ function feature_blog_views_api($module = NULL, $api = NULL) {
 function feature_blog_image_default_styles() {
   $styles = array();
 
+  // Exported image style: author_image.
+  $styles['author_image'] = array(
+    'label' => 'Author image (200x200)',
+    'effects' => array(
+      2 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 200,
+          'height' => 200,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   // Exported image style: blog_image.
   $styles['blog_image'] = array(
     'label' => 'blog image',
