@@ -51,11 +51,12 @@ function feature_blog_image_default_styles() {
   $styles['blog_node_image'] = array(
     'label' => 'blog node image',
     'effects' => array(
-      17 => array(
-        'name' => 'image_scale_and_crop',
+      18 => array(
+        'name' => 'image_scale',
         'data' => array(
-          'width' => 1040,
-          'height' => 500,
+          'width' => 800,
+          'height' => '',
+          'upscale' => 1,
         ),
         'weight' => 1,
       ),
