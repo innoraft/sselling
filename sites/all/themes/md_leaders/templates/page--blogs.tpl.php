@@ -125,7 +125,6 @@
     </div></div>
 </div>
 
-<?php print render($page['mainslider']); ?>
 <?php print $messages; ?>
 
 
@@ -137,6 +136,10 @@
   </div></div>
 </section>-->
 
+
+<div class="banner-image">
+  <img src="sites/all/themes/md_leaders/img/blogs.jpg">
+</div>
 
 <?php print render($page['content']); ?>
 <section class="light_section" id="copyright">

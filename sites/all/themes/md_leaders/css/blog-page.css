@@ -18,6 +18,10 @@
   text-align: center;
   margin-top: 65px;
 }
+.page-blogs .banner-image img {
+  width: 100%;
+  height: auto;
+}
 .page-blogs .view-blog-list {
   margin: 56px 0;
 }
