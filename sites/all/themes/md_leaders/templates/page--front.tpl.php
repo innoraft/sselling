@@ -128,6 +128,8 @@
 <?php print render($page['mainslider']); ?>
 <?php print $messages; ?>
 
+<div class="order-now"><a href=" http://www.amazon.in/You-are-Key-Unlocking-Through/dp/9385436600/" target="_blank">Order Now</a></div>
+
 <?php print render($page['content']); ?>
 
 <footer class="darkgrey_section bg_image" id="footer">

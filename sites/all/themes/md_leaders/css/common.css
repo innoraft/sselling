@@ -1,0 +1,23 @@
+.feedback-button {
+  visibility: hidden;
+}
+
+.order-now {
+  left: -47px;
+  padding: 10px 25px;
+  position: fixed;
+  top: 46%;
+  transform: rotate(-90deg);
+  z-index: 10;
+  background-color: #00233c;
+}
+.order-now a {
+  color: white;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 453px) {
+  .order-now {
+    padding: 8px 16px;
+  }
+}
