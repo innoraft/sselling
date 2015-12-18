@@ -42,6 +42,7 @@ stylesheets[all][] = css/common.css
 
 ;scripts[] = js/plugins.js
 ;scripts[] = js/main.js
+scripts[] = js/home-page.js
 
 
 regions[header] = Header
