@@ -2,7 +2,7 @@
 @import "variables";
 
 
-// Home page.
+// Order Now.
 .feedback-button {
 	visibility: hidden;
 }
@@ -50,5 +50,46 @@
 
 	.home-page a {
 		text-decoration: underline;
+	}
+}
+
+// Footer.
+.page-footer {
+	background-color: #004b96;
+}
+
+#block-menu-menu-footer {
+	margin: 14px 0;
+
+	>h2 {
+		display: none;
+	}
+
+	ul {
+		margin: 0;
+		padding: 0;
+	}
+
+	li {
+		width: 30%;
+		text-align: center;
+		margin: 2px 10px;
+		padding: 3px 10px;
+		display: inline-block;
+	}
+
+	li:hover {
+		background-color: #fff;
+
+		a {
+			color: black;
+		}
+	}
+
+	a {
+		color: #fff;
+		font-family: verdana;
+		font-size: 13px;
+		display: inline-block;
 	}
 }
