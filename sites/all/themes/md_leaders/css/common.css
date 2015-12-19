@@ -90,7 +90,8 @@
     padding: 0;
   }
   #block-menu-menu-footer li {
-    width: 40%;
+    margin: 0;
+    width: 49%;
   }
   #block-menu-menu-footer a {
     font-size: 10px;
