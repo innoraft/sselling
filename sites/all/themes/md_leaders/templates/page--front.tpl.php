@@ -135,7 +135,7 @@
 <footer class="darkgrey_section bg_image" id="footer">
     <div class="container">
         <div class="row to_animate_child_blocks">
-            <?php print render($page['footer']); ?>
+            <?php print render($page['footer']['block_1']);?>
         </div>
     </div>
 </footer>
@@ -155,3 +155,9 @@
     <div class="preloaderimg"></div>
   </div>
 <?php endif; ?>
+
+<footer class="page-footer">
+  <div class="container">
+    <?php print render($page['footer']['menu_menu-footer']); ?>
+  </div>
+</footer>

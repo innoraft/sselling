@@ -156,3 +156,9 @@
     <div class="preloaderimg"></div>
   </div>
 <?php endif; ?>
+
+<footer class="page-footer">
+  <div class="container">
+    <?php print render($page['footer']['menu_menu-footer']); ?>
+  </div>
+</footer>

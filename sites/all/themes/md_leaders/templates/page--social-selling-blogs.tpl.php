@@ -160,6 +160,8 @@
   </div>
 <?php endif; ?>
 
-<footer class="footer container">
-  <?php print render($page['footer']); ?>
+<footer class="page-footer">
+  <div class="container">
+    <?php print render($page['footer']['menu_menu-footer']); ?>
+  </div>
 </footer>
