@@ -40,6 +40,15 @@
   text-decoration: underline;
 }
 
+#header .header-inner {
+  max-width: 86%;
+}
+
+#mainmenu li a {
+  margin: 14px 8px;
+  padding: 8px;
+}
+
 .page-footer {
   background-color: #004b96;
 }
