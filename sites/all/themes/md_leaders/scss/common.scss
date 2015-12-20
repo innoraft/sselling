@@ -63,6 +63,26 @@
 		margin: 14px 8px;
 		padding: 8px;
 	}
+
+	#more-link {
+		color : #ffffff;
+		cursor : default;
+		padding-right : 26px;
+		background : #006BB6 url('/sites/all/themes/md_leaders/img/drop-down.png') no-repeat 53px 11px / 21px auto;
+	}
+
+	#more-list {
+		background-color: #fff;
+		left: auto;
+		padding: 7px;
+		right: -19%;
+		top: 76px;
+
+		a {
+			margin: 0;
+			padding: 6px;
+		}
+	}
 }
 
 // Footer.
