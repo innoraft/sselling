@@ -8,11 +8,17 @@
 		  $(document).ready(function() {
 			  // Make desktop banner image hyperlink.
 			  $('#md-slider-1-block').click(function() {
-			  	window.location = 'http://bit.ly/YouAreTheKeyBanner';
+			  	window.open(
+			  	  'http://bit.ly/bannerOrder',
+			  	  '_blank'
+			  	);
 			  });
 
 			  // Make mobile banner image hyperlink.
-			  $('.block-inno-mobile-slider #slider1_container img').wrap($("<a/>").attr("href", "http://bit.ly/YouAreTheKeyBanner"));
+			  $('.block-inno-mobile-slider #slider1_container img').wrap($("<a/>").attr({
+			  	"href" : "http://bit.ly/bannerOrder",
+			  	"target" : "_blank"
+			  }));
 		  });
 
 		  // Add more sub menu.
