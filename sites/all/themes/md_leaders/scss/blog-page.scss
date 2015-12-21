@@ -23,7 +23,7 @@
 
 	// View blog list.
 	.view-blog-list {
-		margin: 56px 0;
+		margin: 56px 0 27px;
 
 		.views-row {
 			width: 30.9%;
@@ -116,10 +116,10 @@
 
 	// Blog author block.
 	#block-views-blog-author-block-1, #block-views-blog-author-block {
-		width: 30.9%;
+		width: 31.9%;
 		display: inline-block;
 		vertical-align: top;
-		margin: 10px;
+		margin: 10px 10px 60px;
 		padding: 14px;
 		border: 1px solid #eee;
 		background-color: #fff;
@@ -225,6 +225,7 @@
 
 		#block-views-blog-author-block-1 {
 			margin-top: 0;
+			margin-bottom: 30px;
 			border-top: none;
 
 			h2 {
