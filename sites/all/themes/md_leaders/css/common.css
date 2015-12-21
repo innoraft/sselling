@@ -66,6 +66,16 @@
   padding: 6px;
 }
 
+@media screen and (min-width: 992px) {
+  #mainmenu {
+    overflow: visible !important;
+  }
+}
+@media screen and (max-width: 991px) {
+  #mainmenu {
+    padding: 0 12px;
+  }
+}
 .page-footer {
   background-color: #004b96;
 }
