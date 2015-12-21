@@ -8,20 +8,10 @@
 }
 
 .order-now {
-	left: -49px;
-	padding: 10px 25px;
 	position: fixed;
 	top: 46%;
-	transform: rotate(-90deg);
 	z-index: 10;
-	background-color: #FFD500;
-
-	a {
-		color: #fff;
-		cursor: pointer;
-		font-weight: bold;
-		font-family: "lato", arial;
-	}
+	padding: 0;
 }
 
 #md-slider-1-block {
@@ -30,7 +20,7 @@
 
 @media screen and (max-width: 453px) {
 	.order-now {
-		padding: 8px 19px;
+		top: 31%;
 	}
 }
 
