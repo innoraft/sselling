@@ -143,7 +143,10 @@
 
 <div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png"></a></div>
 
-<?php print render($page['content']); ?>
+<div class="container">
+  <?php print render($page['content']); ?>  
+</div>
+
 <section class="light_section" id="copyright">
         <div class="container">
             <div class="row">
@@ -162,6 +165,6 @@
 
 <footer class="page-footer">
   <div class="container">
-    <?php print render($page['footer']['menu_menu-footer']); ?>
+    <?php print render($page['footer']); ?>
   </div>
 </footer>
