@@ -24,12 +24,12 @@
 		  // Add more sub menu.
 		  $(document).ready(function() {
 			  if ($(window).width() > 983) {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/social-selling-blogs">Social Selling Blogs</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/book-session">Book a Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
 			  	$("#mainmenu > li:nth-last-child(3)").after(manu);
 			  	$("#mainmenu > li:nth-last-child(1)").hide();
 			  	$("#mainmenu > li:nth-last-child(2)").hide();
 			  } else {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/social-selling-blogs">Social Selling Blogs</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/book-session">Book a Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
 			  	$("#mainmenu > li:nth-last-child(3)").after(manu);
 			  	$("#mainmenu #more-submenu").hide();
 			  }
