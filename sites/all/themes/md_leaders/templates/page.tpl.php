@@ -138,7 +138,7 @@
 </section>-->
 
 
-<div class="order-now"><a href=" http://www.amazon.in/You-are-Key-Unlocking-Through/dp/9385436600/" target="_blank">Order Now</a></div>
+<div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png"></a></div>
 
 <?php print render($page['content']); ?>
 <section class="light_section" id="copyright">

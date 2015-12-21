@@ -10,7 +10,7 @@ function toggleMobileMenu() {
             jQuery(menuIcon).removeClass('locked');
         });
     } else {
-        jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 220, opacity: 1}, 350, function(){
+        jQuery('#mainmenu').css({'display' : 'block'}).animate({height: 392, opacity: 1}, 350, function(){
             jQuery(menuIcon).addClass('menu-opened');
             jQuery(menuIcon).removeClass('locked');
             if($('.feedback-button').hasClass('opened')) {

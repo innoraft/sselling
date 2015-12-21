@@ -8,20 +8,10 @@
 }
 
 .order-now {
-	left: -49px;
-	padding: 10px 25px;
 	position: fixed;
 	top: 46%;
-	transform: rotate(-90deg);
 	z-index: 10;
-	background-color: #FFD500;
-
-	a {
-		color: #fff;
-		cursor: pointer;
-		font-weight: bold;
-		font-family: "lato", arial;
-	}
+	padding: 0;
 }
 
 #md-slider-1-block {
@@ -30,7 +20,7 @@
 
 @media screen and (max-width: 453px) {
 	.order-now {
-		padding: 8px 19px;
+		top: 31%;
 	}
 }
 
@@ -62,6 +52,38 @@
 	li a {
 		margin: 14px 8px;
 		padding: 8px;
+	}
+
+	#more-link {
+		color : #ffffff;
+		cursor : default;
+		padding-right : 26px;
+		background : #006BB6 url('/sites/all/themes/md_leaders/img/drop-down.png') no-repeat 53px 11px / 21px auto;
+	}
+
+	#more-list {
+		background-color: #fff;
+		left: auto;
+		padding: 7px;
+		right: -19%;
+		top: 76px;
+
+		a {
+			margin: 0;
+			padding: 6px;
+		}
+	}
+}
+
+@media screen and (min-width: 992px) {
+	#mainmenu {
+		overflow: visible !important;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	#mainmenu {
+		padding: 0 12px;
 	}
 }
 
