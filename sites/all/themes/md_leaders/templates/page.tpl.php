@@ -159,6 +159,6 @@
 
 <footer class="page-footer">
   <div class="container">
-    <?php print render($page['footer']['menu_menu-footer']); ?>
+    <?php print render($page['footer']); ?>
   </div>
 </footer>
