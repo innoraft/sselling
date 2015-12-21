@@ -1,0 +1,77 @@
+.page-social-selling-testimonials .view-testimonial-list {
+  width: 1170px;
+  margin: 50px auto;
+  text-align: center;
+}
+.page-social-selling-testimonials .view-testimonial-list .views-row {
+  width: 30.6%;
+  border: 1px solid #dfe6e7;
+  padding: 20px 22px;
+  margin: 10px;
+  vertical-align: top;
+  display: inline-block;
+}
+.page-social-selling-testimonials .view-testimonial-list .views-field-field-testimonial-image img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.page-social-selling-testimonials .view-testimonial-list .views-field-title {
+  margin-bottom: 2px;
+  padding-top: 12px;
+}
+.page-social-selling-testimonials .view-testimonial-list .views-field-title a {
+  color: #fe8f8c;
+  font-size: 16px;
+  font-weight: bold;
+}
+.page-social-selling-testimonials .view-testimonial-list .designation, .page-social-selling-testimonials .view-testimonial-list .company {
+  color: #fe8f8c;
+  font-size: 13px;
+  margin-bottom: 16px;
+  display: inline-block;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.page-social-selling-testimonials .view-testimonial-list .designation {
+  text-transform: uppercase;
+}
+.page-social-selling-testimonials .view-testimonial-list .views-field-body {
+  color: #34495e;
+  font-size: 17px;
+  font-style: italic;
+  line-height: 26px;
+  height: 92px;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1200px) {
+  .page-social-selling-testimonials .view-testimonial-list {
+    width: 970px;
+  }
+  .page-social-selling-testimonials .view-testimonial-list .designation, .page-social-selling-testimonials .view-testimonial-list .company {
+    display: block;
+  }
+  .page-social-selling-testimonials .view-testimonial-list .designation {
+    margin-bottom: 0;
+  }
+  .page-social-selling-testimonials .view-testimonial-list .views-field-body {
+    height: 100px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .page-social-selling-testimonials .view-testimonial-list {
+    width: 750px;
+  }
+  .page-social-selling-testimonials .view-testimonial-list .views-row {
+    width: 100%;
+    margin: 10px 0;
+  }
+  .page-social-selling-testimonials .view-testimonial-list .views-field-body {
+    height: auto;
+  }
+}
+@media screen and (max-width: 786px) {
+  .page-social-selling-testimonials .view-testimonial-list {
+    width: 96%;
+  }
+}
