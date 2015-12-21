@@ -140,8 +140,6 @@
     </div>
 </footer>
 
-
-
 <section class="light_section" id="copyright">
         <div class="container">
             <div class="row">

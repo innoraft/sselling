@@ -135,7 +135,7 @@
   margin-left: -6px;
 }
 
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 991px) {
   .page-social-selling-blogs .view-blog-list .views-row {
     width: 100%;
     margin: 10px 0;
