@@ -30,6 +30,13 @@
 .page-type-blog .filter-wrapper, .page-type-blog #edit-preview {
   display: none;
 }
+.page-type-blog .service-links ul {
+  float: right;
+}
+.page-type-blog .service-links li {
+  display: inline-block;
+  margin-left: 5px;
+}
 
 @media screen and (max-width: 649px) {
   .page-type-blog .row-content {

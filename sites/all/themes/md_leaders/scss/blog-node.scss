@@ -48,6 +48,18 @@
 	.filter-wrapper, #edit-preview {
 		display: none;
 	}
+
+	// Service links.
+	.service-links {
+		ul {
+			float: right;
+		}
+
+		li {
+			display: inline-block;
+			margin-left: 5px;
+		}
+	}
 }
 
 

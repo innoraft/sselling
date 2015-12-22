@@ -1,0 +1,18 @@
+<?php
+
+/**
+ * @file
+ * Customize the service_links module.
+ */
+
+/**
+ * Implementation hook_service_links_alter.
+ */
+function inno_service_links_service_links_alter(&$links) {
+  if (isset($links['facebook']) || isset($links['google_plus']) || isset($links['twitter'])) {
+    // Change the icon of MyService.
+    $links['facebook']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/facebook_icon.png';
+    $links['google_plus']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/google_icon.png';
+    $links['twitter']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/twitter_icon.png';
+  }
+}
