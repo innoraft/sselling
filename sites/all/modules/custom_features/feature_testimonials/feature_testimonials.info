@@ -17,6 +17,7 @@ features[field_instance][] = node-testimonials-field_company
 features[field_instance][] = node-testimonials-field_designation
 features[field_instance][] = node-testimonials-field_testimonial_image
 features[image][] = testimonial_image
+features[image][] = testimonial_node_image
 features[node][] = testimonials
 features[variable][] = comment_anonymous_testimonials
 features[variable][] = comment_default_mode_testimonials

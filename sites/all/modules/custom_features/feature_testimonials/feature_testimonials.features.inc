@@ -41,6 +41,21 @@ function feature_testimonials_image_default_styles() {
     ),
   );
 
+  // Exported image style: testimonial_node_image.
+  $styles['testimonial_node_image'] = array(
+    'label' => 'Testimonial Node Image',
+    'effects' => array(
+      21 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 168,
+          'height' => 168,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 
