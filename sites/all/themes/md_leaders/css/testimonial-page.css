@@ -25,14 +25,13 @@
   font-size: 16px;
   font-weight: bold;
 }
-.page-social-selling-testimonials .view-testimonial-list .designation, .page-social-selling-testimonials .view-testimonial-list .company {
+.page-social-selling-testimonials .view-testimonial-list .views-field-field-designation, .page-social-selling-testimonials .view-testimonial-list .views-field-field-company {
   color: #fe8f8c;
   font-size: 13px;
-  margin-bottom: 16px;
-  display: inline-block;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
 }
-.page-social-selling-testimonials .view-testimonial-list .designation {
+.page-social-selling-testimonials .view-testimonial-list .views-field-field-designation {
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 .page-social-selling-testimonials .view-testimonial-list .views-field-body {
@@ -42,17 +41,12 @@
   line-height: 26px;
   height: 92px;
   overflow: hidden;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 1200px) {
   .page-social-selling-testimonials .view-testimonial-list {
     width: 970px;
-  }
-  .page-social-selling-testimonials .view-testimonial-list .designation, .page-social-selling-testimonials .view-testimonial-list .company {
-    display: block;
-  }
-  .page-social-selling-testimonials .view-testimonial-list .designation {
-    margin-bottom: 0;
   }
   .page-social-selling-testimonials .view-testimonial-list .views-field-body {
     height: 100px;
