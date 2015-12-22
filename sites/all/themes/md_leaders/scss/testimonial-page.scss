@@ -36,15 +36,14 @@
 			}
 		}
 
-		.designation, .company {
+		.views-field-field-designation, .views-field-field-company {
 			color: #fe8f8c;
 			font-size: 13px;
-			margin-bottom: 16px;
-			display: inline-block;
 			font-family: $font-open;
 		}
 
-		.designation {
+		.views-field-field-designation {
+			margin-bottom: 5px;
 			text-transform: uppercase;
 		}
 
@@ -54,7 +53,8 @@
 			font-style: italic;
 			line-height: 26px;
 			height: 92px;
-			overflow: hidden
+			overflow: hidden;
+			margin-top: 10px;
 		}
 	}
 }
@@ -65,14 +65,6 @@
 		// View testimonials.
 		.view-testimonial-list {
 			width: 970px;
-
-			.designation, .company {
-				display: block;
-			}
-
-			.designation {
-				margin-bottom: 0;
-			}
 
 			.views-field-body {
 				height: 100px;
