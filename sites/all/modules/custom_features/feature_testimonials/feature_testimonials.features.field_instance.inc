@@ -182,7 +182,7 @@ function feature_testimonials_field_default_field_instances() {
         'module' => 'image',
         'settings' => array(
           'image_link' => '',
-          'image_style' => 'testimonial_image',
+          'image_style' => 'testimonial_node_image',
         ),
         'type' => 'image',
         'weight' => 0,
