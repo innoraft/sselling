@@ -79,7 +79,7 @@ function feature_testimonials_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 5,
+        'weight' => 2,
       ),
       'mdp_full_popup' => array(
         'label' => 'above',
@@ -131,7 +131,7 @@ function feature_testimonials_field_default_field_instances() {
         'module' => 'text',
         'settings' => array(),
         'type' => 'text_default',
-        'weight' => 4,
+        'weight' => 1,
       ),
       'mdp_full_popup' => array(
         'label' => 'above',
