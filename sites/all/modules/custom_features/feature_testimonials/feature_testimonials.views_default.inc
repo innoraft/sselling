@@ -66,7 +66,7 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_company']['table'] = 'field_data_field_company';
   $handler->display->display_options['fields']['field_company']['field'] = 'field_company';
   $handler->display->display_options['fields']['field_company']['label'] = '';
-  $handler->display->display_options['fields']['field_company']['alter']['max_length'] = '40';
+  $handler->display->display_options['fields']['field_company']['alter']['max_length'] = '45';
   $handler->display->display_options['fields']['field_company']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_company']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
