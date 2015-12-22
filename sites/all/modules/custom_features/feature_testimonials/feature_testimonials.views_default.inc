@@ -58,16 +58,16 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_designation']['table'] = 'field_data_field_designation';
   $handler->display->display_options['fields']['field_designation']['field'] = 'field_designation';
   $handler->display->display_options['fields']['field_designation']['label'] = '';
-  $handler->display->display_options['fields']['field_designation']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_designation']['alter']['max_length'] = '30';
+  $handler->display->display_options['fields']['field_designation']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_designation']['element_label_colon'] = FALSE;
   /* Field: Content: Company */
   $handler->display->display_options['fields']['field_company']['id'] = 'field_company';
   $handler->display->display_options['fields']['field_company']['table'] = 'field_data_field_company';
   $handler->display->display_options['fields']['field_company']['field'] = 'field_company';
   $handler->display->display_options['fields']['field_company']['label'] = '';
-  $handler->display->display_options['fields']['field_company']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_company']['alter']['text'] = '<span class="designation">[field_designation], </span>
-<span class="company">[field_company]</span>';
+  $handler->display->display_options['fields']['field_company']['alter']['max_length'] = '40';
+  $handler->display->display_options['fields']['field_company']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['field_company']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';
