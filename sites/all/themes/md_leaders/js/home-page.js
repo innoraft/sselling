@@ -49,6 +49,12 @@
 		  	});
 		  });
 
+		  //testimonial page, link whole div to content
+		  $('.view-testimonial-list .views-row').click(function(){
+		  	href = $('.views-field-title a', this).attr('href');
+		  	window.location.href = href;
+		  });
+
 	    }
 	}
 })(jQuery);
