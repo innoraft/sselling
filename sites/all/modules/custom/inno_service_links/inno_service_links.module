@@ -9,10 +9,11 @@
  * Implementation hook_service_links_alter.
  */
 function inno_service_links_service_links_alter(&$links) {
-  if (isset($links['facebook']) || isset($links['google_plus']) || isset($links['twitter'])) {
-    // Change the icon of MyService.
-    $links['facebook']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/facebook_icon.png';
+  if (isset($links['google_plus']) || isset($links['twitter']) || isset($links['linkedin']) || isset($links['facebook'])) {
     $links['google_plus']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/google_icon.png';
     $links['twitter']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/twitter_icon.png';
+    $links['twitter']['link'] = 'https://twitter.com/home?status=Order Bloomsbury\'s #SocialSelling book #YouAreTheKey by @a1purva @gauravkakkar82 Order now at http://www.amazon.in/You-are-Key-Unlocking-Through/dp/9385436600/﻿';
+    $links['linkedin']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/linkedin_icon.png';
+    $links['facebook']['icon'] =  base_path() . 'sites/all/themes/md_leaders/img/facebook_icon.png';
   }
 }
