@@ -52,7 +52,6 @@
     <?php if(isset($ios_72) && $ios_72 != null)  :?><link rel="apple-touch-icon-precomposed" sizes="72x72" href="<?php print $ios_72; ?>"><?php endif;?>
     <?php if(isset($ios_57) && $ios_57 != null)  :?><link rel="apple-touch-icon-precomposed" sizes="57x57" href="<?php print $ios_57; ?>"><?php endif;?>
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
   <?php print $styles; ?>
   <?php print $scripts; ?>
   <style type="text/css">
@@ -109,5 +108,6 @@
   </script>
 </div>
 
+<script type="text/javascript" src=/<?php echo path_to_theme() . '/js/social_share.js'?>></script>
 </body>
 </html>
