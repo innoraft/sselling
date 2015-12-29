@@ -94,6 +94,7 @@
         bitly: {}
       },
       title: "Check out the new book on #SocialSelling You are the key - Unlocking doors through social selling",
+      description: "",
     }
     addthis.layers({
       'theme': 'transparent',
