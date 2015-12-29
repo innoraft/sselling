@@ -55,6 +55,9 @@
 		  	window.location.href = href;
 		  });
 
+		  // Sitemap.
+		  $(".page-type-page .tree").treemenu({delay:300}).openActive();
+
 	    }
 	}
 })(jQuery);

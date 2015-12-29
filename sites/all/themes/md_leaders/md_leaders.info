@@ -13,6 +13,7 @@ stylesheets[all][] = css/blog-node.css
 stylesheets[all][] = css/common.css
 stylesheets[all][] = css/testimonial-page.css
 stylesheets[all][] = css/testimonial-node.css
+stylesheets[all][] = css/jquery.treemenu.css
 
 
 ;scripts[] = js/vendor/modernizr-2.6.2.min.js
@@ -45,6 +46,7 @@ stylesheets[all][] = css/testimonial-node.css
 ;scripts[] = js/plugins.js
 ;scripts[] = js/main.js
 scripts[] = js/home-page.js
+scripts[] = js/jquery.treemenu.js
 
 
 regions[header] = Header
