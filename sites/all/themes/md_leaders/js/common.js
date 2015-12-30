@@ -83,6 +83,18 @@
 		  	// 	});
 		  	// });
 
+			// Hide testimonial icon if link empty.
+			$('.view-testimonial-list .views-field-field-wikipedia-path a').each(function() {
+				if ($(this).attr('href') == '') {
+					$(this).hide();
+				}
+			});
+
+			// Click testimonial icons.
+			$('.view-testimonial-list .views-field-field-wikipedia-path a').click(function(event) {
+				event.stopPropagation();
+			});
+
 	    }
 	}
 })(jQuery);

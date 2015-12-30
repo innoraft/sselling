@@ -10,11 +10,12 @@
 .page-social-selling-testimonials .view-testimonial-list .views-row {
   width: 30.6%;
   border: 1px solid #dfe6e7;
-  padding: 20px 22px;
+  padding: 20px 22px 56px;
   margin: 10px;
   vertical-align: top;
   display: inline-block;
   cursor: pointer;
+  position: relative;
 }
 .page-social-selling-testimonials .view-testimonial-list .views-field-field-testimonial-image img {
   -moz-border-radius: 50%;
@@ -44,17 +45,24 @@
   font-size: 17px;
   font-style: italic;
   line-height: 26px;
-  height: 92px;
-  overflow: hidden;
   margin-top: 10px;
+}
+.page-social-selling-testimonials .view-testimonial-list .icons {
+  bottom: 12px;
+  position: absolute;
+  right: 0;
+  width: 100%;
+}
+.page-social-selling-testimonials .view-testimonial-list .icons .linkedin-link img {
+  width: 43px;
+}
+.page-social-selling-testimonials .view-testimonial-list .icons .wikipedia-link img {
+  width: 38px;
 }
 
 @media screen and (max-width: 1200px) {
   .page-social-selling-testimonials .view-testimonial-list {
     width: 970px;
-  }
-  .page-social-selling-testimonials .view-testimonial-list .views-field-body {
-    height: 100px;
   }
 }
 @media screen and (max-width: 991px) {
@@ -64,9 +72,6 @@
   .page-social-selling-testimonials .view-testimonial-list .views-row {
     width: 100%;
     margin: 10px 0;
-  }
-  .page-social-selling-testimonials .view-testimonial-list .views-field-body {
-    height: auto;
   }
 }
 @media screen and (max-width: 786px) {
