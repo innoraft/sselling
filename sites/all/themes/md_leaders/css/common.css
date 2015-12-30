@@ -154,3 +154,11 @@
   background-color: #156354;
   color: #fff;
 }
+
+.page-node h1.block-header .title {
+  padding-top: 15px;
+}
+.page-node h1.block-header .sub-heading {
+  font-size: 0.6em;
+  padding-top: 12px;
+}
