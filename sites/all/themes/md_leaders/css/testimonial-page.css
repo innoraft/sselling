@@ -59,6 +59,9 @@
 .page-social-selling-testimonials .view-testimonial-list .icons .wikipedia-link img {
   width: 38px;
 }
+.page-social-selling-testimonials .view-testimonial-list .icons .website-link img {
+  width: 37px;
+}
 
 @media screen and (max-width: 1200px) {
   .page-social-selling-testimonials .view-testimonial-list {
