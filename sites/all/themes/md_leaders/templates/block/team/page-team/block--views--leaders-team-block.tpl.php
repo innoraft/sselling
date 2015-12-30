@@ -47,7 +47,7 @@
   <div class="container">
       <div class="row">
         <div class="col-sm-12">
-          <h2 class="text-center block-header animated fadeInUp"><?php print $block->subject; ?></h2>
+          <h1 class="text-center block-header animated fadeInUp"><?php print $block->subject; ?></h1>
         </div>
       </div>
       <?php print $content; ?>

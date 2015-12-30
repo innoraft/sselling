@@ -31,7 +31,7 @@
                 <div class="col-sm-12">
                     <?php print render($title_prefix); ?>
                     <?php if ($title): ?>
-                        <h2 class="text-center block-header animated fadeInUp"><?php print $title; ?></h2>
+                        <h1 class="text-center block-header animated fadeInUp"><?php print $title; ?></h1>
                     <?php endif; ?>
                     <?php print render($title_suffix); ?>
                 </div>
