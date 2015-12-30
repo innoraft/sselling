@@ -82,6 +82,9 @@ function animateElements() {
                 $( '.title_strong h2' ).each(function(){
 			$(this).mdtextbold();
 		});
+                $( '.author_title_strong h1' ).each(function(){
+      $(this).mdtextbold();
+    });
 	}     $(window).load(function() {
           var width = $(window).width();
           if (width > 752) {
