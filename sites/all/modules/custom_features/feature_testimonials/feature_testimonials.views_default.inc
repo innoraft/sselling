@@ -83,6 +83,13 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_linkedin_path']['label'] = '';
   $handler->display->display_options['fields']['field_linkedin_path']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_linkedin_path']['element_label_colon'] = FALSE;
+  /* Field: Content: website path */
+  $handler->display->display_options['fields']['field_website_path']['id'] = 'field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['table'] = 'field_data_field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['field'] = 'field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['label'] = '';
+  $handler->display->display_options['fields']['field_website_path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_website_path']['element_label_colon'] = FALSE;
   /* Field: Content: wikipedia path */
   $handler->display->display_options['fields']['field_wikipedia_path']['id'] = 'field_wikipedia_path';
   $handler->display->display_options['fields']['field_wikipedia_path']['table'] = 'field_data_field_wikipedia_path';
@@ -92,6 +99,7 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_wikipedia_path']['alter']['text'] = '<div class="icons">
    <a class="linkedin-link" href=[field_linkedin_path]><img src="sites/all/themes/md_leaders/img/linkedin_testimonials.png"></a>
    <a class="wikipedia-link" href=[field_wikipedia_path]><img src="sites/all/themes/md_leaders/img/wikipedia_testimonials.png"></a>
+   <a class="website-link" href=[field_website_path]><img src="sites/all/themes/md_leaders/img/website_testimonials.png"></a>
 </div>';
   $handler->display->display_options['fields']['field_wikipedia_path']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
