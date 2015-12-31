@@ -58,18 +58,34 @@
 			// Sitemap.
 			$(".page-type-page .tree").treemenu({delay:300}).openActive();
 
-			// Change block height at testimonials.
-		  	// $(document).ready(function(event) {
-		  	// 	var max = 0;
-		  	// 	$('.view-testimonial-list .views-row').each(function() {
-		  	// 		var h = $(this).height();
-		  	// 		max = h > max ? h : max;
-		  	// 	});
+			// Apply height at blogs at blog page.
+		  	$(document).ready(function(event) {
+		  		var max = 0;
+		  		$('.view-blog-list .views-field-body .field-content').each(function() {
+		  			var h = $(this).height();
+		  			max = h > max ? h : max;
+		  		});
 
-		  	// 	$('.view-testimonial-list .views-row').each(function() {
-		  	// 		$('.view-testimonial-list .views-row').height(max);
-		  	// 	});
-		  	// });
+		  		$('.view-blog-list .views-field-body .field-content').each(function() {
+		  			$(this).height(max);
+		  		});
+		  	});
+
+		  	$(window).resize(function(event) {
+		  		$('.view-blog-list .views-field-body .field-content').each(function() {
+		  			$(this).css('height', 'auto');
+		  		});
+
+		  		var max = 0;
+		  		$('.view-blog-list .views-field-body .field-content').each(function() {
+		  			var h = $(this).height();
+		  			max = h > max ? h : max;
+		  		});
+
+		  		$('.view-blog-list .views-field-body .field-content').each(function() {
+		  			$(this).height(max);
+		  		});
+		  	});
 
 			// Hide testimonial icon if link empty.
 			$('.testimonials-icons a').each(function() {
