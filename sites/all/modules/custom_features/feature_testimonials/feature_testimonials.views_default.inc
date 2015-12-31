@@ -96,7 +96,7 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_wikipedia_path']['field'] = 'field_wikipedia_path';
   $handler->display->display_options['fields']['field_wikipedia_path']['label'] = '';
   $handler->display->display_options['fields']['field_wikipedia_path']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_wikipedia_path']['alter']['text'] = '<div class="icons">
+  $handler->display->display_options['fields']['field_wikipedia_path']['alter']['text'] = '<div class="testimonials-icons">
    <a class="linkedin-link" href=[field_linkedin_path]><img src="sites/all/themes/md_leaders/img/linkedin_testimonials.png"></a>
    <a class="wikipedia-link" href=[field_wikipedia_path]><img src="sites/all/themes/md_leaders/img/wikipedia_testimonials.png"></a>
    <a class="website-link" href=[field_website_path]><img src="sites/all/themes/md_leaders/img/website_testimonials.png"></a>
