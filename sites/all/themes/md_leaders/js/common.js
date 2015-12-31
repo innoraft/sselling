@@ -59,17 +59,17 @@
 			$(".page-type-page .tree").treemenu({delay:300}).openActive();
 
 			// Change block height at testimonials.
-		  	$(document).ready(function(event) {
-		  		var max = 0;
-		  		$('.view-testimonial-list .views-row').each(function() {
-		  			var h = $(this).height();
-		  			max = h > max ? h : max;
-		  		});
+		  	// $(document).ready(function(event) {
+		  	// 	var max = 0;
+		  	// 	$('.view-testimonial-list .views-row').each(function() {
+		  	// 		var h = $(this).height();
+		  	// 		max = h > max ? h : max;
+		  	// 	});
 
-		  		$('.view-testimonial-list .views-row').each(function() {
-		  			$('.view-testimonial-list .views-row').height(max);
-		  		});
-		  	});
+		  	// 	$('.view-testimonial-list .views-row').each(function() {
+		  	// 		$('.view-testimonial-list .views-row').height(max);
+		  	// 	});
+		  	// });
 
 			// Hide testimonial icon if link empty.
 			$('.testimonials-icons a').each(function() {
