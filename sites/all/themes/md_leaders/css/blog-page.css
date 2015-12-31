@@ -38,6 +38,9 @@
 }
 .page-social-selling-blogs .view-blog-list .views-field-title {
   margin: 20px 14px 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 .page-social-selling-blogs .view-blog-list .views-field-title a {
   color: #999999;
@@ -70,7 +73,6 @@
   text-transform: uppercase;
 }
 .page-social-selling-blogs .view-blog-list .views-field-body {
-  height: 170px;
   color: #999999;
   margin: 24px 14px;
 }
@@ -139,9 +141,6 @@
   .page-social-selling-blogs .view-blog-list .views-row {
     width: 100%;
     margin: 10px 0;
-  }
-  .page-social-selling-blogs .view-blog-list .views-field-body {
-    height: auto;
   }
   .page-social-selling-blogs #block-views-recent-blog-block {
     width: 100%;

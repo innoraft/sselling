@@ -40,6 +40,9 @@
 
 		.views-field-title {
 			margin: 20px 14px 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
 
 			a {
 				color: $text-color;
@@ -79,7 +82,6 @@
 		}
 
 		.views-field-body {
-			height: 170px;
 			color: $text-color;
 			margin: 24px 14px;
 		}
@@ -179,10 +181,6 @@
 			.views-row {
 				width: 100%;
 				margin: 10px 0;
-			}
-
-			.views-field-body {
-				height: auto;
 			}
 		}
 
