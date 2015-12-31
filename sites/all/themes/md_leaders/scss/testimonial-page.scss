@@ -20,11 +20,12 @@
 		.views-row {
 			width: 30.6%;
 			border: 1px solid #dfe6e7;
-			padding: 20px 22px;
+			padding: 20px 22px 56px;
 			margin: 10px;
 			vertical-align: top;
 			display: inline-block;
 			cursor: pointer;
+			position: relative;
 		}
 
 		.views-field-field-testimonial-image {
@@ -60,9 +61,15 @@
 			font-size: 17px;
 			font-style: italic;
 			line-height: 26px;
-			height: 92px;
-			overflow: hidden;
 			margin-top: 10px;
+		}
+
+		.testimonials-icons {
+			bottom: 12px;
+			position: absolute;
+			right: 0;
+			width: 100%;
+			@extend %testimonials-icons;
 		}
 	}
 }
@@ -73,10 +80,6 @@
 		// View testimonials.
 		.view-testimonial-list {
 			width: 970px;
-
-			.views-field-body {
-				height: 100px;
-			}
 		}
 	}
 }
@@ -91,10 +94,6 @@
 			.views-row {
 				width: 100%;
 				margin: 10px 0;
-			}
-
-			.views-field-body {
-				height: auto;
 			}
 		}
 	}

@@ -75,8 +75,33 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['body']['field'] = 'body';
   $handler->display->display_options['fields']['body']['label'] = '';
   $handler->display->display_options['fields']['body']['alter']['max_length'] = '120';
-  $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: linkedin path */
+  $handler->display->display_options['fields']['field_linkedin_path']['id'] = 'field_linkedin_path';
+  $handler->display->display_options['fields']['field_linkedin_path']['table'] = 'field_data_field_linkedin_path';
+  $handler->display->display_options['fields']['field_linkedin_path']['field'] = 'field_linkedin_path';
+  $handler->display->display_options['fields']['field_linkedin_path']['label'] = '';
+  $handler->display->display_options['fields']['field_linkedin_path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_linkedin_path']['element_label_colon'] = FALSE;
+  /* Field: Content: website path */
+  $handler->display->display_options['fields']['field_website_path']['id'] = 'field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['table'] = 'field_data_field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['field'] = 'field_website_path';
+  $handler->display->display_options['fields']['field_website_path']['label'] = '';
+  $handler->display->display_options['fields']['field_website_path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_website_path']['element_label_colon'] = FALSE;
+  /* Field: Content: wikipedia path */
+  $handler->display->display_options['fields']['field_wikipedia_path']['id'] = 'field_wikipedia_path';
+  $handler->display->display_options['fields']['field_wikipedia_path']['table'] = 'field_data_field_wikipedia_path';
+  $handler->display->display_options['fields']['field_wikipedia_path']['field'] = 'field_wikipedia_path';
+  $handler->display->display_options['fields']['field_wikipedia_path']['label'] = '';
+  $handler->display->display_options['fields']['field_wikipedia_path']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['field_wikipedia_path']['alter']['text'] = '<div class="testimonials-icons">
+   <a class="linkedin-link" href=[field_linkedin_path]><img src="sites/all/themes/md_leaders/img/linkedin_testimonials.png"></a>
+   <a class="wikipedia-link" href=[field_wikipedia_path]><img src="sites/all/themes/md_leaders/img/wikipedia_testimonials.png"></a>
+   <a class="website-link" href=[field_website_path]><img src="sites/all/themes/md_leaders/img/website_testimonials.png"></a>
+</div>';
+  $handler->display->display_options['fields']['field_wikipedia_path']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -100,24 +125,6 @@ function feature_testimonials_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'social-selling-testimonials';
-  $translatables['testimonial_list'] = array(
-    t('Master'),
-    t('Testimonials'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Page'),
-  );
   $export['testimonial_list'] = $view;
 
   return $export;

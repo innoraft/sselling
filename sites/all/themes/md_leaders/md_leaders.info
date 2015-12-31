@@ -45,7 +45,7 @@ stylesheets[all][] = css/jquery.treemenu.css
 
 ;scripts[] = js/plugins.js
 ;scripts[] = js/main.js
-scripts[] = js/home-page.js
+scripts[] = js/common.js
 scripts[] = js/jquery.treemenu.js
 
 

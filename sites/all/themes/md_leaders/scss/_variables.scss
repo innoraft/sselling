@@ -12,3 +12,21 @@ $font-open : "Open Sans",Arial,Helvetica,sans-serif;
 	padding: 5px 5px 20px 0px;
 	font-weight: bolder;
 }
+
+%testimonials-icons {
+	a {
+		margin-right: 8px;
+	}
+
+	.linkedin-link img {
+		width: 34px;
+	}
+
+	.wikipedia-link img {
+		width: 31px;
+	}
+
+	.website-link img {
+		width: 37px;
+	}
+}

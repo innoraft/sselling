@@ -37,7 +37,16 @@
                 </div>
             </div>
             <div class="row row-content">
-              <?php print render($content); ?>
+              <?php print render($content['field_testimonial_image']); ?>
+              <?php print render($content['field_designation']); ?>
+              <?php print render($content['field_company']); ?>
+              <?php print render($content['body']); ?>
+             
+              <div class="testimonials-icons">
+                <a class="linkedin-link" href="<?php print $content['field_linkedin_path']['#items'][0]['value']; ?>"><img src="/sites/all/themes/md_leaders/img/linkedin_testimonials.png"></a>
+                <a class="wikipedia-link" href="<?php print $content['field_wikipedia_path']['#items'][0]['value']; ?>"><img src="/sites/all/themes/md_leaders/img/wikipedia_testimonials.png"></a>
+                <a class="website-link" href="<?php print $content['field_website_path']['#items'][0]['value']; ?>"><img src="/sites/all/themes/md_leaders/img/website_testimonials.png"></a>
+              </div>
             </div>
         </div>
   </section>

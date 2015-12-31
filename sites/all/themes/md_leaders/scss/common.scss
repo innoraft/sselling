@@ -161,7 +161,7 @@
 	}
 }
 
-// Sitemap.
+// Basic page sitemap.
 .page-type-page .tree {
 	font-family: verdana;
 
@@ -196,5 +196,19 @@
 	li a:hover {
 		background-color: #156354;
 		color: #fff;
+	}
+}
+
+// Basic page heading.
+.page-node {
+	h1.block-header {
+		.title {
+			padding-top: 15px;
+		}
+
+		.sub-heading {
+			font-size: 0.6em;
+			padding-top: 12px;
+		}
 	}
 }

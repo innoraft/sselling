@@ -34,7 +34,7 @@
   <?php //endif; ?>
 
 
-  <h2 class="view-page-title text-center block-header animated fadeInUp">Social Selling Case Studies</h2>
+  <h1 class="view-page-title text-center block-header animated fadeInUp">Social Selling Case Studies</h1>
   <?php print render($title_suffix); ?>
   <?php if ($header): ?>
     <div class="view-header">
