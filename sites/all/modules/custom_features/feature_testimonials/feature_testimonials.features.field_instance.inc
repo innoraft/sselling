@@ -60,6 +60,7 @@ function feature_testimonials_field_default_field_instances() {
       'module' => 'text',
       'settings' => array(
         'rows' => 20,
+        'show_token_tree' => FALSE,
         'summary_rows' => 5,
       ),
       'type' => 'text_textarea_with_summary',
@@ -111,6 +112,7 @@ function feature_testimonials_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'show_token_tree' => FALSE,
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -162,6 +164,7 @@ function feature_testimonials_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'show_token_tree' => FALSE,
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -178,9 +181,34 @@ function feature_testimonials_field_default_field_instances() {
     'display' => array(
       'default' => array(
         'label' => 'hidden',
-        'module' => 'text',
-        'settings' => array(),
-        'type' => 'text_default',
+        'module' => 'advanced_text_formatter',
+        'settings' => array(
+          'allowed_html' => array(
+            0 => 'a',
+            1 => 'b',
+            2 => 'br',
+            3 => 'dd',
+            4 => 'dl',
+            5 => 'dt',
+            6 => 'em',
+            7 => 'i',
+            8 => 'li',
+            9 => 'ol',
+            10 => 'p',
+            11 => 'strong',
+            12 => 'u',
+            13 => 'ul',
+          ),
+          'autop' => 1,
+          'ellipsis' => 1,
+          'filter' => 'php',
+          'format' => 'plain_text',
+          'token_replace' => 0,
+          'trim_length' => 0,
+          'use_summary' => 0,
+          'word_boundary' => 1,
+        ),
+        'type' => 'advanced_text',
         'weight' => 1,
       ),
       'mdp_full_popup' => array(
@@ -215,6 +243,7 @@ function feature_testimonials_field_default_field_instances() {
       'module' => 'text',
       'settings' => array(
         'rows' => 5,
+        'show_token_tree' => FALSE,
       ),
       'type' => 'text_textarea',
       'weight' => 5,
@@ -266,6 +295,7 @@ function feature_testimonials_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'show_token_tree' => FALSE,
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -380,6 +410,7 @@ function feature_testimonials_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'show_token_tree' => FALSE,
         'size' => 60,
       ),
       'type' => 'text_textfield',
@@ -432,6 +463,7 @@ function feature_testimonials_field_default_field_instances() {
       'active' => 1,
       'module' => 'text',
       'settings' => array(
+        'show_token_tree' => FALSE,
         'size' => 60,
       ),
       'type' => 'text_textfield',
