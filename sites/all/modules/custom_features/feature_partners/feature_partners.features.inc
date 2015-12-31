@@ -30,11 +30,12 @@ function feature_partners_image_default_styles() {
   $styles['partner_node_logo'] = array(
     'label' => 'partner node logo',
     'effects' => array(
-      18 => array(
-        'name' => 'image_scale_and_crop',
+      20 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 262,
           'height' => 347,
+          'upscale' => 0,
         ),
         'weight' => 1,
       ),
@@ -45,11 +46,12 @@ function feature_partners_image_default_styles() {
   $styles['partner_page_logo'] = array(
     'label' => 'partner page logo',
     'effects' => array(
-      17 => array(
-        'name' => 'image_scale_and_crop',
+      19 => array(
+        'name' => 'image_scale',
         'data' => array(
           'width' => 225,
           'height' => 300,
+          'upscale' => 0,
         ),
         'weight' => 1,
       ),
