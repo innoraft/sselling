@@ -1,0 +1,78 @@
+.page-social-selling-official-partners {
+  background-color: #f0f0f0;
+}
+.page-social-selling-official-partners .view-partners-list .block-header {
+  margin-bottom: 45px;
+  margin-top: 52px;
+}
+.page-social-selling-official-partners .view-partners-list .view-content {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 60px;
+}
+.page-social-selling-official-partners .view-partners-list .views-row {
+  width: 48.8%;
+  display: inline-block;
+  vertical-align: top;
+  background-color: #fff;
+  border-right: 10px solid #006bb6;
+}
+.page-social-selling-official-partners .view-partners-list .views-row:first-of-type {
+  margin-right: 2%;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-field-partner-logo {
+  float: left;
+  margin-right: 10px;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-title {
+  font-size: 24px;
+  margin: 10px;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-body {
+  margin: 10px;
+  text-align: justify;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-body p {
+  margin-bottom: 0;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-view-node {
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-view-node a {
+  background-color: #393939;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.page-social-selling-official-partners .view-partners-list .views-field-view-node a:hover {
+  color: #fff;
+  background-color: #eb7000;
+}
+
+@media screen and (max-width: 1029px) {
+  .page-social-selling-official-partners .view-partners-list .views-row {
+    width: 100%;
+  }
+  .page-social-selling-official-partners .view-partners-list .views-row:first-of-type {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 460px) {
+  .page-social-selling-official-partners .view-partners-list .views-row {
+    border-right: none;
+    border-bottom: 10px solid #006bb6;
+  }
+  .page-social-selling-official-partners .view-partners-list .views-field-field-partner-logo {
+    float: none;
+    text-align: center;
+  }
+  .page-social-selling-official-partners .view-partners-list .views-field-field-partner-logo .field-content {
+    margin: 20px auto;
+    width: 170px;
+  }
+}
