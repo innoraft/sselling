@@ -76,6 +76,9 @@
   color: #999999;
   margin: 24px 14px;
 }
+.page-social-selling-blogs .view-blog-list .views-field-body span {
+  display: inline-block;
+}
 .page-social-selling-blogs .footer {
   margin-bottom: 60px;
 }
