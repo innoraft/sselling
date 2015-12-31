@@ -53,11 +53,14 @@
   right: 0;
   width: 100%;
 }
+.page-social-selling-testimonials .view-testimonial-list .icons a {
+  margin-right: 8px;
+}
 .page-social-selling-testimonials .view-testimonial-list .icons .linkedin-link img {
-  width: 43px;
+  width: 34px;
 }
 .page-social-selling-testimonials .view-testimonial-list .icons .wikipedia-link img {
-  width: 38px;
+  width: 31px;
 }
 .page-social-selling-testimonials .view-testimonial-list .icons .website-link img {
   width: 37px;
