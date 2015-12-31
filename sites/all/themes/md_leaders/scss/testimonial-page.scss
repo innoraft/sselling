@@ -45,15 +45,21 @@
 			}
 		}
 
-		.views-field-field-designation, .views-field-field-company {
+		// .views-field-field-designation, .views-field-field-company {
+		// 	color: #fe8f8c;
+		// 	font-size: 13px;
+		// 	font-family: $font-open;
+		// }
+
+		// .views-field-field-designation {
+		// 	margin-bottom: 5px;
+		// 	text-transform: uppercase;
+		// }
+
+		.views-field-field-designation-company {
 			color: #fe8f8c;
 			font-size: 13px;
 			font-family: $font-open;
-		}
-
-		.views-field-field-designation {
-			margin-bottom: 5px;
-			text-transform: uppercase;
 		}
 
 		.views-field-body {

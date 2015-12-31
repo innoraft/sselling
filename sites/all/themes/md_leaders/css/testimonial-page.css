@@ -44,14 +44,10 @@
   font-size: 16px;
   font-weight: bold;
 }
-.page-social-selling-testimonials .view-testimonial-list .views-field-field-designation, .page-social-selling-testimonials .view-testimonial-list .views-field-field-company {
+.page-social-selling-testimonials .view-testimonial-list .views-field-field-designation-company {
   color: #fe8f8c;
   font-size: 13px;
   font-family: "Open Sans", Arial, Helvetica, sans-serif;
-}
-.page-social-selling-testimonials .view-testimonial-list .views-field-field-designation {
-  margin-bottom: 5px;
-  text-transform: uppercase;
 }
 .page-social-selling-testimonials .view-testimonial-list .views-field-body {
   color: #34495e;
