@@ -10,7 +10,7 @@
 	}
 
 	.row-content {
-		padding: 50px;
+		padding: 50px 50px 30px;
 		text-align: center;
 		margin-bottom: 30px;
 		background-color: white;
@@ -48,6 +48,11 @@
 		font-size: 20px;
 		font-style: italic;
 		text-align: justify;
+	}
+
+	.testimonials-icons {
+		margin-top: 20px;
+		@extend %testimonials-icons;
 	}
 
 	// Comment.

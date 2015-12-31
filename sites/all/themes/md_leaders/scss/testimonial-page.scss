@@ -64,27 +64,12 @@
 			margin-top: 10px;
 		}
 
-		.icons {
+		.testimonials-icons {
 			bottom: 12px;
 			position: absolute;
 			right: 0;
 			width: 100%;
-
-			a {
-				margin-right: 8px;
-			}
-
-			.linkedin-link img {
-				width: 34px;
-			}
-
-			.wikipedia-link img {
-				width: 31px;
-			}
-
-			.website-link img {
-				width: 37px;
-			}
+			@extend %testimonials-icons;
 		}
 	}
 }

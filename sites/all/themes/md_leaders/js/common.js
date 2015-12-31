@@ -71,27 +71,15 @@
 		  		});
 		  	});
 
-		  	// $(window).resize(function() {
-		  	// 	var max = 0;
-		  	// 	$('.view-testimonial-list .views-row').each(function() {
-		  	// 		var h = $(this).height();
-		  	// 		max = h > max ? h : max;
-		  	// 	});
-
-		  	// 	$('.view-testimonial-list .views-row').each(function() {
-		  	// 		$('.view-testimonial-list .views-row').height(max);
-		  	// 	});
-		  	// });
-
 			// Hide testimonial icon if link empty.
-			$('.view-testimonial-list .views-field-field-wikipedia-path a').each(function() {
+			$('.testimonials-icons a').each(function() {
 				if ($(this).attr('href') == '') {
 					$(this).hide();
 				}
 			});
 
 			// Click testimonial icons.
-			$('.view-testimonial-list .views-field-field-wikipedia-path a').click(function(event) {
+			$('.testimonials-icons a').click(function(event) {
 				event.stopPropagation();
 			});
 
