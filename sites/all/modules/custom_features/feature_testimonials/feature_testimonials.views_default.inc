@@ -142,6 +142,7 @@ function feature_testimonials_views_default_views() {
   $handler->display->display_options['fields']['field_designation_company']['table'] = 'field_data_field_designation_company';
   $handler->display->display_options['fields']['field_designation_company']['field'] = 'field_designation_company';
   $handler->display->display_options['fields']['field_designation_company']['label'] = '';
+  $handler->display->display_options['fields']['field_designation_company']['alter']['nl2br'] = TRUE;
   $handler->display->display_options['fields']['field_designation_company']['element_label_colon'] = FALSE;
   /* Field: Content: Body */
   $handler->display->display_options['fields']['body']['id'] = 'body';

@@ -1,6 +1,7 @@
 name = Testimonials
 core = 7.x
 package = Features
+dependencies[] = advanced_text_formatter
 dependencies[] = features
 dependencies[] = image
 dependencies[] = strongarm
