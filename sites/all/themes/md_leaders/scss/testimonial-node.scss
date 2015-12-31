@@ -27,20 +27,27 @@
 		}
 	}
 
-	.field-name-field-designation, .field-name-field-company {
+	// .field-name-field-designation, .field-name-field-company {
+	// 	color: #fe8f8c;
+	// 	font-size: 16px;
+	// 	margin-bottom: 16px;
+	// 	display: inline-block;
+	// 	font-family: $font-open;
+	// }
+
+	// .field-name-field-designation {
+	// 	text-transform: uppercase;
+	// }
+
+	// .field-name-field-company {
+	// 	margin-left: 16px;
+	// }
+
+	.field-name-field-designation-company {
 		color: #fe8f8c;
 		font-size: 16px;
 		margin-bottom: 16px;
-		display: inline-block;
 		font-family: $font-open;
-	}
-
-	.field-name-field-designation {
-		text-transform: uppercase;
-	}
-
-	.field-name-field-company {
-		margin-left: 16px;
 	}
 
 	.field-name-body {

@@ -38,8 +38,7 @@
             </div>
             <div class="row row-content">
               <?php print render($content['field_testimonial_image']); ?>
-              <?php print render($content['field_designation']); ?>
-              <?php print render($content['field_company']); ?>
+              <?php print render($content['field_designation_company']); ?>
               <?php print render($content['body']); ?>
              
               <div class="testimonials-icons">
