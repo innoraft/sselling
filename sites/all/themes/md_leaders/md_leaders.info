@@ -49,6 +49,7 @@ stylesheets[all][] = css/partners-page.css
 ;scripts[] = js/main.js
 scripts[] = js/common.js
 scripts[] = js/jquery.treemenu.js
+scripts[] = js/isotope.pkgd.js
 
 
 regions[header] = Header
