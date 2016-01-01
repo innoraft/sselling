@@ -83,11 +83,15 @@
 
 		.views-field-body {
 			color: $text-color;
-			margin: 24px 14px;
+			margin: 24px 14px 14px;
 
 			span {
 				display: inline-block;
 			}
+		}
+
+		.views-field-view-node {
+			@extend %read-more;
 		}
 	}
 
