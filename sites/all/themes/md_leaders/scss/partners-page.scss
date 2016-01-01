@@ -49,24 +49,7 @@
 		}
 
 		.views-field-view-node {
-			text-align: right;
-			margin-bottom: 10px;
-			margin-right: 10px;
-
-			a {
-				background-color: #393939;
-				color: #fff;
-				display: inline-block;
-				font-size: 12px;
-				line-height: 1;
-				padding: 15px 20px;
-				text-transform: uppercase;
-			}
-
-			a:hover {
-				color: #fff;
-				background-color: #eb7000;
-			}
+			@extend %read-more;
 		}
 	}
 }
