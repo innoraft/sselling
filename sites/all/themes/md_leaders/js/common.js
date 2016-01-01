@@ -99,6 +99,14 @@
 				event.stopPropagation();
 			});
 
+			// Testimonial blocks layout.
+			$(document).ready( function() {
+			  $('.view-testimonial-list .view-content').isotope({
+			    itemSelector: '.views-row',
+			    percentPosition: true
+			  });
+			});
+
 	    }
 	}
 })(jQuery);
