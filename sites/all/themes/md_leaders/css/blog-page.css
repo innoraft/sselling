@@ -8,6 +8,25 @@
   font-weight: bolder;
 }
 
+.page-social-selling-blogs .view-blog-list .views-field-view-node {
+  text-align: right;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+.page-social-selling-blogs .view-blog-list .views-field-view-node a {
+  background-color: #393939;
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  line-height: 1;
+  padding: 15px 20px;
+  text-transform: uppercase;
+}
+.page-social-selling-blogs .view-blog-list .views-field-view-node a:hover {
+  color: #fff;
+  background-color: #eb7000;
+}
+
 .page-social-selling-blogs {
   background-color: #f7f7f7;
 }
@@ -74,7 +93,7 @@
 }
 .page-social-selling-blogs .view-blog-list .views-field-body {
   color: #999999;
-  margin: 24px 14px;
+  margin: 24px 14px 14px;
 }
 .page-social-selling-blogs .view-blog-list .views-field-body span {
   display: inline-block;
