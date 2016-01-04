@@ -103,6 +103,9 @@
   font-size: 16px;
   margin: 10px 0;
 }
+.page-type-content-type-eventbrite .field-name-field-date .date-display-range {
+  display: inline-block;
+}
 .page-type-content-type-eventbrite .register-event {
   font-size: 16px;
   text-transform: uppercase;

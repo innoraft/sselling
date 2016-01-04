@@ -124,6 +124,10 @@
 	.field-name-field-date {
 		font-size: 16px;
 		margin: 10px 0;
+
+		.date-display-range {
+			display: inline-block;
+		}
 	}
 
 	.register-event {
