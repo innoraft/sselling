@@ -24,13 +24,13 @@
 			// Add more sub menu.
 			$(document).ready(function() {
 			  if ($(window).width() > 983) {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/you-are-the-key-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/you-are-the-key-book\'s-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
 			  	$("#mainmenu > li:nth-last-child(4)").after(manu);
 			  	$("#mainmenu > li:nth-last-child(1)").hide();
 			  	$("#mainmenu > li:nth-last-child(2)").hide();
 			  	$("#mainmenu > li:nth-last-child(3)").hide();
 			  } else {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/you-are-the-key-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/you-are-the-key-book\'s-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
 			  	$("#mainmenu > li:nth-last-child(4)").after(manu);
 			  	$("#mainmenu #more-submenu").hide();
 			  }
