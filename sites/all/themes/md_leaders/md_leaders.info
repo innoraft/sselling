@@ -16,6 +16,7 @@ stylesheets[all][] = css/testimonial-node.css
 stylesheets[all][] = css/jquery.treemenu.css
 stylesheets[all][] = css/partners-node.css
 stylesheets[all][] = css/partners-page.css
+stylesheets[all][] = css/event-page.css
 
 
 ;scripts[] = js/vendor/modernizr-2.6.2.min.js
