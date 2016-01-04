@@ -89,7 +89,7 @@ function feature_partners_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'you-are-the-key-official-partners';
+  $handler->display->display_options['path'] = 'you-are-the-key-book\'s-official-partners';
   $export['partners_list'] = $view;
 
   return $export;
