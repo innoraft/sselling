@@ -1,9 +1,9 @@
-.page-you-are-the-key-official-partners .view-partners-list .views-field-view-node {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-view-node {
   text-align: right;
   margin-bottom: 10px;
   margin-right: 10px;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-view-node a {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-view-node a {
   background-color: #393939;
   color: #fff;
   display: inline-block;
@@ -12,67 +12,67 @@
   padding: 15px 20px;
   text-transform: uppercase;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-view-node a:hover {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-view-node a:hover {
   color: #fff;
   background-color: #eb7000;
 }
 
-.page-you-are-the-key-official-partners {
+.page-you-are-the-key-books-official-partners {
   background-color: #f0f0f0;
 }
-.page-you-are-the-key-official-partners .view-partners-list .block-header {
+.page-you-are-the-key-books-official-partners .view-partners-list .block-header {
   margin-bottom: 45px;
   margin-top: 52px;
 }
-.page-you-are-the-key-official-partners .view-partners-list .view-content {
+.page-you-are-the-key-books-official-partners .view-partners-list .view-content {
   width: 90%;
   margin: auto;
   margin-bottom: 60px;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-row {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-row {
   width: 48.8%;
   display: inline-block;
   vertical-align: top;
   background-color: #fff;
   border-right: 10px solid #006bb6;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-row:first-of-type {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-row:first-of-type {
   margin-right: 2%;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-field-partner-logo {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-field-partner-logo {
   float: left;
   margin-right: 10px;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-title {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-title {
   font-size: 24px;
   margin: 10px;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-body {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-body {
   margin: 10px;
   text-align: justify;
 }
-.page-you-are-the-key-official-partners .view-partners-list .views-field-body p {
+.page-you-are-the-key-books-official-partners .view-partners-list .views-field-body p {
   margin-bottom: 0;
 }
 
 @media screen and (max-width: 1029px) {
-  .page-you-are-the-key-official-partners .view-partners-list .views-row {
+  .page-you-are-the-key-books-official-partners .view-partners-list .views-row {
     width: 100%;
   }
-  .page-you-are-the-key-official-partners .view-partners-list .views-row:first-of-type {
+  .page-you-are-the-key-books-official-partners .view-partners-list .views-row:first-of-type {
     margin-bottom: 30px;
   }
 }
 @media screen and (max-width: 460px) {
-  .page-you-are-the-key-official-partners .view-partners-list .views-row {
+  .page-you-are-the-key-books-official-partners .view-partners-list .views-row {
     border-right: none;
     border-bottom: 10px solid #006bb6;
   }
-  .page-you-are-the-key-official-partners .view-partners-list .views-field-field-partner-logo {
+  .page-you-are-the-key-books-official-partners .view-partners-list .views-field-field-partner-logo {
     float: none;
     text-align: center;
   }
-  .page-you-are-the-key-official-partners .view-partners-list .views-field-field-partner-logo .field-content {
+  .page-you-are-the-key-books-official-partners .view-partners-list .views-field-field-partner-logo .field-content {
     margin: 20px auto;
     width: 170px;
   }
