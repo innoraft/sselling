@@ -1,13 +1,13 @@
-.page-social-selling-testimonials .view-testimonial-list .testimonials-icons a {
+.page-social-selling-testimonials .view-testimonial-list .testimonials-icons a, .page-type-testimonials .testimonials-icons a {
   margin-right: 8px;
 }
-.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .linkedin-link img {
+.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .linkedin-link img, .page-type-testimonials .testimonials-icons .linkedin-link img {
   width: 34px;
 }
-.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .wikipedia-link img {
+.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .wikipedia-link img, .page-type-testimonials .testimonials-icons .wikipedia-link img {
   width: 31px;
 }
-.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .website-link img {
+.page-social-selling-testimonials .view-testimonial-list .testimonials-icons .website-link img, .page-type-testimonials .testimonials-icons .website-link img {
   width: 37px;
 }
 
@@ -80,4 +80,57 @@
   .page-social-selling-testimonials .view-testimonial-list {
     width: 96%;
   }
+}
+.page-type-testimonials .block-header {
+  color: #fe8f8c;
+  margin-top: 20px;
+}
+.page-type-testimonials .row-content {
+  padding: 50px 50px 30px;
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+}
+.page-type-testimonials .field-name-field-testimonial-image {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.page-type-testimonials .field-name-field-testimonial-image img {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.page-type-testimonials .field-name-field-designation-company {
+  color: #fe8f8c;
+  font-size: 16px;
+  margin-bottom: 16px;
+  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+}
+.page-type-testimonials .field-name-body {
+  color: #34495e;
+  font-size: 20px;
+  font-style: italic;
+  text-align: justify;
+}
+.page-type-testimonials .testimonials-icons {
+  margin-top: 20px;
+}
+.page-type-testimonials #comments {
+  margin: 60px 0 40px;
+  text-align: left;
+}
+.page-type-testimonials h2.comment-form {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page-type-testimonials .form-item-name label, .page-type-testimonials .form-item-subject label {
+  display: block;
+}
+.page-type-testimonials #edit-comment-body textarea {
+  text-align: left;
+}
+.page-type-testimonials .filter-wrapper, .page-type-testimonials #edit-preview {
+  display: none;
 }
