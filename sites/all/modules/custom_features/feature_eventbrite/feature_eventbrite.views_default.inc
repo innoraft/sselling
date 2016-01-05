@@ -79,6 +79,7 @@ function feature_eventbrite_views_default_views() {
   $handler->display->display_options['fields']['field_register_link']['table'] = 'field_data_field_register_link';
   $handler->display->display_options['fields']['field_register_link']['field'] = 'field_register_link';
   $handler->display->display_options['fields']['field_register_link']['label'] = '';
+  $handler->display->display_options['fields']['field_register_link']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_register_link']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_register_link']['alter']['text'] = '<a href=[field_register_link] target="_blank">Register</a>';
   $handler->display->display_options['fields']['field_register_link']['element_label_colon'] = FALSE;
