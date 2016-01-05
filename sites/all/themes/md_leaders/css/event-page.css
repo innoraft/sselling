@@ -60,8 +60,8 @@
   font-size: 14px;
   margin-left: 14px;
   margin-bottom: 6px;
-  padding-left: 18px;
-  background: url("/sites/all/themes/md_leaders/img/blog-date.png") no-repeat -1px 5px;
+  padding-left: 30px;
+  background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px/19px auto;
 }
 .page-you-are-the-key-events .view-event-list .views-field-field-date .date-display-range {
   display: inline-block;
@@ -105,8 +105,8 @@
 .page-type-content-type-eventbrite .field-name-field-date {
   font-size: 16px;
   margin: 10px 0 16px;
-  padding-left: 18px;
-  background: url("/sites/all/themes/md_leaders/img/blog-date.png") no-repeat -1px 5px;
+  padding-left: 30px;
+  background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px/19px auto;
 }
 .page-type-content-type-eventbrite .field-name-field-date .date-display-range {
   display: inline-block;
@@ -120,7 +120,7 @@
   background-color: #040404;
 }
 .page-type-content-type-eventbrite .register-event:hover {
-  color: #00bac4;
+  color: #ffffff;
 }
 
 @media screen and (max-width: 649px) {
