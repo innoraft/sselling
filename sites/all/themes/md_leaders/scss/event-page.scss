@@ -54,8 +54,8 @@
 			font-size: 14px;
 			margin-left: 14px;
 			margin-bottom: 6px;
-			padding-left: 18px;
-			background: url('/sites/all/themes/md_leaders/img/blog-date.png') no-repeat -1px 5px;
+			padding-left: 30px;
+			background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
 
 			.date-display-range {
 				display: inline-block;
@@ -127,8 +127,8 @@
 	.field-name-field-date {
 		font-size: 16px;
 		margin: 10px 0 16px;
-		padding-left: 18px;
-		background: url('/sites/all/themes/md_leaders/img/blog-date.png') no-repeat -1px 5px;
+		padding-left: 30px;
+		background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
 
 		.date-display-range {
 			display: inline-block;
@@ -145,7 +145,7 @@
 	}
 
 	.register-event:hover {
-		color: #00bac4;
+		color: #ffffff;
 	}
 }
 
