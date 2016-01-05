@@ -40,7 +40,7 @@
               <?php print render($content['field_photo']); ?>
               <?php print render($content['body']); ?>
               <?php print render($content['field_date']); ?>
-              <a class="register-event" href="<?php print $content['field_register_link']['#items'][0]['value']; ?>">Register</a>
+              <a class="register-event" href="<?php print $content['field_register_link']['#items'][0]['value']; ?>">Click To Register</a>
             </div>
         </div>
   </section>
