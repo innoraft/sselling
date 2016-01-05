@@ -29,9 +29,12 @@
 ?>
 <div class="<?php print $classes; ?>">
   <?php print render($title_prefix); ?>
-  <?php if ($title): ?>
-    <?php print $title; ?>
-  <?php endif; ?>
+  <?php //if ($title): ?>
+    <?php //print $title; ?>
+  <?php //endif; ?>
+
+
+  <h1 class="view-page-title text-center block-header animated fadeInUp">Events</h1>
   <?php print render($title_suffix); ?>
   <?php if ($header): ?>
     <div class="view-header">
