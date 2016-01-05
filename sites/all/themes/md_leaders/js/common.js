@@ -90,6 +90,35 @@
 		  		});
 		  	});
 
+	  		// Apply height at events at event page.
+	  	  	$(document).ready(function(event) {
+	  	  		var max = 0;
+	  	  		$('.view-event-list .views-field-body .field-content').each(function() {
+	  	  			var h = $(this).height();
+	  	  			max = h > max ? h : max;
+	  	  		});
+
+	  	  		$('.view-event-list .views-field-body .field-content').each(function() {
+	  	  			$(this).height(max);
+	  	  		});
+	  	  	});
+
+	  	  	$(window).resize(function(event) {
+	  	  		$('.view-event-list .views-field-body .field-content').each(function() {
+	  	  			$(this).css('height', 'auto');
+	  	  		});
+
+	  	  		var max = 0;
+	  	  		$('.view-event-list .views-field-body .field-content').each(function() {
+	  	  			var h = $(this).height();
+	  	  			max = h > max ? h : max;
+	  	  		});
+
+	  	  		$('.view-event-list .views-field-body .field-content').each(function() {
+	  	  			$(this).height(max);
+	  	  		});
+	  	  	});
+
 			// Hide testimonial icon if link empty.
 			$('.testimonials-icons a').each(function() {
 				if ($(this).attr('href') == '') {
