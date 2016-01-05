@@ -56,7 +56,7 @@
             <div class="row">
                 <div class="col-sm-12 text-center">
                     <?php if (isset($subtitle) && $subtitle != null): ?>
-                        <h2 class="block-header"><?php print $subtitle; ?></h2>
+                        <h1 class="block-header"><?php print $subtitle; ?></h1>
                     <?php endif; ?> 
                     <?php if (isset($quote) && $quote != null && isset($author) && $author != null): ?>      
                         <blockquote><?php print $quote; ?>
