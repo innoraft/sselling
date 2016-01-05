@@ -53,6 +53,9 @@
 			color: $text-color;
 			font-size: 14px;
 			margin-left: 14px;
+			margin-bottom: 6px;
+			padding-left: 18px;
+			background: url('/sites/all/themes/md_leaders/img/blog-date.png') no-repeat -1px 5px;
 
 			.date-display-range {
 				display: inline-block;
@@ -123,7 +126,9 @@
 
 	.field-name-field-date {
 		font-size: 16px;
-		margin: 10px 0;
+		margin: 10px 0 16px;
+		padding-left: 18px;
+		background: url('/sites/all/themes/md_leaders/img/blog-date.png') no-repeat -1px 5px;
 
 		.date-display-range {
 			display: inline-block;
@@ -131,10 +136,12 @@
 	}
 
 	.register-event {
+		padding: 8px;
 		font-size: 16px;
 		text-transform: uppercase;
 		font-family: $font-Helvetica;
 		color: $dark-text-color;
+		background-color: #040404;
 	}
 
 	.register-event:hover {
