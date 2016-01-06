@@ -138,7 +138,7 @@
 
 
 <div class="banner-image">
-  <img src="sites/all/themes/md_leaders/img/blogs.jpg">
+  <img src="sites/all/themes/md_leaders/img/blogs.jpg" alt="Social Selling Blogs" title="Blogs">
 </div>
 
 <div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png"></a></div>
