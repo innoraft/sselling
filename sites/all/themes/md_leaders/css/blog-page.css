@@ -1,4 +1,4 @@
-.page-social-selling-blogs #block-views-recent-blog-block > h2, .page-social-selling-blogs #block-views-blog-author-block-1 > h2, .page-social-selling-blogs #block-views-blog-author-block > h2 {
+.page-social-selling-blogs #block-views-recent-blog-block > h1, .page-social-selling-blogs #block-views-blog-author-block-1 > h1, .page-social-selling-blogs #block-views-blog-author-block > h1 {
   margin-top: 0;
   border-bottom: 4px solid #d9d9d9;
   color: #00bac4;
@@ -149,7 +149,7 @@
   margin-left: -4px;
   padding-left: 0;
 }
-.page-social-selling-blogs #block-views-blog-author-block-1 h2 {
+.page-social-selling-blogs #block-views-blog-author-block-1 h1 {
   color: #fff;
 }
 .page-social-selling-blogs #block-views-blog-author-block-1 .content {
@@ -174,7 +174,7 @@
     padding: 14px;
     border: 1px solid #eee;
   }
-  .page-social-selling-blogs #block-views-blog-author-block-1 h2, .page-social-selling-blogs #block-views-blog-author-block h2 {
+  .page-social-selling-blogs #block-views-blog-author-block-1 h1, .page-social-selling-blogs #block-views-blog-author-block h1 {
     color: #00bac4;
   }
   .page-social-selling-blogs #block-views-blog-author-block-1 .content, .page-social-selling-blogs #block-views-blog-author-block .content {
@@ -197,7 +197,52 @@
     margin-bottom: 30px;
     border-top: none;
   }
-  .page-social-selling-blogs #block-views-blog-author-block-1 h2 {
+  .page-social-selling-blogs #block-views-blog-author-block-1 h1 {
     display: none;
+  }
+}
+.page-type-blog .block-header.animated {
+  margin-top: 20px;
+}
+.page-type-blog .row-content {
+  padding: 50px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+}
+.page-type-blog .field-name-field-blog-image img {
+  width: 100%;
+}
+.page-type-blog .blog_usernames_blog a {
+  display: none;
+}
+.page-type-blog .field-name-body {
+  color: #999999;
+}
+.page-type-blog h2.comment-form {
+  font-size: 24px;
+  text-transform: capitalize;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page-type-blog .form-item-name label, .page-type-blog .form-item-subject label {
+  display: block;
+}
+.page-type-blog #edit-comment-body textarea {
+  text-align: left;
+}
+.page-type-blog .filter-wrapper, .page-type-blog #edit-preview {
+  display: none;
+}
+.page-type-blog .service-links ul {
+  float: right;
+}
+.page-type-blog .service-links li {
+  display: inline-block;
+  margin-left: 5px;
+}
+
+@media screen and (max-width: 649px) {
+  .page-type-blog .row-content {
+    padding: 14px;
   }
 }

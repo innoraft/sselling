@@ -77,3 +77,16 @@
     width: 170px;
   }
 }
+.page-type-official-partners .block-header {
+  margin-top: 20px;
+}
+.page-type-official-partners .row-content {
+  padding: 50px 50px 30px;
+  margin-bottom: 30px;
+  background-color: white;
+  box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+}
+.page-type-official-partners .field-name-field-partner-logo {
+  float: left;
+  margin: 0 50px 50px 0;
+}

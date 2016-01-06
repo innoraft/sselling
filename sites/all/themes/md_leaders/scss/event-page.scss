@@ -1,0 +1,160 @@
+@import "compass/css3/";
+@import "variables";
+
+
+// Page event list.
+.page-you-are-the-key-events {
+	 background-color: #f7f7f7;
+
+	// View event list.
+	.view-event-list {
+		margin: 56px 0 27px;
+
+		.views-row {
+			width: 30.9%;
+			margin: 10px;
+			border: 1px solid #eee;
+			vertical-align: top;
+			display: inline-block;
+			background-color: #fff;
+		}
+
+		.views-field-field-photo img {
+			width: 100%;
+		}
+
+		.views-field-title {
+			margin: 20px 14px 0;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+
+			a {
+				color: $text-color;
+				font-size: 15px;
+				font-weight: bold;
+			}
+
+			a:hover {
+				color: #00bac4;
+			}
+		}
+
+		.views-field-body {
+			color: $text-color;
+			margin: 8px 14px;
+
+			span {
+				display: inline-block;
+			}
+		}
+
+		.views-field-field-date {
+			color: $text-color;
+			font-size: 14px;
+			margin-left: 14px;
+			margin-bottom: 6px;
+			padding-left: 30px;
+			background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
+
+			.date-display-range {
+				display: inline-block;
+			}
+		}
+
+		.views-field-field-register-link {
+			font-size: 15px;
+			margin-left: 14px;
+			margin-top: 10px;
+			text-transform: uppercase;
+			font-family: $font-Helvetica;
+
+			a {
+				color: $dark-text-color;
+			}
+
+			a:hover {
+				color: #00bac4;
+			}
+		}
+
+		.views-field-view-node {
+			@extend %read-more;
+		}
+	}
+}
+
+
+@media screen and (max-width: 991px) {
+	// Page event list.
+	.page-you-are-the-key-events {
+		// View event list.
+		.view-event-list {
+			.views-row {
+				width: 100%;
+				margin: 10px 0;
+			}
+		}
+	}
+}
+
+
+// Event node page.
+.page-type-content-type-eventbrite {
+	.block-header.animated {
+		margin-top: 20px;
+	}
+
+	.row-content {
+		color: $text-color;
+		padding: 50px;
+		margin-bottom: 30px;
+		background-color: white;
+		box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
+	}
+
+	// Fields.
+	.field-name-field-photo {
+		img {
+			width: 100%;
+		}
+	}
+
+	.field-name-body {
+		text-align: justify;
+	}
+
+	.field-name-field-date {
+		font-size: 16px;
+		margin: 10px 0 16px;
+		padding-left: 30px;
+		background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
+
+		.date-display-range {
+			display: inline-block;
+		}
+	}
+
+	.register-event {
+		padding: 8px;
+		font-size: 16px;
+		text-transform: uppercase;
+		font-family: $font-Helvetica;
+		color: $dark-text-color;
+		background-color: #040404;
+	}
+
+	.register-event:hover {
+		color: #ffffff;
+	}
+}
+
+
+@media screen and (max-width: 649px) {
+	// Event node page.
+	.page-type-content-type-eventbrite {
+		.row-content {
+			padding: 14px;
+		}
+	}
+}
