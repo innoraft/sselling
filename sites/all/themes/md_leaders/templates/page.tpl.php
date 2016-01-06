@@ -145,7 +145,7 @@
         <div class="container">
             <div class="row">
                 <div class="pull-right"style="margin-right:15px;"><span style="font-size: smaller;">Copyright © 2015 HCL Technologies Limited | </span><a target="_blank" title="HCL Technologies" href="http://www.hcltech.com">
-                <img hspace="0" height="10" border="0" width="69" vspace="0" src="/sites/all/themes/md_leaders/img/hcl.png"></img></a></div>
+                <img hspace="0" height="10" border="0" width="69" vspace="0" src="/sites/all/themes/md_leaders/img/hcl.png" alt="HCL Tech Logo" title="HCL Logo"></img></a></div>
 
         </div>
 
