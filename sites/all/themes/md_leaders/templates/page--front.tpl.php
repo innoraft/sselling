@@ -128,7 +128,7 @@
 <?php print render($page['mainslider']); ?>
 <?php print $messages; ?>
 
-<div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png"></a></div>
+<div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png" alt=""></a></div>
 
 <?php print render($page['content']); ?>
 
