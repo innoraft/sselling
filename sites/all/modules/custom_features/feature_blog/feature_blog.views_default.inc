@@ -66,11 +66,14 @@ function feature_blog_views_default_views() {
   $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
   $handler->display->display_options['fields']['field_image']['label'] = '';
   $handler->display->display_options['fields']['field_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['text'] = '<img src=[field_image] >';
   $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'image_url';
   $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'url_type' => '0',
     'image_style' => 'author_image',
-    'image_link' => 'content',
+    'image_link' => '',
   );
   /* Field: Content: Job */
   $handler->display->display_options['fields']['field_team_job']['id'] = 'field_team_job';
@@ -100,7 +103,7 @@ function feature_blog_views_default_views() {
   $handler->display->display_options['fields']['nothing']['label'] = '';
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="media light_section">
 		<div class="author-image">
-			[field_image]
+			<img src=[field_image] alt="Author - Apurva Chamaria" title="Apurva Chamaria">
 		</div>
 
 		<div class="media-body">
@@ -627,6 +630,91 @@ function feature_blog_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  /* Field: Content: Body */
+  $handler->display->display_options['fields']['body']['id'] = 'body';
+  $handler->display->display_options['fields']['body']['table'] = 'field_data_body';
+  $handler->display->display_options['fields']['body']['field'] = 'body';
+  $handler->display->display_options['fields']['body']['label'] = '';
+  $handler->display->display_options['fields']['body']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['body']['type'] = 'text_summary_or_trimmed';
+  $handler->display->display_options['fields']['body']['settings'] = array(
+    'trim_length' => '300',
+  );
+  /* Field: Content: Image */
+  $handler->display->display_options['fields']['field_image']['id'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['table'] = 'field_data_field_image';
+  $handler->display->display_options['fields']['field_image']['field'] = 'field_image';
+  $handler->display->display_options['fields']['field_image']['label'] = '';
+  $handler->display->display_options['fields']['field_image']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_image']['alter']['text'] = '<img src=[field_image] >';
+  $handler->display->display_options['fields']['field_image']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_image']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_image']['type'] = 'image_url';
+  $handler->display->display_options['fields']['field_image']['settings'] = array(
+    'url_type' => '0',
+    'image_style' => 'author_image',
+    'image_link' => '',
+  );
+  /* Field: Content: Job */
+  $handler->display->display_options['fields']['field_team_job']['id'] = 'field_team_job';
+  $handler->display->display_options['fields']['field_team_job']['table'] = 'field_data_field_team_job';
+  $handler->display->display_options['fields']['field_team_job']['field'] = 'field_team_job';
+  $handler->display->display_options['fields']['field_team_job']['label'] = '';
+  $handler->display->display_options['fields']['field_team_job']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_team_job']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_team_job']['type'] = 'text_plain';
+  /* Field: Content: Social */
+  $handler->display->display_options['fields']['field_team_social']['id'] = 'field_team_social';
+  $handler->display->display_options['fields']['field_team_social']['table'] = 'field_data_field_team_social';
+  $handler->display->display_options['fields']['field_team_social']['field'] = 'field_team_social';
+  $handler->display->display_options['fields']['field_team_social']['label'] = '';
+  $handler->display->display_options['fields']['field_team_social']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_team_social']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_team_social']['type'] = 'field_collection_fields';
+  $handler->display->display_options['fields']['field_team_social']['settings'] = array(
+    'view_mode' => 'full',
+  );
+  $handler->display->display_options['fields']['field_team_social']['delta_offset'] = '0';
+  $handler->display->display_options['fields']['field_team_social']['separator'] = '';
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '<div class="media light_section">
+		<div class="author-image">
+			<img src=[field_image] alt="Author - Gaurav Kakkar" title="Gaurav Kakkar">
+		</div>
+
+		<div class="media-body">
+			<h3>[title]</h3>
+			<br />
+			<p>[field_team_job]</p>
+			<p>[body]</p>
+			<p class="team-social">[field_team_social]</p>
+		</div>
+	</div>';
+  $handler->display->display_options['fields']['nothing']['element_type'] = '0';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['nothing']['element_wrapper_type'] = '0';
   $handler->display->display_options['defaults']['filter_groups'] = FALSE;
   $handler->display->display_options['defaults']['filters'] = FALSE;
   /* Filter criterion: Content: Published */
@@ -648,6 +736,44 @@ function feature_blog_views_default_views() {
   $handler->display->display_options['filters']['title']['table'] = 'node';
   $handler->display->display_options['filters']['title']['field'] = 'title';
   $handler->display->display_options['filters']['title']['value'] = 'Gaurav Kakkar';
+  $translatables['blog_author'] = array(
+    t('Master'),
+    t('Meet Our Authors'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('<img src=[field_image] >'),
+    t('<div class="media light_section">
+		<div class="author-image">
+			<img src=[field_image] alt="Author - Apurva Chamaria" title="Apurva Chamaria">
+		</div>
+
+		<div class="media-body">
+			<h3>[title]</h3>
+			<br />
+			<p>[field_team_job]</p>
+			<p>[body]</p>
+			<p class="team-social">[field_team_social]</p>
+		</div>
+	</div>'),
+    t('Block'),
+    t('<div class="media light_section">
+		<div class="author-image">
+			<img src=[field_image] alt="Author - Gaurav Kakkar" title="Gaurav Kakkar">
+		</div>
+
+		<div class="media-body">
+			<h3>[title]</h3>
+			<br />
+			<p>[field_team_job]</p>
+			<p>[body]</p>
+			<p class="team-social">[field_team_social]</p>
+		</div>
+	</div>'),
+  );
   $export['blog_author'] = $view;
 
   $view = new view();
@@ -755,6 +881,28 @@ function feature_blog_views_default_views() {
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'social-selling-blogs';
+  $translatables['blog_list'] = array(
+    t('Master'),
+    t('blog list'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Items per page'),
+    t('- All -'),
+    t('Offset'),
+    t('« first'),
+    t('‹ previous'),
+    t('next ›'),
+    t('last »'),
+    t('author'),
+    t('<span class="post-date">[created]</span>
+<span class="name">[name]</span>'),
+    t('Read More'),
+    t('Page'),
+  );
   $export['blog_list'] = $view;
 
   $view = new view();
@@ -809,6 +957,17 @@ function feature_blog_views_default_views() {
 
   /* Display: Block */
   $handler = $view->new_display('block', 'Block', 'block');
+  $translatables['recent_blog'] = array(
+    t('Master'),
+    t('Recent Blogs'),
+    t('more'),
+    t('Apply'),
+    t('Reset'),
+    t('Sort by'),
+    t('Asc'),
+    t('Desc'),
+    t('Block'),
+  );
   $export['recent_blog'] = $view;
 
   return $export;
