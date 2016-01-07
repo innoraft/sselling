@@ -139,6 +139,12 @@
 			  });
 			});
 
+			// Add attribute to banner.
+			$('.block-md-slider .md-mainimg img').attr({
+				"alt": "You are the Key: Unlocking Doors through Social Selling",
+				"title": "Book on Social Selling"
+			});
+
 	    }
 	}
 })(jQuery);
