@@ -138,10 +138,10 @@
 
 
 <div class="banner-image">
-  <img src="sites/all/themes/md_leaders/img/blogs.jpg">
+  <img src="sites/all/themes/md_leaders/img/blogs.jpg" alt="Social Selling Blogs" title="Blogs">
 </div>
 
-<div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png"></a></div>
+<div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png" alt=""></a></div>
 
 <div class="container">
   <?php print render($page['content']); ?>  
@@ -151,7 +151,7 @@
         <div class="container">
             <div class="row">
                 <div class="pull-right"style="margin-right:15px;"><span style="font-size: smaller;">Copyright © 2015 HCL Technologies Limited | </span><a target="_blank" title="HCL Technologies" href="http://www.hcltech.com">
-                <img hspace="0" height="10" border="0" width="69" vspace="0" src="/sites/all/themes/md_leaders/img/hcl.png"></img></a></div>
+                <img hspace="0" height="10" border="0" width="69" vspace="0" src="/sites/all/themes/md_leaders/img/hcl.png" alt="HCL Tech Logo" title="HCL Logo"></img></a></div>
 
         </div>
 

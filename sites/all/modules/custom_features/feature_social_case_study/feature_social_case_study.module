@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the social case study feature.
+ */
+
+include_once 'feature_social_case_study.features.inc';
