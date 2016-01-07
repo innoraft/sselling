@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the eventbrite feature.
- */
-
-include_once 'feature_eventbrite.features.inc';
