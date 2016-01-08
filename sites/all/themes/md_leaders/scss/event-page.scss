@@ -10,6 +10,10 @@
 	.view-event-list {
 		margin: 56px 0 27px;
 
+		.view-page-title{
+			margin-top: 72px;
+		}
+
 		.views-row {
 			width: 30.9%;
 			margin: 10px;
@@ -19,12 +23,8 @@
 			background-color: #fff;
 		}
 
-		.views-field-field-photo img {
-			width: 100%;
-		}
-
 		.views-field-title {
-			margin: 20px 14px 0;
+			margin: 14px;
 			overflow: hidden;
 			text-overflow: ellipsis;
 			white-space: nowrap;
@@ -49,11 +49,36 @@
 			}
 		}
 
-		.views-field-field-date {
+		.views-field-field-event-location {
+			margin-bottom: 11px;
+			margin-left: 14px;
+
+			.location {
+				margin-bottom: 0;
+			}
+
+			.adr {
+				color: $text-color;
+				font-size: 15px;
+				margin-bottom: 6px;
+				padding-left: 30px;
+				background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;				
+
+				.country-name, .street-address, .region {
+					display: inline-block;
+				}
+			}
+
+			.map-link {
+				display: none;
+			}
+		}
+
+		.views-field-field-date-time {
 			color: $text-color;
 			font-size: 14px;
 			margin-left: 14px;
-			margin-bottom: 6px;
+			margin-bottom: 11px;
 			padding-left: 30px;
 			background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
 
@@ -62,24 +87,28 @@
 			}
 		}
 
-		.views-field-field-register-link {
-			font-size: 15px;
-			margin-left: 14px;
-			margin-top: 10px;
+		.views-field-field-register {
+			margin: 14px;
+			text-align: right;
 			text-transform: uppercase;
-			font-family: $font-Helvetica;
-
-			a {
-				color: $dark-text-color;
-			}
-
-			a:hover {
-				color: #00bac4;
-			}
 		}
 
-		.views-field-view-node {
-			@extend %read-more;
+		.free-text {
+			color: #5b5b5b;
+			font-size: 20px;
+			margin-right: 20px;
+		}
+
+		.register-link {
+			a {
+				background-color: #00cc52;
+				border-radius: 3px;
+				color: #fff;
+				display: inline-block;
+				font-size: 15px;
+				padding: 7px 14px;
+				font-family: $font-Helvetica;
+			}
 		}
 	}
 }
@@ -100,7 +129,7 @@
 
 
 // Event node page.
-.page-type-content-type-eventbrite {
+.page-type-content-type-event {
 	.block-header.animated {
 		margin-top: 20px;
 	}
@@ -114,19 +143,34 @@
 	}
 
 	// Fields.
-	.field-name-field-photo {
-		img {
-			width: 100%;
+	.share-register {
+		text-align: right;
+		margin-bottom: 40px;
+	}
+
+	.free-text {
+		color: #5b5b5b;
+		font-size: 20px;
+		margin-right: 20px;
+	}
+
+	.register-link {
+		a {
+			text-transform: uppercase;
+			background-color: #00cc52;
+			border-radius: 3px;
+			color: #fff;
+			display: inline-block;
+			font-size: 16px;
+			padding: 8px 17px;
+			font-family: $font-Helvetica;
 		}
 	}
 
-	.field-name-body {
-		text-align: justify;
-	}
-
-	.field-name-field-date {
+	.field-name-field-date-time {
+		color: $text-color;
 		font-size: 16px;
-		margin: 10px 0 16px;
+		margin-bottom: 11px;
 		padding-left: 30px;
 		background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px / 19px auto;
 
@@ -135,24 +179,52 @@
 		}
 	}
 
-	.register-event {
-		padding: 8px;
-		font-size: 16px;
-		text-transform: uppercase;
-		font-family: $font-Helvetica;
-		color: $dark-text-color;
-		background-color: #040404;
+	.field-name-field-event-location {
+		.location {
+			margin-bottom: 6px;
+		}
+
+		.adr {
+			color: $text-color;
+			font-size: 16px;
+			margin-bottom: 6px;
+			padding-left: 30px;
+			display: inline-block;
+			background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;				
+
+			.country-name, .street-address, .region {
+				display: inline-block;
+			}
+		}
+
+		.map-link {
+			display: inline-block;
+
+			a {
+				color: #1d1d1d;
+				font-family: $font-Helvetica;
+				font-size: 16px;
+				margin-left: 4px;
+				padding: 5px 8px;
+				@include border-radius(3px);
+			}
+
+			a:hover {
+				color: #ffffff;
+				background-color: #303030;
+			}
+		}
 	}
 
-	.register-event:hover {
-		color: #ffffff;
+	.field-name-body {
+		text-align: justify;
 	}
 }
 
 
 @media screen and (max-width: 649px) {
 	// Event node page.
-	.page-type-content-type-eventbrite {
+	.page-type-content-type-event {
 		.row-content {
 			padding: 14px;
 		}
