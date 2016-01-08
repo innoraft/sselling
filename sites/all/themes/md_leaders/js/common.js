@@ -132,7 +132,7 @@
 			});
 
 			// Testimonial blocks layout.
-			$(document).ready( function() {
+			$(window).load(function() {
 			  $('.view-testimonial-list .view-content').isotope({
 			    itemSelector: '.views-row',
 			    percentPosition: true
