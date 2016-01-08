@@ -145,6 +145,14 @@
 				"title": "Book on Social Selling"
 			});
 
+			// Replace map link text.
+			var mapLink = $(".location.map-link a").attr("href");
+			$(".location.map-link").replaceWith("<div class='location map-link'><a>View Map</a></div>");
+			$(".location.map-link a").attr({
+				"href": mapLink,
+				"target": "_blank"
+			});
+
 	    }
 	}
 })(jQuery);
