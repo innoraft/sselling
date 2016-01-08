@@ -103,9 +103,20 @@
   background-color: white;
   box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
 }
+.page-type-content-type-event .service-links {
+  display: inline-block;
+  margin-bottom: 30px;
+  padding-top: 6px;
+}
+.page-type-content-type-event .service-links ul {
+  list-style-type: none;
+  padding: 0;
+}
+.page-type-content-type-event .service-links li {
+  display: inline-block;
+}
 .page-type-content-type-event .share-register {
-  text-align: right;
-  margin-bottom: 40px;
+  float: right;
 }
 .page-type-content-type-event .free-text {
   color: #5b5b5b;
