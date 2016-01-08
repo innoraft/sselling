@@ -109,7 +109,7 @@ echo "<img src=" . $path . " width=\'226\' height=\'300\' alt=\'IBM Case Study -
         'default' => 'You Are the Key: Book Authors',
       ),
       'description' => array(
-        'value' => 'Find how brands have managed to leverage social channels to find potential customers, understand their needs, and engage with them.',
+        'value' => 'Visit us to read the latest case studies, from the pioneer companies in the field of Social Selling like IBM and HCL Technologies.',
         'default' => '[view:description]',
       ),
       'abstract' => array(
@@ -117,7 +117,7 @@ echo "<img src=" . $path . " width=\'226\' height=\'300\' alt=\'IBM Case Study -
         'default' => '',
       ),
       'keywords' => array(
-        'value' => 'social selling, b2b social media, social selling case studies',
+        'value' => 'social selling case studies, social selling case study',
         'default' => 'social selling, b2b social media, managing social media, best social media tools, make your own social network, what is social selling, b2b social media marketing, advertising with social media, business to business social media, executive sales, social selling companies, social selling statistics',
       ),
       'robots' => array(
