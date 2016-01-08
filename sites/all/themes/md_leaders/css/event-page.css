@@ -1,27 +1,11 @@
-.page-you-are-the-key-events .view-event-list .views-field-view-node {
-  text-align: right;
-  margin-bottom: 10px;
-  margin-right: 10px;
-}
-.page-you-are-the-key-events .view-event-list .views-field-view-node a {
-  background-color: #393939;
-  color: #fff;
-  display: inline-block;
-  font-size: 12px;
-  line-height: 1;
-  padding: 15px 20px;
-  text-transform: uppercase;
-}
-.page-you-are-the-key-events .view-event-list .views-field-view-node a:hover {
-  color: #fff;
-  background-color: #eb7000;
-}
-
 .page-you-are-the-key-events {
   background-color: #f7f7f7;
 }
 .page-you-are-the-key-events .view-event-list {
-  margin: 56px 0 27px;
+  margin-bottom: 30px;
+}
+.page-you-are-the-key-events .view-event-list .view-page-title {
+  margin-top: 30px;
 }
 .page-you-are-the-key-events .view-event-list .views-row {
   width: 30.9%;
@@ -31,11 +15,8 @@
   display: inline-block;
   background-color: #fff;
 }
-.page-you-are-the-key-events .view-event-list .views-field-field-photo img {
-  width: 100%;
-}
 .page-you-are-the-key-events .view-event-list .views-field-title {
-  margin: 20px 14px 0;
+  margin: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -55,29 +36,55 @@
 .page-you-are-the-key-events .view-event-list .views-field-body span {
   display: inline-block;
 }
-.page-you-are-the-key-events .view-event-list .views-field-field-date {
+.page-you-are-the-key-events .view-event-list .views-field-field-event-location {
+  margin-bottom: 11px;
+  margin-left: 14px;
+}
+.page-you-are-the-key-events .view-event-list .views-field-field-event-location .location {
+  margin-bottom: 0;
+}
+.page-you-are-the-key-events .view-event-list .views-field-field-event-location .adr {
+  color: #999999;
+  font-size: 16px;
+  margin-bottom: 6px;
+  padding-left: 30px;
+  background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px/26px auto;
+}
+.page-you-are-the-key-events .view-event-list .views-field-field-event-location .adr .country-name, .page-you-are-the-key-events .view-event-list .views-field-field-event-location .adr .street-address, .page-you-are-the-key-events .view-event-list .views-field-field-event-location .adr .region {
+  display: inline-block;
+}
+.page-you-are-the-key-events .view-event-list .views-field-field-event-location .map-link {
+  display: none;
+}
+.page-you-are-the-key-events .view-event-list .views-field-field-date-time {
   color: #999999;
   font-size: 14px;
   margin-left: 14px;
-  margin-bottom: 6px;
+  margin-bottom: 11px;
   padding-left: 30px;
   background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px/19px auto;
 }
-.page-you-are-the-key-events .view-event-list .views-field-field-date .date-display-range {
+.page-you-are-the-key-events .view-event-list .views-field-field-date-time .date-display-range {
   display: inline-block;
 }
-.page-you-are-the-key-events .view-event-list .views-field-field-register-link {
-  font-size: 15px;
-  margin-left: 14px;
-  margin-top: 10px;
+.page-you-are-the-key-events .view-event-list .views-field-field-register {
+  margin: 14px;
+  text-align: right;
   text-transform: uppercase;
+}
+.page-you-are-the-key-events .view-event-list .free-text {
+  color: #5b5b5b;
+  font-size: 20px;
+  margin-right: 20px;
+}
+.page-you-are-the-key-events .view-event-list .register-link a {
+  background-color: #00cc52;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  font-size: 15px;
+  padding: 7px 14px;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-}
-.page-you-are-the-key-events .view-event-list .views-field-field-register-link a {
-  color: #626262;
-}
-.page-you-are-the-key-events .view-event-list .views-field-field-register-link a:hover {
-  color: #00bac4;
 }
 
 @media screen and (max-width: 991px) {
@@ -86,45 +93,82 @@
     margin: 10px 0;
   }
 }
-.page-type-content-type-eventbrite .block-header.animated {
+.page-type-content-type-event .block-header.animated {
   margin-top: 20px;
 }
-.page-type-content-type-eventbrite .row-content {
+.page-type-content-type-event .row-content {
   color: #999999;
   padding: 50px;
   margin-bottom: 30px;
   background-color: white;
   box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
 }
-.page-type-content-type-eventbrite .field-name-field-photo img {
-  width: 100%;
+.page-type-content-type-event .share-register {
+  text-align: right;
+  margin-bottom: 40px;
 }
-.page-type-content-type-eventbrite .field-name-body {
-  text-align: justify;
+.page-type-content-type-event .free-text {
+  color: #5b5b5b;
+  font-size: 20px;
+  margin-right: 20px;
 }
-.page-type-content-type-eventbrite .field-name-field-date {
+.page-type-content-type-event .register-link a {
+  text-transform: uppercase;
+  background-color: #00cc52;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
   font-size: 16px;
-  margin: 10px 0 16px;
+  padding: 8px 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+.page-type-content-type-event .field-name-field-date-time {
+  color: #999999;
+  font-size: 16px;
+  margin-bottom: 11px;
   padding-left: 30px;
   background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 4px/19px auto;
 }
-.page-type-content-type-eventbrite .field-name-field-date .date-display-range {
+.page-type-content-type-event .field-name-field-date-time .date-display-range {
   display: inline-block;
 }
-.page-type-content-type-eventbrite .register-event {
-  padding: 8px;
-  font-size: 16px;
-  text-transform: uppercase;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #626262;
-  background-color: #040404;
+.page-type-content-type-event .field-name-field-event-location .location {
+  margin-bottom: 6px;
 }
-.page-type-content-type-eventbrite .register-event:hover {
+.page-type-content-type-event .field-name-field-event-location .adr {
+  color: #999999;
+  font-size: 18px;
+  margin-bottom: 6px;
+  padding-left: 30px;
+  display: inline-block;
+  background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px/26px auto;
+}
+.page-type-content-type-event .field-name-field-event-location .adr .country-name, .page-type-content-type-event .field-name-field-event-location .adr .street-address, .page-type-content-type-event .field-name-field-event-location .adr .region {
+  display: inline-block;
+}
+.page-type-content-type-event .field-name-field-event-location .map-link {
+  display: inline-block;
+}
+.page-type-content-type-event .field-name-field-event-location .map-link a {
+  color: #1d1d1d;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  margin-left: 4px;
+  padding: 5px 8px;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.page-type-content-type-event .field-name-field-event-location .map-link a:hover {
   color: #ffffff;
+  background-color: #303030;
+}
+.page-type-content-type-event .field-name-body {
+  text-align: justify;
 }
 
 @media screen and (max-width: 649px) {
-  .page-type-content-type-eventbrite .row-content {
+  .page-type-content-type-event .row-content {
     padding: 14px;
   }
 }
