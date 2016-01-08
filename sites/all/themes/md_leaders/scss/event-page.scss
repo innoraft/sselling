@@ -23,6 +23,7 @@
 			background-color: #fff;
 		}
 
+		// Fields.
 		.views-field-title {
 			margin: 14px;
 			overflow: hidden;
@@ -93,6 +94,7 @@
 			text-transform: uppercase;
 		}
 
+		// Register.
 		.free-text {
 			color: #5b5b5b;
 			font-size: 20px;
@@ -142,10 +144,24 @@
 		box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
 	}
 
-	// Fields.
+	// Register.
+	.service-links {
+		display: inline-block;
+		margin-bottom: 30px;
+		padding-top: 6px;
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
+
+		li {
+			display: inline-block;
+		}
+	}
+
 	.share-register {
-		text-align: right;
-		margin-bottom: 40px;
+		float: right;
 	}
 
 	.free-text {
@@ -167,6 +183,7 @@
 		}
 	}
 
+	// Fields.
 	.field-name-field-date-time {
 		color: $text-color;
 		font-size: 16px;
