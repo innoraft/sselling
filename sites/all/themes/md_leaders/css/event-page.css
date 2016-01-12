@@ -1,13 +1,19 @@
 .page-upcoming-events {
   background-color: #f7f7f7;
 }
-.page-upcoming-events .view-event-list {
+.page-upcoming-events .banner-image {
   margin-bottom: 60px;
 }
-.page-upcoming-events .view-event-list .banner-image {
+.page-upcoming-events .main-block {
   margin-bottom: 60px;
 }
-.page-upcoming-events .view-event-list .views-row {
+.page-upcoming-events .main-block > .views-row {
+  display: none;
+}
+.page-upcoming-events #block-quicktabs-events-tab > h1 {
+  display: none;
+}
+.page-upcoming-events #block-quicktabs-events-tab .views-row {
   width: 30.9%;
   margin: 10px;
   border: 1px solid #eee;
@@ -15,48 +21,48 @@
   display: inline-block;
   background-color: #fff;
 }
-.page-upcoming-events .view-event-list .views-field-title {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-title {
   margin: 14px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
 }
-.page-upcoming-events .view-event-list .views-field-title a {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-title a {
   color: #999999;
   font-size: 15px;
   font-weight: bold;
 }
-.page-upcoming-events .view-event-list .views-field-title a:hover {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-title a:hover {
   color: #00bac4;
 }
-.page-upcoming-events .view-event-list .views-field-body {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-body {
   color: #999999;
   margin: 8px 14px;
 }
-.page-upcoming-events .view-event-list .views-field-body span {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-body span {
   display: inline-block;
 }
-.page-upcoming-events .view-event-list .views-field-field-event-location {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location {
   margin-bottom: 11px;
   margin-left: 14px;
 }
-.page-upcoming-events .view-event-list .views-field-field-event-location .location {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .location {
   margin-bottom: 0;
 }
-.page-upcoming-events .view-event-list .views-field-field-event-location .adr {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .adr {
   color: #999999;
   font-size: 16px;
   margin-bottom: 6px;
   padding-left: 30px;
   background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px/26px auto;
 }
-.page-upcoming-events .view-event-list .views-field-field-event-location .adr .country-name, .page-upcoming-events .view-event-list .views-field-field-event-location .adr .street-address, .page-upcoming-events .view-event-list .views-field-field-event-location .adr .region {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .adr .country-name, .page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .adr .street-address, .page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .adr .region {
   display: inline-block;
 }
-.page-upcoming-events .view-event-list .views-field-field-event-location .map-link {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-event-location .map-link {
   display: none;
 }
-.page-upcoming-events .view-event-list .views-field-field-date-time {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-date-time {
   color: #999999;
   font-size: 14px;
   margin-left: 14px;
@@ -64,20 +70,20 @@
   padding-left: 30px;
   background: url("/sites/all/themes/md_leaders/img/analog-clock.png") no-repeat 1px 2px/19px auto;
 }
-.page-upcoming-events .view-event-list .views-field-field-date-time .date-display-range {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-date-time .date-display-range {
   display: inline-block;
 }
-.page-upcoming-events .view-event-list .views-field-field-register {
+.page-upcoming-events #block-quicktabs-events-tab .views-field-field-register {
   margin: 14px;
   text-align: right;
   text-transform: uppercase;
 }
-.page-upcoming-events .view-event-list .free-text {
+.page-upcoming-events #block-quicktabs-events-tab .free-text {
   color: #5b5b5b;
   font-size: 20px;
   margin-right: 20px;
 }
-.page-upcoming-events .view-event-list .register-link a {
+.page-upcoming-events #block-quicktabs-events-tab .register-link a {
   background-color: #00cc52;
   border-radius: 3px;
   color: #fff;
@@ -88,7 +94,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  .page-upcoming-events .view-event-list .views-row {
+  .page-upcoming-events #block-quicktabs-events-tab .views-row {
     width: 100%;
     margin: 10px 0;
   }
