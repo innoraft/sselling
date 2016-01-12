@@ -8,10 +8,10 @@
 
 	// View event list.
 	.view-event-list {
-		margin-bottom: 30px;
+		margin-bottom: 60px;
 
-		.view-page-title{
-			margin-top: 30px;
+		.banner-image {
+			margin-bottom: 60px;
 		}
 
 		.views-row {
@@ -144,7 +144,7 @@
 		box-shadow: 0 0 34px rgba(0, 0, 0, 0.5);
 	}
 
-	// Register.
+	// Social sharing.
 	.service-links {
 		display: inline-block;
 		margin-bottom: 30px;
@@ -160,10 +160,7 @@
 		}
 	}
 
-	.share-register {
-		float: right;
-	}
-
+	// Register.
 	.free-text {
 		color: #5b5b5b;
 		font-size: 20px;
@@ -171,6 +168,8 @@
 	}
 
 	.register-link {
+		float: right;
+
 		a {
 			text-transform: uppercase;
 			background-color: #00cc52;
