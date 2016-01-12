@@ -140,7 +140,7 @@ print views_embed_view($viewName, $displayType, $nid);
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'you-are-the-key-events';
+  $handler->display->display_options['path'] = 'upcoming-events';
   $translatables['event_list'] = array(
     t('Master'),
     t('Event List'),
