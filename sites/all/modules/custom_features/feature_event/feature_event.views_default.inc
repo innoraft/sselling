@@ -90,7 +90,7 @@ print views_embed_view($viewName, $displayType, $nid);
   $handler->display->display_options['fields']['field_register']['field'] = 'field_register';
   $handler->display->display_options['fields']['field_register']['label'] = '';
   $handler->display->display_options['fields']['field_register']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_register']['alter']['text'] = '<span class="free-text">FREE</span><span class="register-link"><a href=[field_register]>Register</a></span>';
+  $handler->display->display_options['fields']['field_register']['alter']['text'] = '<span class="register-link"><a href=[field_register]>Register</a></span>';
   $handler->display->display_options['fields']['field_register']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_register']['settings'] = array(
     'trim_length' => '600',
@@ -157,7 +157,7 @@ print views_embed_view($viewName, $displayType, $nid);
     t('‹ previous'),
     t('next ›'),
     t('last »'),
-    t('<span class="free-text">FREE</span><span class="register-link"><a href=[field_register]>Register</a></span>'),
+    t('<span class="register-link"><a href=[field_register]>Register</a></span>'),
     t('Page'),
   );
   $export['event_list'] = $view;
