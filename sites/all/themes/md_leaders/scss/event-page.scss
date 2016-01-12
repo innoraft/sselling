@@ -6,12 +6,22 @@
 .page-upcoming-events {
 	 background-color: #f7f7f7;
 
-	// View event list.
-	.view-event-list {
+	.banner-image {
+		margin-bottom: 60px;
+	}
+
+	.main-block {
 		margin-bottom: 60px;
 
-		.banner-image {
-			margin-bottom: 60px;
+		> .views-row {
+			display: none;
+		}
+	}
+
+	// Event tab.
+	#block-quicktabs-events-tab {
+		> h1 {
+			display: none;
 		}
 
 		.views-row {
@@ -119,8 +129,8 @@
 @media screen and (max-width: 991px) {
 	// Page event list.
 	.page-upcoming-events {
-		// View event list.
-		.view-event-list {
+		// Event tab.
+		#block-quicktabs-events-tab {
 			.views-row {
 				width: 100%;
 				margin: 10px 0;
