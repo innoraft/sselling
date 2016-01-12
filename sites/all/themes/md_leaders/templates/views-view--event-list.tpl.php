@@ -33,8 +33,10 @@
     <?php //print $title; ?>
   <?php //endif; ?>
 
+  <div class="banner-image">
+    <img src="sites/all/themes/md_leaders/img/Events.jpg">
+  </div>
 
-  <h1 class="view-page-title text-center block-header animated fadeInUp">Events</h1>
   <?php print render($title_suffix); ?>
   <?php if ($header): ?>
     <div class="view-header">

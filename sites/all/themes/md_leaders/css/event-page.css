@@ -2,10 +2,10 @@
   background-color: #f7f7f7;
 }
 .page-you-are-the-key-events .view-event-list {
-  margin-bottom: 30px;
+  margin-bottom: 60px;
 }
-.page-you-are-the-key-events .view-event-list .view-page-title {
-  margin-top: 30px;
+.page-you-are-the-key-events .view-event-list .banner-image {
+  margin-bottom: 60px;
 }
 .page-you-are-the-key-events .view-event-list .views-row {
   width: 30.9%;
@@ -115,13 +115,13 @@
 .page-type-content-type-event .service-links li {
   display: inline-block;
 }
-.page-type-content-type-event .share-register {
-  float: right;
-}
 .page-type-content-type-event .free-text {
   color: #5b5b5b;
   font-size: 20px;
   margin-right: 20px;
+}
+.page-type-content-type-event .register-link {
+  float: right;
 }
 .page-type-content-type-event .register-link a {
   text-transform: uppercase;
