@@ -24,6 +24,31 @@
 			display: none;
 		}
 
+		.item-list {
+			margin-bottom: 20px;
+
+			li {
+				padding: 0;
+				margin-left: 10px;
+
+				a {
+					background-image: none;
+					padding: 10px 15px;
+					@include border-radius(2px);
+				}
+			}
+
+			li.active a {
+				background-color: #006bb6;
+				color: #ffffff !important;
+			}
+
+			li:not(.active) a {
+				background-color: #777;
+				color: #2e2e2e !important;
+			}
+		}
+
 		.quicktabs-hide {
 			display: block;
 			position: absolute;
