@@ -24,6 +24,13 @@
 			display: none;
 		}
 
+		.quicktabs-hide {
+			display: block;
+			position: absolute;
+			left: -10000px;
+			top: -10000px;
+		}
+
 		.views-row {
 			width: 30.9%;
 			margin: 10px;
