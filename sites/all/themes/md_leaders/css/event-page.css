@@ -13,6 +13,28 @@
 .page-upcoming-events #block-quicktabs-events-tab > h1 {
   display: none;
 }
+.page-upcoming-events #block-quicktabs-events-tab .item-list {
+  margin-bottom: 20px;
+}
+.page-upcoming-events #block-quicktabs-events-tab .item-list li {
+  padding: 0;
+  margin-left: 10px;
+}
+.page-upcoming-events #block-quicktabs-events-tab .item-list li a {
+  background-image: none;
+  padding: 10px 15px;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+}
+.page-upcoming-events #block-quicktabs-events-tab .item-list li.active a {
+  background-color: #006bb6;
+  color: #ffffff !important;
+}
+.page-upcoming-events #block-quicktabs-events-tab .item-list li:not(.active) a {
+  background-color: #777;
+  color: #2e2e2e !important;
+}
 .page-upcoming-events #block-quicktabs-events-tab .quicktabs-hide {
   display: block;
   position: absolute;
