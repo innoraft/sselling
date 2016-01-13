@@ -22,27 +22,27 @@ function feature_event_quicktabs_default_quicktabs() {
     0 => array(
       'bid' => 'views_delta_event_list-block_1',
       'hide_title' => 1,
-      'title' => 'Upcoming Event',
+      'title' => 'Upcoming Events',
       'weight' => '-100',
       'type' => 'block',
     ),
     1 => array(
       'bid' => 'views_delta_event_list-block_2',
       'hide_title' => 1,
-      'title' => 'Event History',
+      'title' => 'Archived Events',
       'weight' => '-99',
       'type' => 'block',
     ),
   );
   $quicktabs->renderer = 'quicktabs';
-  $quicktabs->style = 'Arrows';
+  $quicktabs->style = 'Bullets';
   $quicktabs->options = array();
 
   // Translatables
   // Included for use with string extractors like potx.
-  t('Event History');
+  t('Archived Events');
   t('Events Tab');
-  t('Upcoming Event');
+  t('Upcoming Events');
 
   $export['events_tab'] = $quicktabs;
 
