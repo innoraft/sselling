@@ -137,10 +137,76 @@ print views_embed_view($viewName, $displayType, $nid);
   $handler->display->display_options['filters']['type']['value'] = array(
     'content_type_event' => 'content_type_event',
   );
+  /* Filter criterion: Content: Date Time - end date (field_date_time:value2) */
+  $handler->display->display_options['filters']['field_date_time_value2']['id'] = 'field_date_time_value2';
+  $handler->display->display_options['filters']['field_date_time_value2']['table'] = 'field_data_field_date_time';
+  $handler->display->display_options['filters']['field_date_time_value2']['field'] = 'field_date_time_value2';
+  $handler->display->display_options['filters']['field_date_time_value2']['operator'] = '>=';
+  $handler->display->display_options['filters']['field_date_time_value2']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_date_time_value2']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_date_time_value2']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_date_time_value2']['year_range'] = '-10:+10';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['path'] = 'you-are-the-key-events';
+  /* Display: Upcoming Event */
+  $handler = $view->new_display('block', 'Upcoming Event', 'block_1');
+
+  /* Display: Event History */
+  $handler = $view->new_display('block', 'Event History', 'block_2');
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'content_type_event' => 'content_type_event',
+  );
+  /* Filter criterion: Content: Date Time - end date (field_date_time:value2) */
+  $handler->display->display_options['filters']['field_date_time_value2']['id'] = 'field_date_time_value2';
+  $handler->display->display_options['filters']['field_date_time_value2']['table'] = 'field_data_field_date_time';
+  $handler->display->display_options['filters']['field_date_time_value2']['field'] = 'field_date_time_value2';
+  $handler->display->display_options['filters']['field_date_time_value2']['operator'] = '<';
+  $handler->display->display_options['filters']['field_date_time_value2']['granularity'] = 'hour';
+  $handler->display->display_options['filters']['field_date_time_value2']['form_type'] = 'date_text';
+  $handler->display->display_options['filters']['field_date_time_value2']['default_date'] = 'now';
+  $handler->display->display_options['filters']['field_date_time_value2']['year_range'] = '-10:+10';
+
+  /* Display: Event Page */
+  $handler = $view->new_display('page', 'Event Page', 'page_1');
+  $handler->display->display_options['defaults']['fields'] = FALSE;
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['alter_text'] = TRUE;
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
+  $handler->display->display_options['defaults']['filter_groups'] = FALSE;
+  $handler->display->display_options['defaults']['filters'] = FALSE;
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'content_type_event' => 'content_type_event',
+  );
+  $handler->display->display_options['path'] = 'upcoming-events';
   $translatables['event_list'] = array(
     t('Master'),
     t('Event List'),
@@ -158,7 +224,9 @@ print views_embed_view($viewName, $displayType, $nid);
     t('next ›'),
     t('last »'),
     t('<span class="register-link"><a href=[field_register]>Register</a></span>'),
-    t('Page'),
+    t('Upcoming Event'),
+    t('Event History'),
+    t('Event Page'),
   );
   $export['event_list'] = $view;
 
