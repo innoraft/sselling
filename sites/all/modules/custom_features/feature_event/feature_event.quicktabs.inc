@@ -15,7 +15,7 @@ function feature_event_quicktabs_default_quicktabs() {
   $quicktabs->api_version = 1;
   $quicktabs->machine_name = 'events_tab';
   $quicktabs->ajax = 0;
-  $quicktabs->hide_empty_tabs = FALSE;
+  $quicktabs->hide_empty_tabs = TRUE;
   $quicktabs->default_tab = 0;
   $quicktabs->title = 'Events Tab';
   $quicktabs->tabs = array(
