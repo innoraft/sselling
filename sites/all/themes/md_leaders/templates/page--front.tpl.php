@@ -128,6 +128,14 @@
 <?php print render($page['mainslider']); ?>
 <?php print $messages; ?>
 
+<div class="desktop banner-image">
+  <img src="sites/all/themes/md_leaders/img/Desktop-Banner.jpg" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book">
+</div>
+
+<div class="mobile banner-image">
+  <img src="sites/all/themes/md_leaders/img/Mobile-Banner.jpg" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book">
+</div>
+
 <div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png" alt=""></a></div>
 
 <?php print render($page['content']); ?>

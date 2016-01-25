@@ -162,3 +162,21 @@
   font-size: 0.6em;
   padding-top: 12px;
 }
+
+.mobile.banner-image {
+  display: none;
+}
+
+.desktop.banner-image {
+  display: block;
+}
+
+@media screen and (max-width: 767px) {
+  .mobile.banner-image {
+    display: block;
+  }
+
+  .desktop.banner-image {
+    display: none;
+  }
+}
