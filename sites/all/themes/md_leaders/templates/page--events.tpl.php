@@ -144,7 +144,7 @@
 <div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png" alt=""></a></div>
 
 <div class="main-block container">
-  <?php print render($page['content']); ?>  
+  <?php print render($page['content']); ?>
 </div>
 
 <section class="light_section" id="copyright">
