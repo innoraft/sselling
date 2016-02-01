@@ -3,7 +3,7 @@
 
 
 // Page event list.
-.page-upcoming-events {
+.page-events {
 	 background-color: #f7f7f7;
 
 	.banner-image {
@@ -105,7 +105,7 @@
 				font-size: 16px;
 				margin-bottom: 6px;
 				padding-left: 30px;
-				background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;				
+				background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;
 
 				.country-name, .street-address, .region {
 					display: inline-block;
@@ -160,7 +160,7 @@
 
 @media screen and (max-width: 991px) {
 	// Page event list.
-	.page-upcoming-events {
+	.page-events {
 		// Event tab.
 		#block-quicktabs-events-tab {
 			.views-row {
@@ -248,7 +248,7 @@
 			margin-bottom: 6px;
 			padding-left: 30px;
 			display: inline-block;
-			background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;				
+			background: url("/sites/all/themes/md_leaders/img/map-marker.png") no-repeat -3px 0px / 26px auto;
 
 			.country-name, .street-address, .region {
 				display: inline-block;
