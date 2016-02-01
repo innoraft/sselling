@@ -206,28 +206,7 @@ print views_embed_view($viewName, $displayType, $nid);
   $handler->display->display_options['filters']['type']['value'] = array(
     'content_type_event' => 'content_type_event',
   );
-  $handler->display->display_options['path'] = 'upcoming-events';
-  $translatables['event_list'] = array(
-    t('Master'),
-    t('Event List'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('<span class="register-link"><a href=[field_register]>Register</a></span>'),
-    t('Upcoming Event'),
-    t('Event History'),
-    t('Event Page'),
-  );
+  $handler->display->display_options['path'] = 'events';
   $export['event_list'] = $view;
 
   $view = new view();
@@ -313,23 +292,6 @@ print views_embed_view($viewName, $displayType, $nid);
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'content_type_event' => 'content_type_event',
-  );
-  $translatables['event_map'] = array(
-    t('Master'),
-    t('more'),
-    t('Apply'),
-    t('Reset'),
-    t('Sort by'),
-    t('Asc'),
-    t('Desc'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('All'),
   );
   $export['event_map'] = $view;
 
