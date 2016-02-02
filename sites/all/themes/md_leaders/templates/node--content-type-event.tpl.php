@@ -38,7 +38,9 @@
             </div>
             <div class="row row-content">
               <?php print render($content['service_links']); ?>
-              <div class="register-link"><a href="<?php print $content['field_register']['#items'][0]['value']; ?>">Register</a></div>
+              <?php if (isset($content['field_register'])) { ?>
+                <div class="register-link"><a href="<?php print $content['field_register']['#items'][0]['value']; ?>">Register</a></div>
+              <?php } ?>
               <?php print render($content['title']); ?>
               <?php print render($content['field_event_location']); ?>
               <?php print render($content['field_date_time']); ?>
