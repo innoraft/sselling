@@ -129,11 +129,11 @@
 <?php print $messages; ?>
 
 <div class="desktop banner-image">
-  <a href="http://bit.ly/bannerOrder" target="_blank"><img src="sites/all/themes/md_leaders/img/Desktop-Banner.png" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book"></a>
+  <a href="http://bit.ly/bannerOrder" target="_blank"><img src="sites/all/themes/md_leaders/img/Desktop-Banner.jpg" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book"></a>
 </div>
 
 <div class="mobile banner-image">
-  <a href="http://bit.ly/bannerOrder" target="_blank"><img src="sites/all/themes/md_leaders/img/Mobile-Banner.png" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book"></a>
+  <a href="http://bit.ly/bannerOrder" target="_blank"><img src="sites/all/themes/md_leaders/img/Mobile-Banner.jpg" alt="You are the Key: Unlocking Doors through Social Selling" title="Social Selling Book"></a>
 </div>
 
 <div class="order-now"><a href="http://bit.ly/LeftStickyOrder" target="_blank"><img src="/sites/all/themes/md_leaders/img/order-now.png" alt=""></a></div>
