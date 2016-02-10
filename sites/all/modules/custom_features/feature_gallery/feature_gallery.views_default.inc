@@ -49,8 +49,10 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_album_1']['field'] = 'field_album';
   $handler->display->display_options['fields']['field_album_1']['ui_name'] = 'Album Title';
   $handler->display->display_options['fields']['field_album_1']['label'] = '';
+  $handler->display->display_options['fields']['field_album_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_album_1']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_album_1']['alter']['text'] = '<div class="title">[field_album_1-title]</div>';
+  $handler->display->display_options['fields']['field_album_1']['alter']['max_length'] = '10';
   $handler->display->display_options['fields']['field_album_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_album_1']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_album_1']['settings'] = array(
@@ -63,14 +65,24 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_album_2']['field'] = 'field_album';
   $handler->display->display_options['fields']['field_album_2']['ui_name'] = 'Album Alt';
   $handler->display->display_options['fields']['field_album_2']['label'] = '';
+  $handler->display->display_options['fields']['field_album_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_album_2']['alter']['alter_text'] = TRUE;
   $handler->display->display_options['fields']['field_album_2']['alter']['text'] = '<div class="description">[field_album_2-alt]</div>';
+  $handler->display->display_options['fields']['field_album_2']['alter']['max_length'] = '30';
   $handler->display->display_options['fields']['field_album_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_album_2']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_album_2']['settings'] = array(
     'image_style' => '',
     'image_link' => '',
   );
+  /* Field: Global: Custom text */
+  $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['table'] = 'views';
+  $handler->display->display_options['fields']['nothing']['field'] = 'nothing';
+  $handler->display->display_options['fields']['nothing']['label'] = '';
+  $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_album_1] 
+[field_album_2]';
+  $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -105,6 +117,8 @@ function feature_gallery_views_default_views() {
     t('Desc'),
     t('<div class="title">[field_album_1-title]</div>'),
     t('<div class="description">[field_album_2-alt]</div>'),
+    t('[field_album_1] 
+[field_album_2]'),
     t('Page'),
   );
   $export['photo_gallery'] = $view;
