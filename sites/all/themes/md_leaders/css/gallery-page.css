@@ -1,0 +1,37 @@
+.view-photo-gallery {
+  margin: 50px 0;
+}
+.view-photo-gallery .views-row {
+  border: 3px solid #dfe6e7;
+  cursor: pointer;
+  display: inline-block;
+  margin: 10px;
+  padding: 1px;
+  position: relative;
+  width: 31%;
+  vertical-align: top;
+}
+.view-photo-gallery .views-field-field-album img {
+  width: 100%;
+}
+.view-photo-gallery .views-field-nothing {
+  position: absolute;
+  top: 60%;
+  color: #ffffff;
+  font-family: sans-serif;
+  margin: 0 18px 18px 18px;
+}
+.view-photo-gallery .views-field-nothing .title {
+  font-size: 20px;
+}
+.view-photo-gallery .views-field-nothing .title::first-letter {
+  text-transform: uppercase;
+}
+.view-photo-gallery .views-field-nothing .description {
+  margin-top: 5px;
+  font-size: 14px;
+  margin-bottom: 0;
+}
+.view-photo-gallery .views-field-nothing .description::first-letter {
+  text-transform: uppercase;
+}
