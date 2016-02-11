@@ -10,6 +10,7 @@
 
 @media screen and (max-width: 991px) {
   .view-video-gallery .views-row {
+    text-align: center;
     margin: 10px 0;
     width: 100%;
   }

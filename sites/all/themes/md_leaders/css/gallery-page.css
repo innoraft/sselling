@@ -6,7 +6,7 @@
   display: inline-block;
   margin: 10px;
   position: relative;
-  width: 31%;
+  width: 46.9%;
   vertical-align: top;
   transition: all 0.2s linear 0s;
   filter: grayscale(0);
@@ -17,7 +17,6 @@
   transform: scale(1);
 }
 .view-photo-gallery .views-field-field-album img {
-  width: 100%;
   padding: 1px;
   display: inline-block;
   border: 3px solid #dfe6e7;
@@ -47,6 +46,13 @@
   text-transform: uppercase;
 }
 
+@media screen and (max-width: 991px) {
+  .view-photo-gallery .views-row {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+}
 .node-gallery .block-header.animated {
   margin-top: 20px;
 }
