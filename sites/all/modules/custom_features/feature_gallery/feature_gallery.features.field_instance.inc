@@ -112,7 +112,7 @@ function feature_gallery_field_default_field_instances() {
           'jlib_showThumbsButton' => 1,
           'jlib_textColor' => 'rgba(255,255,255,1)',
           'jlib_thumbFrameColor' => 'rgba(255,255,255,.5)',
-          'jlib_useFullscreenExpand' => 0,
+          'jlib_useFullscreenExpand' => 1,
           'jlib_useThumbDots' => 0,
           'linkurl_source' => '',
           'linkurl_target' => '_blank',
