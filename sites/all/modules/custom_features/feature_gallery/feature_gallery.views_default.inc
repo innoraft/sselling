@@ -90,6 +90,16 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['nothing']['alter']['text'] = '[field_album_1] 
 [field_album_2]';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
+  /* Field: Content: Video */
+  $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
+  $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
+  $handler->display->display_options['fields']['field_video']['label'] = '';
+  $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'video_url';
+  $handler->display->display_options['fields']['field_video']['settings'] = array(
+    'video_style' => 'normal',
+  );
   /* Sort criterion: Content: Post date */
   $handler->display->display_options['sorts']['created']['id'] = 'created';
   $handler->display->display_options['sorts']['created']['table'] = 'node';
@@ -108,6 +118,7 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['filters']['type']['field'] = 'type';
   $handler->display->display_options['filters']['type']['value'] = array(
     'gallery' => 'gallery',
+    'videos' => 'videos',
   );
 
   /* Display: Page */
