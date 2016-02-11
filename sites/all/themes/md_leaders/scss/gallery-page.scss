@@ -15,11 +15,13 @@
 		vertical-align: top;
 		transition: all 0.2s linear 0s;
 		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
 		transform: scale(1.015);
 	}
 
 	.views-row:hover {
 		filter: grayscale(1);
+		-webkit-filter: grayscale(1);
 		transform: scale(1);
 	}
 
