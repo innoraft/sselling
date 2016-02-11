@@ -2,17 +2,25 @@
   margin: 50px 0;
 }
 .view-photo-gallery .views-row {
-  border: 3px solid #dfe6e7;
   cursor: pointer;
   display: inline-block;
   margin: 10px;
-  padding: 1px;
   position: relative;
   width: 31%;
   vertical-align: top;
+  transition: all 0.2s linear 0s;
+  filter: grayscale(0);
+  transform: scale(1.015);
+}
+.view-photo-gallery .views-row:hover {
+  filter: grayscale(1);
+  transform: scale(1);
 }
 .view-photo-gallery .views-field-field-album img {
   width: 100%;
+  padding: 1px;
+  display: inline-block;
+  border: 3px solid #dfe6e7;
 }
 .view-photo-gallery .views-field-nothing {
   position: absolute;
@@ -37,4 +45,8 @@
 }
 .view-photo-gallery .views-field-nothing .description a::first-letter {
   text-transform: uppercase;
+}
+
+.node-gallery .block-header.animated {
+  margin-top: 20px;
 }

@@ -1,0 +1,9 @@
+.view-video-gallery {
+  margin: 50px 0;
+}
+.view-video-gallery .views-row {
+  display: inline-block;
+  margin: 10px;
+  width: 48%;
+  vertical-align: top;
+}
