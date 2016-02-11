@@ -102,7 +102,7 @@ function feature_gallery_field_default_field_instances() {
           'apply_markup_filter' => 1,
           'caption_source' => 'alt',
           'custom_parent_classes' => '',
-          'image_style' => 'juicebox_medium',
+          'image_style' => 'juicebox_main',
           'incompatible_file_action' => 'show_icon_and_link',
           'jlib_backgroundColor' => '#222222',
           'jlib_galleryHeight' => '100%',

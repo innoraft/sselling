@@ -41,6 +41,21 @@ function feature_gallery_image_default_styles() {
     ),
   );
 
+  // Exported image style: juicebox_main.
+  $styles['juicebox_main'] = array(
+    'label' => 'juicebox main',
+    'effects' => array(
+      22 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 400,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
   return $styles;
 }
 

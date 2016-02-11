@@ -13,6 +13,7 @@ features[field_base][] = field_photos
 features[field_instance][] = node-gallery-field_album
 features[field_instance][] = node-gallery-field_photos
 features[image][] = gallery_photo
+features[image][] = juicebox_main
 features[node][] = gallery
 features[variable][] = comment_anonymous_gallery
 features[variable][] = comment_default_mode_gallery
