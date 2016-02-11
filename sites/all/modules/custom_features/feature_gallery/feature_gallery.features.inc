@@ -33,8 +33,8 @@ function feature_gallery_image_default_styles() {
       21 => array(
         'name' => 'image_scale_and_crop',
         'data' => array(
-          'width' => 350,
-          'height' => 310,
+          'width' => 553,
+          'height' => 367,
         ),
         'weight' => 1,
       ),
