@@ -9,7 +9,17 @@
 	.views-row {
 		display: inline-block;
 		margin: 10px;
-		width: 48%;
+		width: 47.7%;
 		vertical-align: top;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	// Video gallery view.
+	.view-video-gallery {
+		.views-row {
+			margin: 10px 0;
+			width: 100%;
+		}
 	}
 }
