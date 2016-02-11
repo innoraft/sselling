@@ -21,6 +21,45 @@ function feature_gallery_views_api($module = NULL, $api = NULL) {
 }
 
 /**
+ * Implements hook_image_default_styles().
+ */
+function feature_gallery_image_default_styles() {
+  $styles = array();
+
+  // Exported image style: gallery_photo.
+  $styles['gallery_photo'] = array(
+    'label' => 'gallery photo',
+    'effects' => array(
+      21 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 350,
+          'height' => 310,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  // Exported image style: juicebox_main.
+  $styles['juicebox_main'] = array(
+    'label' => 'juicebox main',
+    'effects' => array(
+      22 => array(
+        'name' => 'image_scale_and_crop',
+        'data' => array(
+          'width' => 800,
+          'height' => 400,
+        ),
+        'weight' => 1,
+      ),
+    ),
+  );
+
+  return $styles;
+}
+
+/**
  * Implements hook_node_info().
  */
 function feature_gallery_node_info() {

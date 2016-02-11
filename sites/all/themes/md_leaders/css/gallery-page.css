@@ -20,20 +20,21 @@
   font-family: sans-serif;
   margin: 0 18px 18px 18px;
 }
-.view-photo-gallery .views-field-nothing .title {
-  font-size: 20px;
+.view-photo-gallery .views-field-nothing .title a {
+  color: #ffffff;
+  font-size: 30px;
+  font-weight: bolder;
 }
-.view-photo-gallery .views-field-nothing .title::first-letter {
+.view-photo-gallery .views-field-nothing .title a::first-letter {
   text-transform: uppercase;
 }
 .view-photo-gallery .views-field-nothing .description {
-  margin-top: 5px;
-  font-size: 14px;
-  margin-bottom: 0;
+  margin-top: 12px;
 }
-.view-photo-gallery .views-field-nothing .description::first-letter {
-  text-transform: uppercase;
-}
-.view-photo-gallery .views-field-nothing a {
+.view-photo-gallery .views-field-nothing .description a {
   color: #ffffff;
+  font-size: 20px;
+}
+.view-photo-gallery .views-field-nothing .description a::first-letter {
+  text-transform: uppercase;
 }

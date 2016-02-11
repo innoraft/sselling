@@ -40,7 +40,7 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_album']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_album']['click_sort_column'] = 'fid';
   $handler->display->display_options['fields']['field_album']['settings'] = array(
-    'image_style' => 'blog_related',
+    'image_style' => 'gallery_photo',
     'image_link' => 'content',
   );
   /* Field: Content: Path */
