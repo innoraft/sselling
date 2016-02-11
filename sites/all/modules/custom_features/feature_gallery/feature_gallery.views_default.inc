@@ -43,6 +43,13 @@ function feature_gallery_views_default_views() {
     'image_style' => 'blog_related',
     'image_link' => 'content',
   );
+  /* Field: Content: Path */
+  $handler->display->display_options['fields']['path']['id'] = 'path';
+  $handler->display->display_options['fields']['path']['table'] = 'node';
+  $handler->display->display_options['fields']['path']['field'] = 'path';
+  $handler->display->display_options['fields']['path']['label'] = '';
+  $handler->display->display_options['fields']['path']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['path']['element_label_colon'] = FALSE;
   /* Field: Album Title */
   $handler->display->display_options['fields']['field_album_1']['id'] = 'field_album_1';
   $handler->display->display_options['fields']['field_album_1']['table'] = 'field_data_field_album';
@@ -51,7 +58,7 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_album_1']['label'] = '';
   $handler->display->display_options['fields']['field_album_1']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_album_1']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_album_1']['alter']['text'] = '<div class="title">[field_album_1-title]</div>';
+  $handler->display->display_options['fields']['field_album_1']['alter']['text'] = '<div class="title"><a href="[path]">[field_album_1-title]</a></div>';
   $handler->display->display_options['fields']['field_album_1']['alter']['max_length'] = '10';
   $handler->display->display_options['fields']['field_album_1']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_album_1']['click_sort_column'] = 'fid';
@@ -67,7 +74,7 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['fields']['field_album_2']['label'] = '';
   $handler->display->display_options['fields']['field_album_2']['exclude'] = TRUE;
   $handler->display->display_options['fields']['field_album_2']['alter']['alter_text'] = TRUE;
-  $handler->display->display_options['fields']['field_album_2']['alter']['text'] = '<div class="description">[field_album_2-alt]</div>';
+  $handler->display->display_options['fields']['field_album_2']['alter']['text'] = '<div class="description"><a href="[path]">[field_album_2-alt]</a></div>';
   $handler->display->display_options['fields']['field_album_2']['alter']['max_length'] = '30';
   $handler->display->display_options['fields']['field_album_2']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_album_2']['click_sort_column'] = 'fid';
@@ -115,8 +122,8 @@ function feature_gallery_views_default_views() {
     t('Sort by'),
     t('Asc'),
     t('Desc'),
-    t('<div class="title">[field_album_1-title]</div>'),
-    t('<div class="description">[field_album_2-alt]</div>'),
+    t('<div class="title"><a href="[path]">[field_album_1-title]</a></div>'),
+    t('<div class="description"><a href="[path]">[field_album_2-alt]</a></div>'),
     t('[field_album_1] 
 [field_album_2]'),
     t('Page'),
