@@ -11,7 +11,7 @@
 		display: inline-block;
 		margin: 10px;
 		position: relative;
-		width: 31%;
+		width: 46.9%;
 		vertical-align: top;
 		transition: all 0.2s linear 0s;
 		filter: grayscale(0);
@@ -24,7 +24,6 @@
 	}
 
 	.views-field-field-album img {
-		width: 100%;
 		padding: 1px;
 		display: inline-block;
 		border: 3px solid #dfe6e7;
@@ -57,6 +56,17 @@
 
 		.description a::first-letter {
 			text-transform: uppercase;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	// Video gallery view.
+	.view-photo-gallery {
+		.views-row {
+			text-align: center;
+			margin: 10px 0;
+			width: 100%;
 		}
 	}
 }
