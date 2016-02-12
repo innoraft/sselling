@@ -1,0 +1,82 @@
+@import "compass/css3/";
+@import "variables";
+
+
+// Photo gallery view.
+.view-photo-gallery {
+	margin: 50px 0;
+
+	.views-row {
+		cursor: pointer;
+		display: inline-block;
+		margin: 10px;
+		position: relative;
+		width: 46.9%;
+		vertical-align: top;
+		transition: all 0.2s linear 0s;
+		filter: grayscale(0);
+		-webkit-filter: grayscale(0);
+		transform: scale(1.015);
+	}
+
+	.views-row:hover {
+		filter: grayscale(1);
+		-webkit-filter: grayscale(1);
+		transform: scale(1);
+	}
+
+	.views-field-field-album img {
+		padding: 1px;
+		display: inline-block;
+		border: 3px solid #dfe6e7;
+	}
+
+	.views-field-nothing {
+		position: absolute;
+		top: 60%;
+		font-family: sans-serif;
+		margin: 0 18px 18px 18px;
+
+		.title a {
+			color: #ffffff;
+			font-size: 30px;
+			font-weight: bolder;
+		}
+
+		.title a::first-letter {
+			text-transform: uppercase;
+		}
+
+		.description {
+			margin-top: 12px;
+
+			a {
+				color: #ffffff;
+				font-size: 20px;
+			}
+		}
+
+		.description a::first-letter {
+			text-transform: uppercase;
+		}
+	}
+}
+
+@media screen and (max-width: 991px) {
+	// Video gallery view.
+	.view-photo-gallery {
+		.views-row {
+			text-align: center;
+			margin: 10px 0;
+			width: 100%;
+		}
+	}
+}
+
+
+// Gallery node page.
+.node-gallery {
+	.block-header.animated {
+		margin-top: 20px;
+	}
+}

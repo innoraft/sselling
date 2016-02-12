@@ -1,0 +1,17 @@
+.view-video-gallery {
+  margin: 50px 0;
+}
+.view-video-gallery .views-row {
+  display: inline-block;
+  margin: 10px;
+  width: 47.7%;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 991px) {
+  .view-video-gallery .views-row {
+    text-align: center;
+    margin: 10px 0;
+    width: 100%;
+  }
+}

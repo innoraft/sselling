@@ -1,0 +1,26 @@
+@import "compass/css3/";
+@import "variables";
+
+
+// Video gallery view.
+.view-video-gallery {
+	margin: 50px 0;
+
+	.views-row {
+		display: inline-block;
+		margin: 10px;
+		width: 47.7%;
+		vertical-align: top;
+	}
+}
+
+@media screen and (max-width: 991px) {
+	// Video gallery view.
+	.view-video-gallery {
+		.views-row {
+			text-align: center;
+			margin: 10px 0;
+			width: 100%;
+		}
+	}
+}
