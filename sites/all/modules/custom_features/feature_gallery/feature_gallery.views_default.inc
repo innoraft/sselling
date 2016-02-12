@@ -104,7 +104,7 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['sorts']['weight']['id'] = 'weight';
   $handler->display->display_options['sorts']['weight']['table'] = 'draggableviews_structure';
   $handler->display->display_options['sorts']['weight']['field'] = 'weight';
-  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'testimonial_list:page_1';
+  $handler->display->display_options['sorts']['weight']['draggableviews_setting_view'] = 'photo_gallery:page_1';
   $handler->display->display_options['sorts']['weight']['draggableviews_setting_new_items_bottom_list'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
@@ -126,60 +126,27 @@ function feature_gallery_views_default_views() {
   $handler = $view->new_display('page', 'Page', 'page');
   $handler->display->display_options['path'] = 'gallery';
 
-  /* Display: Page */
-  $handler = $view->new_display('page', 'Page', 'page_1');
+  /* Display: Page-sort */
+  $handler = $view->new_display('page', 'Page-sort', 'page_1');
   $handler->display->display_options['defaults']['pager'] = FALSE;
-  $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['pager']['options']['items_per_page'] = '10';
+  $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['pager']['options']['id'] = '0';
-  $handler->display->display_options['pager']['options']['quantity'] = '9';
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['columns'] = array(
-    'field_album' => 'field_album',
-    'path' => 'path',
-    'field_album_1' => 'field_album_1',
-    'field_album_2' => 'field_album_2',
-    'nothing' => 'nothing',
-    'field_video' => 'field_video',
+    'title' => 'title',
+    'draggableviews' => 'draggableviews',
   );
   $handler->display->display_options['style_options']['default'] = '-1';
   $handler->display->display_options['style_options']['info'] = array(
-    'field_album' => array(
+    'title' => array(
       'sortable' => 0,
       'default_sort_order' => 'asc',
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
     ),
-    'path' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_album_1' => array(
-      'sortable' => 1,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_album_2' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'nothing' => array(
-      'align' => '',
-      'separator' => '',
-      'empty_column' => 0,
-    ),
-    'field_video' => array(
-      'sortable' => 0,
-      'default_sort_order' => 'asc',
+    'draggableviews' => array(
       'align' => '',
       'separator' => '',
       'empty_column' => 0,
@@ -189,32 +156,16 @@ function feature_gallery_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
-  /* Field: Content: Album */
-  $handler->display->display_options['fields']['field_album']['id'] = 'field_album';
-  $handler->display->display_options['fields']['field_album']['table'] = 'field_data_field_album';
-  $handler->display->display_options['fields']['field_album']['field'] = 'field_album';
-  $handler->display->display_options['fields']['field_album']['label'] = '';
-  $handler->display->display_options['fields']['field_album']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_album']['click_sort_column'] = 'fid';
-  $handler->display->display_options['fields']['field_album']['settings'] = array(
-    'image_style' => 'gallery_photo',
-    'image_link' => 'content',
-  );
-  /* Field: Content: Video */
-  $handler->display->display_options['fields']['field_video']['id'] = 'field_video';
-  $handler->display->display_options['fields']['field_video']['table'] = 'field_data_field_video';
-  $handler->display->display_options['fields']['field_video']['field'] = 'field_video';
-  $handler->display->display_options['fields']['field_video']['label'] = '';
-  $handler->display->display_options['fields']['field_video']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['field_video']['click_sort_column'] = 'video_url';
-  $handler->display->display_options['fields']['field_video']['settings'] = array(
-    'video_style' => 'normal',
-  );
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
   /* Field: Draggableviews: Content */
   $handler->display->display_options['fields']['draggableviews']['id'] = 'draggableviews';
   $handler->display->display_options['fields']['draggableviews']['table'] = 'node';
   $handler->display->display_options['fields']['draggableviews']['field'] = 'draggableviews';
-  $handler->display->display_options['fields']['draggableviews']['label'] = 'Order';
+  $handler->display->display_options['fields']['draggableviews']['label'] = '';
+  $handler->display->display_options['fields']['draggableviews']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['element_default_classes'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['hide_alter_empty'] = FALSE;
   $handler->display->display_options['fields']['draggableviews']['draggableviews']['ajax'] = 0;
@@ -233,14 +184,8 @@ function feature_gallery_views_default_views() {
     t('[field_album_1] 
 [field_album_2]'),
     t('Page'),
-    t('Items per page'),
-    t('- All -'),
-    t('Offset'),
-    t('« first'),
-    t('‹ previous'),
-    t('next ›'),
-    t('last »'),
-    t('Order'),
+    t('Page-sort'),
+    t('Title'),
   );
   $export['photo_gallery'] = $view;
 
