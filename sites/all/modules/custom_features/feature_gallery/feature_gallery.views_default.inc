@@ -128,6 +128,13 @@ function feature_gallery_views_default_views() {
 
   /* Display: Page-sort */
   $handler = $view->new_display('page', 'Page-sort', 'page_1');
+  $handler->display->display_options['defaults']['access'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'role';
+  $handler->display->display_options['access']['role'] = array(
+    3 => '3',
+    1 => '1',
+    2 => '2',
+  );
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
