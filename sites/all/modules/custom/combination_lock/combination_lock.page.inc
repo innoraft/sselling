@@ -11,8 +11,11 @@ function combination_lock_view($combination_lock_nid) {
 
   $page_content = NULL;
 
-  $help_text = '<h1>To Play...</h1>';
-  $help_text = t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');
+  $help_text = '<div class="locker-section"><section class="locker"><div class="locker-upper"><img src="/sites/all/themes/md_leaders/img/lock-upper.png" alt="lock-upper-part" width="200" height="200" /></div><div class="lock-lower"><img src="/sites/all/themes/md_leaders/img/lock-lower.png" alt="lock-lower-part" width="200" height="200"/></div></section>';
+
+  $help_text .= '<section class="locker-play"><h1>To Play...</h1>';
+  $help_text .= t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');
+  $help_text .= '</section></div>';
 
   $combination_lock_form = drupal_get_form('combination_lock_form', $combination_lock_nid);
   $combination_lock_form = drupal_render($combination_lock_form);
@@ -20,6 +23,8 @@ function combination_lock_view($combination_lock_nid) {
   // Combined all renderable elements.
   $page_content .= $help_text;
   $page_content .= $combination_lock_form;
+
+  // Adding css to page
 
   return $page_content;
 }
