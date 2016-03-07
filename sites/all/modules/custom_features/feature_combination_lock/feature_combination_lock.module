@@ -1,5 +1,7 @@
 <?php
 /**
  * @file
- * Drupal needs this blank file.
+ * Code for the feature_combination_lock feature.
  */
+
+include_once 'feature_combination_lock.features.inc';
