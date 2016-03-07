@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Combination quiz install file
+ */
+
+/**
+ * Implentations hook_install().
+ */
+function combination_lock_install() {
+
+}
+
+/**
+ * Implentations hook_uninstall().
+ */
+function combination_lock_uninstall() {
+
+}

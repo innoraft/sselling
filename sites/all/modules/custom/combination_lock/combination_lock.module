@@ -1,0 +1,33 @@
+<?php
+/**
+ * @file
+ * Combination quiz module file
+ */
+
+/**
+ * Implementation hook_permission().
+ */
+function combination_lock_permission() {
+  return array(
+    'combination lock view' => array(
+      'title' => t('Combination Lock View Page'),
+    ),
+  );
+}
+
+/**
+ * Implementation hook_menu().
+ */
+function combination_lock_menu() {
+  $items['combination-lock/%'] = array(
+    'title' => 'Combination Lock',
+    'description' => 'Combination Lock Quiz',
+    'page callback' => 'combination_lock_view',
+    'page arguments' => array(1),
+    'access arguments' => array('combination lock view'),
+    'file' => 'combination_lock.page.inc',
+    'file path'=> drupal_get_path('module', 'combination_lock'),
+  );
+
+  return $items;
+}

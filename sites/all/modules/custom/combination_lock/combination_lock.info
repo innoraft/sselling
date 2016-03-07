@@ -1,0 +1,5 @@
+name = Combination Lock
+description = This module creates a page showing quiz.
+package = Quiz
+core = 7.x
+dependencies[] = feature_combination_lock
