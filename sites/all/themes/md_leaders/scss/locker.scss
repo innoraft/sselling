@@ -5,11 +5,14 @@
     float: left;
 		.locker-upper {
 			margin: auto;
-    	width: 24%;
+    	width: 25%;
+    	position: relative;
+    	top: 50px;
 		}
-		.lock-lower {
+		.locker-lower {
 			width: 30%;
     	margin: auto;
+    	position: relative;
 		}
 	}
 	.locker-play {
