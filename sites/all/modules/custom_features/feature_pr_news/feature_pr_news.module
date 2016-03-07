@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the pr news feature.
+ */
+
+include_once 'feature_pr_news.features.inc';
