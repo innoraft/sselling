@@ -1,0 +1,19 @@
+.locker-section {
+  overflow: auto;
+}
+.locker-section .locker {
+  width: 50%;
+  float: left;
+}
+.locker-section .locker .locker-upper {
+  margin: auto;
+  width: 24%;
+}
+.locker-section .locker .lock-lower {
+  width: 30%;
+  margin: auto;
+}
+.locker-section .locker-play {
+  width: 50%;
+  float: left;
+}
