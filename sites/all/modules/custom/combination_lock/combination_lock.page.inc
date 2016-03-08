@@ -11,7 +11,13 @@ function combination_lock_view($combination_lock_nid) {
 
   $page_content = NULL;
 
+  $combination_lock_node = node_load($combination_lock_nid);
+  if (empty($combination_lock_node)) {
+    drupal_not_found();
+  }
+
   drupal_add_css(drupal_get_path('theme', 'md_leaders') . '/css/locker.css' , array('type' => 'file'));
+  drupal_add_js(drupal_get_path('theme', 'md_leaders') . '/js/locker.js');
   drupal_add_js(drupal_get_path('theme', 'md_leaders') . '/js/locker.js');
 
   $help_text = '<div class="locker-section">
@@ -24,11 +30,15 @@ function combination_lock_view($combination_lock_nid) {
   $help_text .= '<section class="locker-play"><h1>To Play...</h1>';
   $help_text .= t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');
 
+  $combination_lock_question = '<h2>Quiz</h2>';
+  $combination_lock_question .= isset($combination_lock_node->body[LANGUAGE_NONE][0]['value']) ? $combination_lock_node->body[LANGUAGE_NONE][0]['value'] : NULL;
+
   $combination_lock_form = drupal_get_form('combination_lock_form', $combination_lock_nid);
   $combination_lock_form = drupal_render($combination_lock_form);
 
   // Combined all renderable elements.
   $page_content .= $help_text;
+  $page_content .= $combination_lock_question;
   $page_content .= $combination_lock_form;
 
   $page_content .= '</section></div>';
@@ -44,6 +54,7 @@ function combination_lock_form($form, &$form_state, $combination_lock_nid = NULL
   $form['lock_pattern'] = array(
     '#type' => 'textfield',
     '#title' => t('Lock Pattern'),
+    '#title_display' => 'invisible',
     '#attributes' => array('class' => array('lock-pattern'), 'placeholder' => 'Enter Lock Pattern'),
   );
 
