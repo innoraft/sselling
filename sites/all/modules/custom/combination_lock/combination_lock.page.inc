@@ -12,13 +12,13 @@ function combination_lock_view($combination_lock_nid) {
   $page_content = NULL;
 
   $combination_lock_node = node_load($combination_lock_nid);
-  if (empty($combination_lock_node)) {
+  if (empty($combination_lock_node) || (!empty($combination_lock_node) && $combination_lock_node->type != 'combination_lock')) {
     drupal_not_found();
   }
 
   drupal_add_css(drupal_get_path('theme', 'md_leaders') . '/css/locker.css' , array('type' => 'file'));
   drupal_add_js(drupal_get_path('theme', 'md_leaders') . '/js/locker.js');
-  drupal_add_js(drupal_get_path('theme', 'md_leaders') . '/js/locker.js');
+  drupal_add_js(libraries_get_path('jquerycounter') . '/js/jquery.counter.js');
 
   $help_text = '<div class="locker-section">
                 <section class="locker">
@@ -26,6 +26,14 @@ function combination_lock_view($combination_lock_nid) {
                 </div><div class="locker-lower"><img src="/sites/all/themes/md_leaders/img/lock-lower.png" alt="locker-lower-part" width="200" height="200"/>
                 </div>
                 </section>';
+
+  $help_text .= '<div class="jcpo-counter lock-pattern-first-counter"><p>
+                  <span class="counter-digits contador-dig-0">0</span>
+                </p></div>';
+
+  $help_text .= '<div class="jcpo-counter lock-pattern-second-counter "><p>
+                  <span class="counter-digits contador-dig-0">0</span>
+                </p></div>';
 
   $help_text .= '<section class="locker-play"><h1>To Play...</h1>';
   $help_text .= t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');

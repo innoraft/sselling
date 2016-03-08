@@ -24,3 +24,38 @@
 #combination-lock-form .combination-lock-answer {
   display: none;
 }
+
+.jcpo-counter {
+  display: inline-block;
+  width: auto;
+  margin: 0 auto;
+  overflow: hidden;
+  // position: absolute;
+  top: -84px;
+  left: 26%;
+  border: 3px solid #CB9E5F;
+  background: #716d6d;
+  padding: 0px 0.5px;
+  height: 47px;
+  p {
+    margin: 0;
+    color: #999;
+    font-size: 1.8em;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+  }
+  .counter-digits {
+    position: relative;
+    padding: 9px;
+    background: #716d6d;
+    color: white;
+    display: block;
+    float: left;
+    border-left: 1px solid #aaa;
+    margin-left: -1px;
+    &:first-child {
+      border-left: 0 none;
+    }
+  }
+}
