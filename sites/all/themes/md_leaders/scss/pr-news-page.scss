@@ -1,0 +1,90 @@
+@import "compass/css3/";
+@import "variables";
+
+// PR news page.
+.page-pr-news {
+	background-color: #f0f0f0;
+
+	.view-pr-list {
+		.block-header {
+			margin-bottom: 45px;
+			margin-top: 52px;
+		}
+
+		.view-content {
+			width: 90%;
+			margin: auto;
+			margin-bottom: 60px;
+		}
+
+		.views-row {
+			width: 48.8%;
+			display: inline-block;
+			vertical-align: top;
+			background-color: #fff;
+			border-right: 10px solid #006bb6;
+		}
+
+		.views-row:first-of-type {
+			margin-right: 1.8%;
+		}
+
+		.views-field-field-pr-logo {
+			float: left;
+			margin-right: 10px;
+		}
+
+		.views-field-title {
+			font-size: 24px;
+			margin: 10px;
+		}
+
+		.views-field-body {
+			margin: 10px;	
+			text-align: justify;
+
+			p {
+				margin-bottom: 0;
+			}
+		}
+
+		.views-field-field-read-more {
+			@extend %read-more;
+		}
+	}
+}
+
+@media screen and (max-width: 1029px) {
+	.page-pr-news {
+		.view-pr-list {
+			.views-row {
+				width: 100%;
+			}
+
+			.views-row:first-of-type {
+				margin-bottom: 30px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 460px) {
+	.page-pr-news {
+		.view-pr-list {
+			.views-row {
+				border-right: none;
+				border-bottom: 10px solid #006bb6;
+			}
+
+			.views-field-field-pr-logo {
+				float: none;
+				text-align: center;
+
+				.field-content {
+					margin: 20px auto;
+					width: 170px;
+				}
+			}
+		}
+	}
+}
