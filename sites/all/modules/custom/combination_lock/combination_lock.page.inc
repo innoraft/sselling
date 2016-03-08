@@ -23,7 +23,6 @@ function combination_lock_view($combination_lock_nid) {
 
   $help_text .= '<section class="locker-play"><h1>To Play...</h1>';
   $help_text .= t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');
-  $help_text .= '</section></div>';
 
   $combination_lock_form = drupal_get_form('combination_lock_form', $combination_lock_nid);
   $combination_lock_form = drupal_render($combination_lock_form);
@@ -32,7 +31,7 @@ function combination_lock_view($combination_lock_nid) {
   $page_content .= $help_text;
   $page_content .= $combination_lock_form;
 
-  // Adding css to page
+  $page_content .= '</section></div>';
 
   return $page_content;
 }
