@@ -26,16 +26,16 @@
 }
 
 .jcpo-counter {
+  position: relative;
   display: inline-block;
   width: auto;
   margin: 0 auto;
   overflow: hidden;
-  top: -84px;
-  left: 26%;
+  top: -106px;
+  left: 43.8%;
   border: 3px solid #CB9E5F;
-  background: #716d6d;
   padding: 0px 0.5px;
-  height: 47px;
+  height: 50px;
 }
 .jcpo-counter p {
   margin: 0;
@@ -48,12 +48,12 @@
 .jcpo-counter .counter-digits {
   position: relative;
   padding: 9px;
-  background: #716d6d;
-  color: white;
+  background: transparent;
+  color: #AC8851;
   display: block;
   float: left;
-  border-left: 1px solid #aaa;
   margin-left: -1px;
+  box-shadow: inset 0px 0px 20px 2px #ac8851;
 }
 .jcpo-counter .counter-digits:first-child {
   border-left: 0 none;
