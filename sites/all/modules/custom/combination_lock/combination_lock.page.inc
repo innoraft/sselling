@@ -24,9 +24,7 @@ function combination_lock_view($combination_lock_nid) {
                 <section class="locker">
                 <div class="locker-upper"><img src="/sites/all/themes/md_leaders/img/lock-upper.png" alt="lock-upper-part" width="200" height="200" />
                 </div><div class="locker-lower"><img src="/sites/all/themes/md_leaders/img/lock-lower.png" alt="locker-lower-part" width="200" height="200"/>
-                </div>
-                </section>';
-
+                </div>';
   $help_text .= '<div class="jcpo-counter lock-pattern-first-counter"><p>
                   <span class="counter-digits contador-dig-0">0</span>
                 </p></div>';
@@ -34,6 +32,8 @@ function combination_lock_view($combination_lock_nid) {
   $help_text .= '<div class="jcpo-counter lock-pattern-second-counter "><p>
                   <span class="counter-digits contador-dig-0">0</span>
                 </p></div>';
+   $help_text .= '</section>';
+
 
   $help_text .= '<section class="locker-play"><h1>To Play...</h1>';
   $help_text .= t('Enter your answer by clicking on the numbers or typing it into the box. Use the clues below. Then click the Try button or in the silver loop. The lock will open if you are correct.');
