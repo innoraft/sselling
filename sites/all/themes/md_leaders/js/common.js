@@ -24,15 +24,16 @@
 			// Add more sub menu.
 			$(document).ready(function() {
 			  if ($(window).width() > 983) {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/gallery">Gallery</a></li><li><a href="/you-are-the-key-books-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
-			  	$("#mainmenu > li:nth-last-child(5)").after(manu);
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/gallery">Gallery</a></li><li><a href="/you-are-the-key-books-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li><li><a href="/pr-news">PR Coverage of You are the Key</a></li></ul></li>';
+			  	$("#mainmenu > li:nth-last-child(6)").after(manu);
 			  	$("#mainmenu > li:nth-last-child(1)").hide();
 			  	$("#mainmenu > li:nth-last-child(2)").hide();
 			  	$("#mainmenu > li:nth-last-child(3)").hide();
 			  	$("#mainmenu > li:nth-last-child(4)").hide();
+			  	$("#mainmenu > li:nth-last-child(5)").hide();
 			  } else {
-			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/gallery">Gallery</a></li><li><a href="/you-are-the-key-books-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li></ul></li>';
-			  	$("#mainmenu > li:nth-last-child(5)").after(manu);
+			  	var manu = '<li id="more-submenu"><a id="more-link">More</a><ul id="more-list"><li><a href="/gallery">Gallery</a></li><li><a href="/you-are-the-key-books-official-partners">Official Partners</a></li><li><a href="/book-free-session">Book a Free Session</a></li><li><a href="/social-selling-case-studies">Social Selling Case Studies</a></li><li><a href="/pr-news">PR Coverage of You are the Key</a></li></ul></li>';
+			  	$("#mainmenu > li:nth-last-child(6)").after(manu);
 			  	$("#mainmenu #more-submenu").hide();
 			  }
 			});
@@ -45,12 +46,14 @@
 					  	$("#mainmenu > li:nth-last-child(2)").hide();
 					  	$("#mainmenu > li:nth-last-child(3)").hide();
 					  	$("#mainmenu > li:nth-last-child(4)").hide();
+					  	$("#mainmenu > li:nth-last-child(5)").hide();
 					  } else {
 					  	$("#mainmenu #more-submenu").hide();
 					  	$("#mainmenu > li:nth-last-child(1)").show();
 					  	$("#mainmenu > li:nth-last-child(2)").show();
 					  	$("#mainmenu > li:nth-last-child(3)").show();
 					  	$("#mainmenu > li:nth-last-child(4)").show();
+					  	$("#mainmenu > li:nth-last-child(5)").show();
 					  }
 				});
 			});

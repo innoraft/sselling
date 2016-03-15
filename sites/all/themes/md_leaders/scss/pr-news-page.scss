@@ -19,13 +19,14 @@
 
 		.views-row {
 			width: 48.8%;
+			margin-bottom: 30px;
 			display: inline-block;
 			vertical-align: top;
 			background-color: #fff;
 			border-right: 10px solid #006bb6;
 		}
 
-		.views-row:first-of-type {
+		.views-row-odd {
 			margin-right: 1.8%;
 		}
 
@@ -60,10 +61,6 @@
 			.views-row {
 				width: 100%;
 			}
-
-			.views-row:first-of-type {
-				margin-bottom: 30px;
-			}
 		}
 	}
 }
@@ -74,6 +71,10 @@
 			.views-row {
 				border-right: none;
 				border-bottom: 10px solid #006bb6;
+			}
+
+			.views-row-odd {
+				margin-right: 0;
 			}
 
 			.views-field-field-pr-logo {
