@@ -98,6 +98,20 @@
 .page-social-selling-blogs .view-blog-list .views-field-body span {
   display: inline-block;
 }
+.page-social-selling-blogs .view-blog-list .views-field-field-upload-file {
+  display: inline-block;
+  line-height: 40px;
+  margin-left: 10px;
+  vertical-align: bottom;
+}
+.page-social-selling-blogs .view-blog-list .views-field-field-upload-file a {
+  color: #1c1c1c;
+  vertical-align: -2px;
+}
+.page-social-selling-blogs .view-blog-list .views-field-view-node {
+  float: right;
+  display: inline-block;
+}
 .page-social-selling-blogs .footer {
   margin-bottom: 60px;
 }
@@ -218,6 +232,17 @@
 }
 .page-type-blog .field-name-body {
   color: #999999;
+}
+.page-type-blog .field-name-field-upload-file {
+  float: left;
+  margin-top: 10px;
+}
+.page-type-blog .field-name-field-upload-file a {
+  color: #1c1c1c;
+  vertical-align: -2px;
+}
+.page-type-blog #comments {
+  margin: 54px 0 40px;
 }
 .page-type-blog h2.comment-form {
   font-size: 24px;

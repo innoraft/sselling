@@ -851,6 +851,17 @@ function feature_blog_views_default_views() {
   $handler->display->display_options['fields']['body']['alter']['trim'] = TRUE;
   $handler->display->display_options['fields']['body']['alter']['html'] = TRUE;
   $handler->display->display_options['fields']['body']['element_label_colon'] = FALSE;
+  /* Field: Content: Upload File */
+  $handler->display->display_options['fields']['field_upload_file']['id'] = 'field_upload_file';
+  $handler->display->display_options['fields']['field_upload_file']['table'] = 'field_data_field_upload_file';
+  $handler->display->display_options['fields']['field_upload_file']['field'] = 'field_upload_file';
+  $handler->display->display_options['fields']['field_upload_file']['label'] = '';
+  $handler->display->display_options['fields']['field_upload_file']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_upload_file']['click_sort_column'] = 'fid';
+  $handler->display->display_options['fields']['field_upload_file']['type'] = 'file_rendered';
+  $handler->display->display_options['fields']['field_upload_file']['settings'] = array(
+    'file_view_mode' => 'default',
+  );
   /* Field: Content: Link */
   $handler->display->display_options['fields']['view_node']['id'] = 'view_node';
   $handler->display->display_options['fields']['view_node']['table'] = 'views_entity_node';
