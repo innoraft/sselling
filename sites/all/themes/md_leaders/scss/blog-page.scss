@@ -90,7 +90,21 @@
 			}
 		}
 
+		.views-field-field-upload-file {
+			display: inline-block;
+			line-height: 40px;
+			margin-left: 10px;
+			vertical-align: bottom;
+
+			a {
+				color: #1c1c1c;
+				vertical-align: -2px;
+			}
+		}
+
 		.views-field-view-node {
+			float: right;
+			display: inline-block;
 			@extend %read-more;
 		}
 	}
@@ -270,7 +284,21 @@
 		color: $text-color;
 	}
 
+	.field-name-field-upload-file {
+		float: left;
+		margin-top: 10px;
+
+		a {
+			color: #1c1c1c;
+			vertical-align: -2px;
+		}
+	}
+
 	// Comment.
+	#comments {
+		margin: 54px 0 40px;
+	}
+
 	h2.comment-form {
 		font-size: 24px;
 		text-transform: capitalize;
